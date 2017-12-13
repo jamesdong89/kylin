@@ -36,7 +36,6 @@ import org.apache.kylin.metadata.model.TableRef;
 import org.apache.kylin.metadata.model.TblColRef;
 import org.apache.kylin.metadata.project.ProjectManager;
 import org.apache.kylin.metadata.realization.IRealization;
-import org.apache.kylin.metadata.realization.RealizationType;
 import org.apache.kylin.query.relnode.OLAPContext;
 import org.apache.kylin.query.relnode.OLAPTableScan;
 import org.apache.kylin.query.routing.rules.RemoveBlackoutRealizationsRule;
@@ -249,13 +248,7 @@ public class RealizationChooser {
             this.priority = Candidate.PRIORITIES.get(real.getType());
 
             // ref CubeInstance.getCost()
-            int countedDimensionNum;
-            if (RealizationType.CUBE == real.getType()) {
-                countedDimensionNum = ((CubeInstance) real).getRowKeyColumnCount();
-            } else {
-                countedDimensionNum = real.getAllDimensions().size();
-            }
-            int c = countedDimensionNum * CubeInstance.COST_WEIGHT_DIMENSION
+            int c = real.getAllDimensions().size() * CubeInstance.COST_WEIGHT_DIMENSION
                     + real.getMeasures().size() * CubeInstance.COST_WEIGHT_MEASURE;
             for (JoinTableDesc join : real.getModel().getJoinTables()) {
                 if (join.getJoin().isInnerJoin())

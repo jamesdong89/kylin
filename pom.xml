@@ -7,9 +7,9 @@
  to you under the Apache License, Version 2.0 (the
  "License"); you may not use this file except in compliance
  with the License.  You may obtain a copy of the License at
- 
+
      http://www.apache.org/licenses/LICENSE-2.0
- 
+
  Unless required by applicable law or agreed to in writing, software
  distributed under the License is distributed on an "AS IS" BASIS,
  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -40,6 +40,11 @@
 
 
     <properties>
+
+
+
+        <checkstyle.skip>true</checkstyle.skip>
+
         <!-- General Properties -->
         <javaVersion>1.7</javaVersion>
         <maven-model.version>3.3.9</maven-model.version>
@@ -61,13 +66,13 @@
         <kafka.version>0.11.0.1</kafka.version>
 
         <!-- Spark versions -->
-        <spark.version>2.1.2</spark.version>
+        <spark.version>2.1.1</spark.version>
         <kryo.version>4.0.0</kryo.version>
 
         <!-- <reflections.version>0.9.10</reflections.version> -->
 
         <!-- Calcite Version -->
-        <calcite.version>1.13.0-kylin-r3-SNAPSHOT</calcite.version>
+        <calcite.version>1.13.0-kylin-r2-SNAPSHOT</calcite.version>
         <avatica.version>1.10.0</avatica.version>
 
         <!-- Hadoop Common deps, keep compatible with hadoop2.version -->
@@ -95,12 +100,11 @@
         <jetty.version>9.2.20.v20161216</jetty.version>
         <jamm.version>0.3.1</jamm.version>
         <mockito.version>2.7.14</mockito.version>
-        <powermock.version>1.7.0</powermock.version>
+
 
         <!-- Commons -->
         <commons-lang3.version>3.4</commons-lang3.version>
         <commons-email.version>1.5</commons-email.version>
-        <commons-validator.version>1.4.0</commons-validator.version>
 
         <!-- Utility -->
         <log4j.version>1.2.17</log4j.version>
@@ -236,6 +240,11 @@
             <dependency>
                 <groupId>org.apache.kylin</groupId>
                 <artifactId>kylin-core-cube</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.kylin</groupId>
+                <artifactId>kylin-core-cube-test</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
@@ -641,11 +650,6 @@
                 <artifactId>commons-email</artifactId>
                 <version>${commons-email.version}</version>
             </dependency>
-            <dependency>
-                <groupId>commons-validator</groupId>
-                <artifactId>commons-validator</artifactId>
-                <version>${commons-validator.version}</version>
-            </dependency>
 
             <!-- Logging -->
             <dependency>
@@ -826,7 +830,7 @@
                 <artifactId>spring-security-saml2-core</artifactId>
                 <version>${spring.framework.security.extensions.version}</version>
             </dependency>
-            
+
             <dependency>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-server</artifactId>
@@ -927,6 +931,7 @@
     <build>
         <pluginManagement>
             <plugins>
+
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
@@ -1138,6 +1143,9 @@
         <module>core-metadata</module>
         <module>core-dictionary</module>
         <module>core-cube</module>
+        <module>core-cube-test-4</module>
+        <module>core-cube-test-3</module>
+        <module>core-cube-test-2</module>
         <module>core-job</module>
         <module>core-storage</module>
         <module>engine-mr</module>

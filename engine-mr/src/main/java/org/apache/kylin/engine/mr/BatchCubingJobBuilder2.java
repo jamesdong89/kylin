@@ -20,7 +20,6 @@ package org.apache.kylin.engine.mr;
 
 import org.apache.kylin.cube.CubeManager;
 import org.apache.kylin.cube.CubeSegment;
-import org.apache.kylin.cube.cuboid.CuboidUtil;
 import org.apache.kylin.engine.mr.IMRInput.IMRBatchCubingInputSide;
 import org.apache.kylin.engine.mr.IMROutput2.IMRBatchCubingOutputSide2;
 import org.apache.kylin.engine.mr.common.AbstractHadoopJob;
@@ -99,8 +98,7 @@ public class BatchCubingJobBuilder2 extends JobBuilderSupport {
     }
 
     protected void addLayerCubingSteps(final CubingJob result, final String jobId, final String cuboidRootPath) {
-        // Don't know statistics so that tree cuboid scheduler is not determined. Determine the maxLevel at runtime
-        final int maxLevel = CuboidUtil.getLongestDepth(seg.getCuboidScheduler().getAllCuboidIds());
+        final int maxLevel = seg.getCuboidScheduler().getBuildLevel();
         // base cuboid step
         result.addTask(createBaseCuboidStep(getCuboidOutputPathsByLevel(cuboidRootPath, 0), jobId));
         // n dim cuboid steps

@@ -20,7 +20,6 @@ package org.apache.kylin.engine.mr.common;
 
 import java.io.IOException;
 import java.util.Map;
-import java.util.Set;
 
 import org.apache.kylin.common.util.Pair;
 import org.apache.kylin.cube.CubeInstance;
@@ -40,27 +39,23 @@ public class CuboidRecommenderUtil {
             return null;
         }
 
-        CubeStatsReader cubeStatsReader = new CubeStatsReader(segment, null, segment.getConfig());
+        CubeStatsReader cubeStatsReader = new CubeStatsReader(segment, segment.getConfig());
         if (cubeStatsReader.getCuboidRowEstimatesHLL() == null
                 || cubeStatsReader.getCuboidRowEstimatesHLL().isEmpty()) {
             logger.info("Cuboid Statistics is not enabled.");
             return null;
         }
-        CubeInstance cube = segment.getCubeInstance();
-        long baseCuboid = cube.getCuboidScheduler().getBaseCuboidId();
+        long baseCuboid = segment.getCuboidScheduler().getBaseCuboidId();
         if (cubeStatsReader.getCuboidRowEstimatesHLL().get(baseCuboid) == null
                 || cubeStatsReader.getCuboidRowEstimatesHLL().get(baseCuboid) == 0L) {
             logger.info("Base cuboid count in cuboid statistics is 0.");
             return null;
         }
 
-        Set<Long> mandatoryCuboids = segment.getCubeDesc().getMandatoryCuboids();
-
-        String key = cube.getName();
+        String key = segment.getCubeInstance().getName();
         CuboidStats cuboidStats = new CuboidStats.Builder(key, baseCuboid, cubeStatsReader.getCuboidRowEstimatesHLL(),
-                cubeStatsReader.getCuboidSizeMap()).setMandatoryCuboids(mandatoryCuboids).build();
-        return CuboidRecommender.getInstance().getRecommendCuboidList(cuboidStats, segment.getConfig(),
-                !mandatoryCuboids.isEmpty());
+                cubeStatsReader.getCuboidSizeMap()).build();
+        return CuboidRecommender.getInstance().getRecommendCuboidList(cuboidStats, segment.getConfig(), false);
     }
 
     /** Trigger cube planner phase two for optimization */
@@ -86,21 +81,20 @@ public class CuboidRecommenderUtil {
             return null;
         }
 
-        CubeStatsReader cubeStatsReader = new CubeStatsReader(segment, null, segment.getConfig());
+        CubeStatsReader cubeStatsReader = new CubeStatsReader(segment, segment.getConfig());
         if (cubeStatsReader.getCuboidRowEstimatesHLL() == null
                 || cubeStatsReader.getCuboidRowEstimatesHLL().isEmpty()) {
             logger.info("Cuboid Statistics is not enabled.");
             return null;
         }
-        CubeInstance cube = segment.getCubeInstance();
-        long baseCuboid = cube.getCuboidScheduler().getBaseCuboidId();
+        long baseCuboid = segment.getCuboidScheduler().getBaseCuboidId();
         if (cubeStatsReader.getCuboidRowEstimatesHLL().get(baseCuboid) == null
                 || cubeStatsReader.getCuboidRowEstimatesHLL().get(baseCuboid) == 0L) {
             logger.info("Base cuboid count in cuboid statistics is 0.");
             return null;
         }
 
-        String key = cube.getName() + "-" + segment.getName();
+        String key = segment.getCubeInstance().getName() + "-" + segment.getName();
         CuboidStats cuboidStats = new CuboidStats.Builder(key, baseCuboid, cubeStatsReader.getCuboidRowEstimatesHLL(),
                 cubeStatsReader.getCuboidSizeMap()).setHitFrequencyMap(hitFrequencyMap)
                         .setRollingUpCountSourceMap(rollingUpCountSourceMap,

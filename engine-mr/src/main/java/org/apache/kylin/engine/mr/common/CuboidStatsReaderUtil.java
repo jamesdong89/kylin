@@ -38,13 +38,9 @@ public class CuboidStatsReaderUtil {
 
     private static final Logger logger = LoggerFactory.getLogger(CuboidStatsReaderUtil.class);
 
-    public static Map<Long, Long> readCuboidStatsFromCube(Set<Long> cuboidIds, CubeInstance cubeInstance) {
-        Map<Long, Long> statisticsMerged = null;
-        try {
-            statisticsMerged = readCuboidStatsAndSizeFromCube(cuboidIds, cubeInstance).getFirst();
-        } catch (IOException e) {
-            logger.warn("Fail to read statistics for cube " + cubeInstance.getName() + " due to " + e);
-        }
+    public static Map<Long, Long> readCuboidStatsFromCube(Set<Long> cuboidIds, CubeInstance cubeInstance)
+            throws IOException {
+        Map<Long, Long> statisticsMerged = readCuboidStatsAndSizeFromCube(cuboidIds, cubeInstance).getFirst();
         return statisticsMerged.isEmpty() ? null : statisticsMerged;
     }
 
@@ -78,7 +74,7 @@ public class CuboidStatsReaderUtil {
         Map<Long, HLLCounter> cuboidHLLMapMerged = Maps.newHashMapWithExpectedSize(cuboidSet.size());
         Map<Long, Double> sizeMapMerged = Maps.newHashMapWithExpectedSize(cuboidSet.size());
         for (CubeSegment pSegment : segmentList) {
-            CubeStatsReader pReader = new CubeStatsReader(pSegment, null, pSegment.getConfig());
+            CubeStatsReader pReader = new CubeStatsReader(pSegment, pSegment.getConfig());
             Map<Long, HLLCounter> pHLLMap = pReader.getCuboidRowHLLCounters();
             if (pHLLMap == null || pHLLMap.isEmpty()) {
                 logger.info("Cuboid Statistics for segment " + pSegment.getName() + " is not enabled.");
@@ -117,7 +113,7 @@ public class CuboidStatsReaderUtil {
             return null;
         }
 
-        CubeStatsReader cubeStatsReader = new CubeStatsReader(cubeSegment, null, cubeSegment.getConfig());
+        CubeStatsReader cubeStatsReader = new CubeStatsReader(cubeSegment, cubeSegment.getConfig());
         if (cubeStatsReader.getCuboidRowEstimatesHLL() == null
                 || cubeStatsReader.getCuboidRowEstimatesHLL().isEmpty()) {
             logger.info("Cuboid Statistics is not enabled.");
@@ -136,5 +132,4 @@ public class CuboidStatsReaderUtil {
         }
         return cuboidsWithStats;
     }
-
 }

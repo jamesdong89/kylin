@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.kylin.dict.TrieDictionaryForestTest
+-------------------------------------------------------------------------------
+Tests run: 20, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 17.438 sec - in org.apache.kylin.dict.TrieDictionaryForestTest

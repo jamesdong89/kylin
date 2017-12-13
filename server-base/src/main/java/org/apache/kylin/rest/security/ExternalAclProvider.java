@@ -52,22 +52,22 @@ abstract public class ExternalAclProvider {
 
     // ============================================================================
 
-    public final static String ADMINISTRATION = "ADMIN";
-    public final static String MANAGEMENT = "MANAGEMENT";
-    public final static String OPERATION = "OPERATION";
-    public final static String READ = "QUERY";
+    public final static String CUBE_ADMIN = "CUBE ADMIN";
+    public final static String CUBE_EDIT = "CUBE EDIT";
+    public final static String CUBE_OPERATION = "CUBE OPERATION";
+    public final static String CUBE_QUERY = "CUBE QUERY";
     
     // used by ranger ExternalAclProvider
     public static String transformPermission(Permission p) {
         String permString = null;
         if (AclPermission.ADMINISTRATION.equals(p)) {
-            permString = ADMINISTRATION;
+            permString = CUBE_ADMIN;
         } else if (AclPermission.MANAGEMENT.equals(p)) {
-            permString = MANAGEMENT;
+            permString = CUBE_EDIT;
         } else if (AclPermission.OPERATION.equals(p)) {
-            permString = OPERATION;
+            permString = CUBE_OPERATION;
         } else if (AclPermission.READ.equals(p)) {
-            permString = READ;
+            permString = CUBE_QUERY;
         } else {
             permString = p.getPattern();
         }

@@ -1,0 +1,3270 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>Apache Kylin 2.3.0-SNAPSHOT (Aggregated)</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://kylin.apache.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://kylin.apache.org" target="_top">
+                                        Apache Kylin 2.3.0-SNAPSHOT (Aggregated)
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Wed Dec 13 2017 10:24:58 PST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item active-tab">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = topRisksDescription();
+                var title = 'Top Risks';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="org/apache/kylin/common/util/AbstractApplication.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 3 , Coverage - 66.7% ">AbstractApplication</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/AbstractCache.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractCache</a>
+            
+    
+            <a href="org/apache/kylin/dimension/AbstractDateDimEnc.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.357 , Coverage - 54.2% ">AbstractDateDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/job/execution/AbstractExecutable.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.558 , Coverage - 72.5% ">AbstractExecutable</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/common/AbstractHadoopJob.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="Average Method Complexity - 2.595 , Coverage - 21.4% ">AbstractHadoopJob</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/AbstractRowKeyEncoder.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 27.3% ">AbstractRowKeyEncoder</a>
+            
+    
+            <a href="org/apache/kylin/source/kafka/AbstractTimeParser.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AbstractTimeParser</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/AccessController.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 56.9% ">AccessController</a>
+            
+    
+            <a href="org/apache/kylin/rest/response/AccessEntryResponse.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 88.9% ">AccessEntryResponse</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/AccessRequest.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AccessRequest</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/AccessService.html" class="tag"
+            style="font-size: 24px;color:#f6c342"
+            title="Average Method Complexity - 4.462 , Coverage - 63.3% ">AccessService</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/AceInfo.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AceInfo</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/AclEntityFactory.html" class="tag"
+            style="font-size: 25px;color:#e7a19b"
+            title="Average Method Complexity - 5 , Coverage - 61.5% ">AclEntityFactory</a>
+            
+    
+            <a href="org/apache/kylin/rest/util/AclEvaluate.html" class="tag"
+            style="font-size: 14px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 42.6% ">AclEvaluate</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/AclPermission.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">AclPermission</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/AclPermissionFactory.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 2.667 , Coverage - 96.3% ">AclPermissionFactory</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/AclService.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 77.8% ">AclRecord</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/AclService.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 3.5 , Coverage - 86.7% ">AclService</a>
+            
+    
+            <a href="org/apache/kylin/rest/util/AclUtil.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">AclUtil</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/AdminController.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.143 , Coverage - 69.6% ">AdminController</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/AdminService.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 82.6% ">AdminService</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/common/coprocessor/AggrKey.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.846 , Coverage - 86.4% ">AggrKey</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/AggregationGroup.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 2.629 , Coverage - 83.5% ">AggregationGroup</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/rule/AggregationGroupRule.html" class="tag"
+            style="font-size: 31px;color:#f6c342"
+            title="Average Method Complexity - 7 , Coverage - 67.2% ">AggregationGroupRule</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/AppendDictNode.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.438 , Coverage - 92.9% ">AppendDictNode</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/AppendDictNode.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 2.75 , Coverage - 76.3% ">AppendDictNode.Stats</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/AppendDictSlice.html" class="tag"
+            style="font-size: 21px;color:#e7a19b"
+            title="Average Method Complexity - 3.462 , Coverage - 56% ">AppendDictSlice</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/AppendDictSliceKey.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.286 , Coverage - 92.6% ">AppendDictSliceKey</a>
+            
+    
+            <a href="org/apache/kylin/dict/AppendTrieDictionary.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.294 , Coverage - 52.1% ">AppendTrieDictionary</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/AppendTrieDictionaryBuilder.html" class="tag"
+            style="font-size: 22px;color:#89c495"
+            title="Average Method Complexity - 3.909 , Coverage - 98.5% ">AppendTrieDictionaryBuilder</a>
+            
+    
+            <a href="org/apache/kylin/common/util/Array.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="Average Method Complexity - 2.429 , Coverage - 18.6% ">Array</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/AsymmetricRecordComparator.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 1 , Coverage - 16.7% ">AsymmetricRecordComparator</a>
+            
+    
+            <a href="org/apache/kylin/common/debug/BackdoorToggles.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.35 , Coverage - 31.6% ">BackdoorToggles</a>
+            
+    
+            <a href="org/apache/kylin/common/BackwardCompatibilityConfig.html" class="tag"
+            style="font-size: 20px;color:#e28e87"
+            title="Average Method Complexity - 2.917 , Coverage - 41.2% ">BackwardCompatibilityConfig</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/BadQueryDetector.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.615 , Coverage - 92% ">BadQueryDetector</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/BadQueryDetector.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71.4% ">BadQueryDetector.Entry</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/BadQueryDetector.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BadQueryDetector.LoggerNotifier</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/BadQueryDetector.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 70% ">BadQueryDetector.PersistenceNotifier</a>
+            
+    
+            <a href="org/apache/kylin/metadata/badquery/BadQueryEntry.html" class="tag"
+            style="font-size: 15px;color:#e28e87"
+            title="Average Method Complexity - 1.3 , Coverage - 48.5% ">BadQueryEntry</a>
+            
+    
+            <a href="org/apache/kylin/metadata/badquery/BadQueryHistory.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 31.2% ">BadQueryHistory</a>
+            
+    
+            <a href="org/apache/kylin/metadata/badquery/BadQueryHistoryManager.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 2.125 , Coverage - 83.9% ">BadQueryHistoryManager</a>
+            
+    
+            <a href="org/apache/kylin/rest/exception/BadRequestException.html" class="tag"
+            style="font-size: 14px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 45.5% ">BadRequestException</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/BasicController.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="Average Method Complexity - 2.286 , Coverage - 41% ">BasicController</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/BasicMeasureType.html" class="tag"
+            style="font-size: 22px;color:#e7a19b"
+            title="Average Method Complexity - 3.667 , Coverage - 50% ">BasicMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/BasicMeasureType.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 25% ">BasicMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/BasicService.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1.077 , Coverage - 67.7% ">BasicService</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/BatchCubingJobBuilder2.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.364 , Coverage - 94% ">BatchCubingJobBuilder2</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/BigDecimalMaxAggregator.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 51.7% ">BigDecimalMaxAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/BigDecimalMinAggregator.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 51.7% ">BigDecimalMinAggregator</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/BigDecimalSerializer.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.429 , Coverage - 87.2% ">BigDecimalSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/BigDecimalSumAggregator.html" class="tag"
+            style="font-size: 15px;color:#e28e87"
+            title="Average Method Complexity - 1.4 , Coverage - 44.4% ">BigDecimalSumAggregator</a>
+            
+    
+            <a href="org/apache/kylin/common/util/BitSets.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 3 , Coverage - 83.3% ">BitSets</a>
+            
+    
+            <a href="org/apache/kylin/measure/bitmap/BitmapAggregator.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.8 , Coverage - 53.8% ">BitmapAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/bitmap/BitmapMeasureType.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1.538 , Coverage - 9.7% ">BitmapMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/bitmap/BitmapMeasureType.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">BitmapMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/measure/bitmap/BitmapSerializer.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="Average Method Complexity - 1.625 , Coverage - 38.9% ">BitmapSerializer</a>
+            
+    
+            <a href="org/apache/kylin/dimension/BooleanDimEnc.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.8 , Coverage - 63.3% ">BooleanDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/BooleanDimEnc.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.286 , Coverage - 70.4% ">BooleanDimEnc.BooleanSerializer</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/Broadcaster.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.263 , Coverage - 90.7% ">Broadcaster</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/Broadcaster.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="Average Method Complexity - 2 , Coverage - 29.8% ">Broadcaster.BroadcastEvent</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/Broadcaster.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.333 , Coverage - 90.9% ">Broadcaster.Event</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/Broadcaster.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">Broadcaster.Listener</a>
+            
+    
+            <a href="org/apache/kylin/rest/broadcaster/BroadcasterReceiveServlet.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.5 , Coverage - 79.2% ">BroadcasterReceiveServlet</a>
+            
+    
+            <a href="org/apache/kylin/engine/spark/cube/BufferedCuboidWriter.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.556 , Coverage - 70.3% ">BufferedCuboidWriter</a>
+            
+    
+            <a href="org/apache/kylin/common/util/BufferedLogger.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="Average Method Complexity - 1.25 , Coverage - 16.7% ">BufferedLogger</a>
+            
+    
+            <a href="org/apache/kylin/measure/BufferedMeasureCodec.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.556 , Coverage - 74.4% ">BufferedMeasureCodec</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ByteArray.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 81.3% ">ByteArray</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ByteBufferBackedInputStream.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.75 , Coverage - 50% ">ByteBufferBackedInputStream</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ByteBufferOutputStream.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">ByteBufferOutputStream</a>
+            
+    
+            <a href="org/apache/kylin/dict/ByteComparator.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ByteComparator</a>
+            
+    
+            <a href="org/apache/kylin/common/util/Bytes.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="Average Method Complexity - 2.299 , Coverage - 12.5% ">Bytes</a>
+            
+    
+            <a href="org/apache/kylin/common/util/Bytes.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 83.3% ">Bytes.LexicographicalComparerHolder</a>
+            
+    
+            <a href="org/apache/kylin/common/util/Bytes.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 3.857 , Coverage - 92.5% ">Bytes.LexicographicalComparerHolder.UnsafeComparer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/BytesSplitter.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="Average Method Complexity - 2.25 , Coverage - 44.9% ">BytesSplitter</a>
+            
+    
+            <a href="org/apache/kylin/common/util/BytesUtil.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.25 , Coverage - 81.6% ">BytesUtil</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/CacheController.html" class="tag"
+            style="font-size: 14px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 44.4% ">CacheController</a>
+            
+    
+            <a href="org/apache/kylin/dict/CacheDictionary.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.833 , Coverage - 93.2% ">CacheDictionary</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/CacheService.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.438 , Coverage - 71.2% ">CacheService</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/tool/CalciteParser.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 2.167 , Coverage - 80.4% ">CalciteParser</a>
+            
+    
+            <a href="org/apache/calcite/prepare/CalcitePrepareImpl.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="Average Method Complexity - 3.049 , Coverage - 37.2% ">CalcitePrepareImpl</a>
+            
+    
+            <a href="org/apache/calcite/prepare/CalcitePrepareImpl.html" class="tag"
+            style="font-size: 16px;color:#e28e87"
+            title="Average Method Complexity - 1.6 , Coverage - 43.6% ">CalcitePrepareImpl.CalcitePreparingStmt</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/Candidate.html" class="tag"
+            style="font-size: 15px;color:#e28e87"
+            title="Average Method Complexity - 1.182 , Coverage - 44.4% ">Candidate</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/CaseInsensitiveStringCache.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">CaseInsensitiveStringCache</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/CaseTupleFilter.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.462 , Coverage - 69.6% ">CaseTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/common/util/CheckUtil.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 3.333 , Coverage - 75.7% ">CheckUtil</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ClassUtil.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 2.857 , Coverage - 68.8% ">ClassUtil</a>
+            
+    
+            <a href="org/apache/kylin/common/util/CliCommandExecutor.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="Average Method Complexity - 2.2 , Coverage - 41.5% ">CliCommandExecutor</a>
+            
+    
+            <a href="org/apache/kylin/common/metrics/metrics2/CodahaleMetrics.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="Average Method Complexity - 1.848 , Coverage - 34.2% ">CodahaleMetrics</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/cardinality/ColumnCardinalityReducer.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.75 , Coverage - 97.1% ">ColumnCardinalityReducer</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/ColumnDesc.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.531 , Coverage - 61.8% ">ColumnDesc</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenConfig.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 3.6 , Coverage - 100% ">ColumnGenConfig</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenerator.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 4.667 , Coverage - 83.3% ">ColumnGenerator</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenerator.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.667 , Coverage - 83.3% ">ColumnGenerator.AddNullFilter</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenerator.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.25 , Coverage - 85.7% ">ColumnGenerator.DiscreteGen</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenerator.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">ColumnGenerator.IDGen</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenerator.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.333 , Coverage - 81.8% ">ColumnGenerator.OrderFilter</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenerator.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 89.4% ">ColumnGenerator.RandomGen</a>
+            
+    
+            <a href="org/apache/kylin/metadata/querymeta/ColumnMeta.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ColumnMeta</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/ColumnRowType.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1.7 , Coverage - 26.8% ">ColumnRowType</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/ColumnTupleFilter.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.3 , Coverage - 70.3% ">ColumnTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/storage/translate/ColumnValueRange.html" class="tag"
+            style="font-size: 20px;color:#e28e87"
+            title="Average Method Complexity - 3.067 , Coverage - 40.9% ">ColumnValueRange</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/ComparatorEx.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 2.2 , Coverage - 67.6% ">ComparatorEx</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/CompareTupleFilter.html" class="tag"
+            style="font-size: 19px;color:#e7a19b"
+            title="Average Method Complexity - 2.75 , Coverage - 57.6% ">CompareTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/common/util/CompressionUtils.html" class="tag"
+            style="font-size: 17px;color:#e28e87"
+            title="Average Method Complexity - 2 , Coverage - 48.4% ">CompressionUtils</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/ConcurrentDiskStore.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.882 , Coverage - 71.7% ">ConcurrentDiskStore</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/ConcurrentDiskStore.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 66.7% ">ConcurrentDiskStore.Reader</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/ConcurrentDiskStore.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.6 , Coverage - 78.8% ">ConcurrentDiskStore.Writer</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/ConstantTupleFilter.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.385 , Coverage - 80% ">ConstantTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/common/coprocessor/CoprocessorProjector.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.364 , Coverage - 55.6% ">CoprocessorProjector</a>
+            
+    
+            <a href="org/apache/kylin/measure/topn/Counter.html" class="tag"
+            style="font-size: 14px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 42.9% ">Counter</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/CreateFlatHiveTableStep.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="Average Method Complexity - 1.286 , Coverage - 11.8% ">CreateFlatHiveTableStep</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/CreateHTableJob.html" class="tag"
+            style="font-size: 30px;color:#d5584c"
+            title="Average Method Complexity - 6.5 , Coverage - 9.3% ">CreateHTableJob</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeCapabilityChecker.html" class="tag"
+            style="font-size: 23px;color:#e28e87"
+            title="Average Method Complexity - 4 , Coverage - 43.1% ">CubeCapabilityChecker</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/CubeCodeSystem.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 75.3% ">CubeCodeSystem</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/CubeController.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="Average Method Complexity - 3.033 , Coverage - 27.6% ">CubeController</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/CubeDesc.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 2.092 , Coverage - 71.4% ">CubeDesc</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/CubeDesc.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71.4% ">CubeDesc.DeriveInfo</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/CubeDescController.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="Average Method Complexity - 2.333 , Coverage - 38.5% ">CubeDescController</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeDescManager.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 3.286 , Coverage - 62.9% ">CubeDescManager</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeDescManager.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 87% ">CubeDescManager.CubeDescSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/CubeDimEncMap.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 72.7% ">CubeDimEncMap</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/CubeGridTable.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">CubeGridTable</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/CubeHFileMapper.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.5 , Coverage - 74.1% ">CubeHFileMapper</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeInstance.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.338 , Coverage - 67.8% ">CubeInstance</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/CubeJoinedFlatTableDesc.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.6 , Coverage - 72.5% ">CubeJoinedFlatTableDesc</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeManager.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 2.787 , Coverage - 67.5% ">CubeManager</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeManager.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.667 , Coverage - 88.2% ">CubeManager.CubeSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/CubeMetadataValidator.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 85.7% ">CubeMetadataValidator</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/CubeRequest.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 92.5% ">CubeRequest</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/CubeScanRangePlanner.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 3 , Coverage - 67.6% ">CubeScanRangePlanner</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeSegment.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.357 , Coverage - 60.1% ">CubeSegment</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeSegmentAdvisor.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.714 , Coverage - 100% ">CubeSegmentAdvisor</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/CubeService.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="Average Method Complexity - 3.933 , Coverage - 26.6% ">CubeService</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/CubeService.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.5 , Coverage - 60% ">CubeService.HTableInfoSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/common/CubeStatsWriter.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 78.9% ">CubeStatsWriter</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/cube/v2/CubeStorageQuery.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1.5 , Coverage - 25% ">CubeStorageQuery</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeUpdate.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 87.8% ">CubeUpdate</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/steps/CubingExecutableUtil.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="Average Method Complexity - 1.2 , Coverage - 23.1% ">CubingExecutableUtil</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/CubingJob.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1.739 , Coverage - 17.7% ">CubingJob</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/Cuboid.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.594 , Coverage - 68.3% ">Cuboid</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/CuboidCLI.html" class="tag"
+            style="font-size: 30px;color:#fae1a0"
+            title="Average Method Complexity - 6.5 , Coverage - 77.5% ">CuboidCLI</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/steps/CuboidReducer.html" class="tag"
+            style="font-size: 21px;color:#89c495"
+            title="Average Method Complexity - 3.5 , Coverage - 100% ">CuboidReducer</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/CuboidScheduler.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 86.4% ">CuboidScheduler</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/algorithm/CuboidStatsUtil.html" class="tag"
+            style="font-size: 24px;color:#14892c"
+            title="Average Method Complexity - 4.429 , Coverage - 92.1% ">CuboidStatsUtil</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/CuboidToGridTableMapping.html" class="tag"
+            style="font-size: 16px;color:#e28e87"
+            title="Average Method Complexity - 1.765 , Coverage - 45.3% ">CuboidToGridTableMapping</a>
+            
+    
+            <a href="org/apache/kylin/common/util/DBUtils.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 92.3% ">DBUtils</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/DFSFileTable.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="Average Method Complexity - 1.375 , Coverage - 15.4% ">DFSFileTable</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/DFSFileTableReader.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 2.9 , Coverage - 74.3% ">DFSFileTableReader</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/DFSFileTableReader.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71.4% ">DFSFileTableReader.CsvRowReader</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/DFSFileTableReader.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.333 , Coverage - 84.6% ">DFSFileTableReader.SeqRowReader</a>
+            
+    
+            <a href="org/apache/kylin/common/util/DaemonThreadFactory.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DaemonThreadFactory</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/DataModelDesc.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 66.1% ">DataModelDesc</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/DataModelManager.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.783 , Coverage - 71.3% ">DataModelManager</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/DataModelManager.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.333 , Coverage - 69.2% ">DataModelManager.DataModelSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/DataType.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.788 , Coverage - 83.3% ">DataType</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/DataTypeSerializer.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.333 , Coverage - 56.5% ">DataTypeSerializer</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/DatabaseDesc.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.4 , Coverage - 70.8% ">DatabaseDesc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DateDimEnc.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.6 , Coverage - 72.7% ">DateDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DateDimEnc.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.333 , Coverage - 73.3% ">DateDimEnc.DateDimValueCodec</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DateDimEnc.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">DateDimEnc.Factory</a>
+            
+    
+            <a href="org/apache/kylin/common/util/DateFormat.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 85.9% ">DateFormat</a>
+            
+    
+            <a href="org/apache/kylin/dict/DateStrDictionary.html" class="tag"
+            style="font-size: 15px;color:#e28e87"
+            title="Average Method Complexity - 1.333 , Coverage - 47.5% ">DateStrDictionary</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/DateTimeSerializer.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 84.6% ">DateTimeSerializer</a>
+            
+    
+            <a href="org/apache/kylin/job/execution/DefaultChainedExecutable.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 2.9 , Coverage - 72.5% ">DefaultChainedExecutable</a>
+            
+    
+            <a href="org/apache/kylin/job/impl/threadpool/DefaultContext.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 69.2% ">DefaultContext</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/DefaultCuboidScheduler.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.5 , Coverage - 78.8% ">DefaultCuboidScheduler</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/DefaultGTComparator.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DefaultGTComparator</a>
+            
+    
+            <a href="org/apache/kylin/job/execution/DefaultOutput.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.4 , Coverage - 59.5% ">DefaultOutput</a>
+            
+    
+            <a href="org/apache/kylin/job/impl/threadpool/DefaultScheduler.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 2.333 , Coverage - 64.9% ">DefaultScheduler</a>
+            
+    
+            <a href="org/apache/kylin/job/impl/threadpool/DefaultScheduler.html" class="tag"
+            style="font-size: 42px;color:#f6c342"
+            title="Average Method Complexity - 11 , Coverage - 72.2% ">DefaultScheduler.FetcherRunner</a>
+            
+    
+            <a href="org/apache/kylin/job/impl/threadpool/DefaultScheduler.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 3 , Coverage - 90% ">DefaultScheduler.JobRunner</a>
+            
+    
+            <a href="org/apache/kylin/source/kafka/DefaultTimeParser.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 66.7% ">DefaultTimeParser</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/DenseRegister.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.3 , Coverage - 82.7% ">DenseRegister</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictCodeSystem.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1.6 , Coverage - 23.8% ">DictCodeSystem</a>
+            
+    
+            <a href="org/apache/kylin/common/util/Dictionary.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.636 , Coverage - 70.8% ">Dictionary</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/DictionaryDesc.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.2 , Coverage - 100% ">DictionaryDesc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DictionaryDimEnc.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.462 , Coverage - 55.6% ">DictionaryDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DictionaryDimEnc.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.2 , Coverage - 78.6% ">DictionaryDimEnc.DictionarySerializer</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryGenerator.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 3.5 , Coverage - 90.6% ">DictionaryGenerator</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryGenerator.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 2.667 , Coverage - 63% ">DictionaryGenerator.DateDictBuilder</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryGenerator.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.333 , Coverage - 81.8% ">DictionaryGenerator.NumberTrieDictForestBuilder</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryGenerator.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.333 , Coverage - 81.8% ">DictionaryGenerator.StringTrieDictForestBuilder</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryGenerator.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.333 , Coverage - 80% ">DictionaryGenerator.TimeDictBuilder</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryInfo.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 52.6% ">DictionaryInfo</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryInfoSerializer.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.25 , Coverage - 76.9% ">DictionaryInfoSerializer</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryManager.html" class="tag"
+            style="font-size: 19px;color:#e7a19b"
+            title="Average Method Complexity - 2.542 , Coverage - 50.7% ">DictionaryManager</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/rule/DictionaryRule.html" class="tag"
+            style="font-size: 48px;color:#89c495"
+            title="Average Method Complexity - 13 , Coverage - 97.8% ">DictionaryRule</a>
+            
+    
+            <a href="org/apache/kylin/measure/dim/DimCountDistinctAggFunc.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.4 , Coverage - 65% ">DimCountDistinctAggFunc</a>
+            
+    
+            <a href="org/apache/kylin/measure/dim/DimCountDistinctAggFunc.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.5 , Coverage - 52.9% ">DimCountDistinctAggFunc.DimDistinctCounter</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/DimensionDesc.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="Average Method Complexity - 2.471 , Coverage - 36.3% ">DimensionDesc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DimensionEncoding.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 4.5 , Coverage - 79.2% ">DimensionEncoding</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DimensionEncodingFactory.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 2.333 , Coverage - 59.4% ">DimensionEncodingFactory</a>
+            
+    
+            <a href="org/apache/kylin/job/impl/threadpool/DistributedScheduler.html" class="tag"
+            style="font-size: 18px;color:#d04437"
+            title="Average Method Complexity - 2.333 , Coverage - 1.9% ">DistributedScheduler</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/DomainObjectInfo.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">DomainObjectInfo</a>
+            
+    
+            <a href="org/apache/kylin/measure/topn/DoubleDeltaSerializer.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.583 , Coverage - 93.2% ">DoubleDeltaSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/DoubleMaxAggregator.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.4 , Coverage - 35.3% ">DoubleMaxAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/DoubleMinAggregator.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.4 , Coverage - 35.3% ">DoubleMinAggregator</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/DoubleSerializer.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 38.5% ">DoubleSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/DoubleSumAggregator.html" class="tag"
+            style="font-size: 14px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 40% ">DoubleSumAggregator</a>
+            
+    
+            <a href="org/apache/kylin/metadata/draft/Draft.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Draft</a>
+            
+    
+            <a href="org/apache/kylin/metadata/draft/DraftManager.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 64.9% ">DraftManager</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/Driver.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.8 , Coverage - 68.4% ">Driver</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/DynamicTupleFilter.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 57.9% ">DynamicTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/engine/EngineFactory.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.2 , Coverage - 87.5% ">EngineFactory</a>
+            
+    
+            <a href="org/apache/kylin/rest/response/EnvelopeResponse.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">EnvelopeResponse</a>
+            
+    
+            <a href="org/apache/kylin/rest/response/ErrorResponse.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">ErrorResponse</a>
+            
+    
+            <a href="org/apache/kylin/job/dao/ExecutableDao.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.818 , Coverage - 69.7% ">ExecutableDao</a>
+            
+    
+            <a href="org/apache/kylin/job/execution/ExecutableManager.html" class="tag"
+            style="font-size: 20px;color:#e7a19b"
+            title="Average Method Complexity - 3.129 , Coverage - 50.7% ">ExecutableManager</a>
+            
+    
+            <a href="org/apache/kylin/job/dao/ExecutableOutputPO.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ExecutableOutputPO</a>
+            
+    
+            <a href="org/apache/kylin/job/dao/ExecutablePO.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ExecutablePO</a>
+            
+    
+            <a href="org/apache/kylin/job/execution/ExecutableState.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ExecutableState</a>
+            
+    
+            <a href="org/apache/kylin/job/exception/ExecuteException.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 28.6% ">ExecuteException</a>
+            
+    
+            <a href="org/apache/kylin/job/execution/ExecuteResult.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 66.7% ">ExecuteResult</a>
+            
+    
+            <a href="org/apache/kylin/measure/extendedcolumn/ExtendedColumnMeasureType.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="Average Method Complexity - 2.091 , Coverage - 34% ">ExtendedColumnMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/extendedcolumn/ExtendedColumnMeasureType.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ExtendedColumnMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/measure/extendedcolumn/ExtendedColumnSerializer.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 84% ">ExtendedColumnSerializer</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/ExternalAclProvider.html" class="tag"
+            style="font-size: 25px;color:#de7b72"
+            title="Average Method Complexity - 5 , Coverage - 34.2% ">ExternalAclProvider</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/ExternalFilterDesc.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="Average Method Complexity - 1.067 , Coverage - 5.7% ">ExternalFilterDesc</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/ExtractTupleFilter.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1.75 , Coverage - 13.3% ">ExtractTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/FileResourceStore.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 91.5% ">FileResourceStore</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/FilterOptimizeTransformer.html" class="tag"
+            style="font-size: 29px;color:#e7a19b"
+            title="Average Method Complexity - 6.25 , Coverage - 57.4% ">FilterOptimizeTransformer</a>
+            
+    
+            <a href="org/apache/kylin/dimension/FixedLenDimEnc.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 65.5% ">FixedLenDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/FixedLenDimEnc.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">FixedLenDimEnc.Factory</a>
+            
+    
+            <a href="org/apache/kylin/dimension/FixedLenDimEnc.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="Average Method Complexity - 1.286 , Coverage - 7.4% ">FixedLenDimEnc.FixedLenSerializer</a>
+            
+    
+            <a href="org/apache/kylin/dimension/FixedLenHexDimEnc.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 86.9% ">FixedLenHexDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/FixedLenHexDimEnc.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.286 , Coverage - 70.4% ">FixedLenHexDimEnc.FixedLenSerializer</a>
+            
+    
+            <a href="org/apache/kylin/rest/exception/ForbiddenException.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">ForbiddenException</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/FunctionDesc.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 2.241 , Coverage - 63.9% ">FunctionDesc</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/rule/FunctionRule.html" class="tag"
+            style="font-size: 27px;color:#e7a19b"
+            title="Average Method Complexity - 5.75 , Coverage - 56.4% ">FunctionRule</a>
+            
+    
+            <a href="org/apache/kylin/cube/common/FuzzyValueCombination.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.333 , Coverage - 87.3% ">FuzzyValueCombination</a>
+            
+    
+            <a href="org/apache/kylin/storage/translate/FuzzyValueCombination.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 2.333 , Coverage - 97.2% ">FuzzyValueCombination</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTAggregateScanner.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.308 , Coverage - 79.4% ">GTAggregateScanner</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTAggregateScanner.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 3.267 , Coverage - 70.4% ">GTAggregateScanner.AggregationCache</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTAggregateScanner.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 100% ">GTAggregateScanner.AggregationCache.HavingFilterChecker</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTAggregateScanner.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 3.5 , Coverage - 47.8% ">GTAggregateScanner.AggregationCache.HavingFilterCodeSys</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTAggregateScanner.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 20% ">GTAggregateScanner.AggregationCache.HavingFilterTuple</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTAggregateScanner.html" class="tag"
+            style="font-size: 23px;color:#89c495"
+            title="Average Method Complexity - 4 , Coverage - 100% ">GTAggregateScanner.AggregationCache.ReturningRecord</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTBuilder.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.2 , Coverage - 100% ">GTBuilder</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/GTCubeStorageQueryBase.html" class="tag"
+            style="font-size: 22px;color:#e28e87"
+            title="Average Method Complexity - 3.95 , Coverage - 43.1% ">GTCubeStorageQueryBase</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/GTCubeStorageQueryRequest.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22% ">GTCubeStorageQueryRequest</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTFilterScanner.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.375 , Coverage - 78.8% ">GTFilterScanner</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTFilterScanner.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.75 , Coverage - 85.4% ">GTFilterScanner.FilterResultCache</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTForwardingScanner.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">GTForwardingScanner</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTInfo.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.25 , Coverage - 78.9% ">GTInfo</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTInfo.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.111 , Coverage - 100% ">GTInfo.Builder</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTRecord.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 1.903 , Coverage - 55.2% ">GTRecord</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTSampleCodeSystem.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.231 , Coverage - 76.3% ">GTSampleCodeSystem</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTScanRange.html" class="tag"
+            style="font-size: 23px;color:#d5584c"
+            title="Average Method Complexity - 4.167 , Coverage - 16.9% ">GTScanRange</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTScanRequest.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.692 , Coverage - 74.7% ">GTScanRequest</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTScanRequestBuilder.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.412 , Coverage - 98.6% ">GTScanRequestBuilder</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/memstore/GTSimpleMemStore.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 61% ">GTSimpleMemStore</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/memstore/GTSimpleMemStore.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 75% ">GTSimpleMemStore.Writer</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTUtil.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.167 , Coverage - 100% ">GTUtil</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTUtil.html" class="tag"
+            style="font-size: 31px;color:#f6c342"
+            title="Average Method Complexity - 7.2 , Coverage - 63.4% ">GTUtil.GTConvertDecorator</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/GlobalDictHDFSStore.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 2.6 , Coverage - 64.6% ">GlobalDictHDFSStore</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/GlobalDictHDFSStore.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.2 , Coverage - 93% ">GlobalDictHDFSStore.IndexFormatV1</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/GlobalDictHDFSStore.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.6 , Coverage - 90.4% ">GlobalDictHDFSStore.IndexFormatV2</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/GlobalDictMetadata.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">GlobalDictMetadata</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/GlobalDictStore.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">GlobalDictStore</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GridTable.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.111 , Coverage - 78.3% ">GridTable</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/HBaseColumnDesc.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="Average Method Complexity - 1.933 , Coverage - 36.5% ">HBaseColumnDesc</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/HBaseColumnFamilyDesc.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.167 , Coverage - 33.3% ">HBaseColumnFamilyDesc</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/HBaseConnection.html" class="tag"
+            style="font-size: 19px;color:#d9695f"
+            title="Average Method Complexity - 2.684 , Coverage - 19.1% ">HBaseConnection</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/HBaseMROutput2Transition.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 36.4% ">HBaseMROutput2Transition</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/HBaseMRSteps.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.125 , Coverage - 37% ">HBaseMRSteps</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/HBaseMappingDesc.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1.5 , Coverage - 19.1% ">HBaseMappingDesc</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/HBaseStorage.html" class="tag"
+            style="font-size: 19px;color:#e7a19b"
+            title="Average Method Complexity - 2.667 , Coverage - 51.4% ">HBaseStorage</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCAggregator.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.167 , Coverage - 66.7% ">HLLCAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCMeasureType.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.636 , Coverage - 58.8% ">HLLCMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCMeasureType.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">HLLCMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCSerializer.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.429 , Coverage - 76.9% ">HLLCSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCounter.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.429 , Coverage - 74.2% ">HLLCounter</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCounter.html" class="tag"
+            style="font-size: 23px;color:#89c495"
+            title="Average Method Complexity - 4 , Coverage - 100% ">HLLCounter.HLLCSnapshot</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCounterOld.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="Average Method Complexity - 2.571 , Coverage - 33.8% ">HLLCounterOld</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCounterOld.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 3 , Coverage - 81.5% ">HLLCounterOld.HLLCSnapshot</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/common/HadoopShellExecutable.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1.667 , Coverage - 21.6% ">HadoopShellExecutable</a>
+            
+    
+            <a href="org/apache/kylin/common/util/HadoopUtil.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 55.3% ">HadoopUtil</a>
+            
+    
+            <a href="org/apache/kylin/common/util/HiveCmdBuilder.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.4 , Coverage - 76.6% ">HiveCmdBuilder</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/HiveMRInput.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="Average Method Complexity - 1.4 , Coverage - 13.3% ">HiveMRInput</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/HiveMRInput.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.455 , Coverage - 92.7% ">HiveMRInput.BatchCubingInputSide</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/HiveMRInput.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1.5 , Coverage - 15.4% ">HiveMRInput.GarbageCollectionStep</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/HiveMRInput.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1.5 , Coverage - 8.6% ">HiveMRInput.RedistributeFlatHiveTableStep</a>
+            
+    
+            <a href="org/apache/kylin/source/adhocquery/HivePushDownConverter.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 3.333 , Coverage - 71% ">HivePushDownConverter</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/HiveSource.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.4 , Coverage - 33.3% ">HiveSource</a>
+            
+    
+            <a href="org/apache/kylin/tool/HybridCubeCLI.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">HybridCubeCLI</a>
+            
+    
+            <a href="org/apache/kylin/rest/job/HybridCubeCLI.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 3.25 , Coverage - 74.4% ">HybridCubeCLI</a>
+            
+    
+            <a href="org/apache/kylin/storage/hybrid/HybridInstance.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.69 , Coverage - 56.5% ">HybridInstance</a>
+            
+    
+            <a href="org/apache/kylin/storage/hybrid/HybridManager.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.833 , Coverage - 83.1% ">HybridManager</a>
+            
+    
+            <a href="org/apache/kylin/storage/hybrid/HybridManager.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 2.333 , Coverage - 50% ">HybridManager.HybridSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HyperLogLogPlusTable.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.167 , Coverage - 93.8% ">HyperLogLogPlusTable</a>
+            
+    
+            <a href="org/apache/kylin/source/IReadableTable.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 1.818 , Coverage - 58.7% ">IReadableTable.TableSignature</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/IRemoteClient.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">IRemoteClient.QueryResult</a>
+            
+    
+            <a href="org/apache/kylin/common/util/IdentityUtils.html" class="tag"
+            style="font-size: 25px;color:#fae1a0"
+            title="Average Method Complexity - 5 , Coverage - 81% ">IdentityUtils</a>
+            
+    
+            <a href="org/apache/kylin/job/exception/IllegalStateTranferException.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 22.2% ">IllegalStateTranferException</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ImmutableBitSet.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.259 , Coverage - 76.5% ">ImmutableBitSet</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ImplementationSwitch.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.667 , Coverage - 87.9% ">ImplementationSwitch</a>
+            
+    
+            <a href="org/apache/kylin/rest/init/InitialTaskManager.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 52.6% ">InitialTaskManager</a>
+            
+    
+            <a href="org/apache/kylin/dimension/IntDimEnc.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.9 , Coverage - 72% ">IntDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/IntDimEnc.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">IntDimEnc.Factory</a>
+            
+    
+            <a href="org/apache/kylin/dimension/IntDimEnc.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.286 , Coverage - 77.8% ">IntDimEnc.IntegerSerializer</a>
+            
+    
+            <a href="org/apache/kylin/dimension/IntegerDimEnc.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 2.273 , Coverage - 71% ">IntegerDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/IntegerDimEnc.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.286 , Coverage - 70.4% ">IntegerDimEnc.IntegerSerializer</a>
+            
+    
+            <a href="org/apache/kylin/rest/exception/InternalErrorException.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">InternalErrorException</a>
+            
+    
+            <a href="org/apache/kylin/dict/IterableDictionaryValueEnumerator.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 88.9% ">IterableDictionaryValueEnumerator</a>
+            
+    
+            <a href="org/apache/kylin/engine/spark/util/IteratorUtils.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 2.75 , Coverage - 80% ">IteratorUtils</a>
+            
+    
+            <a href="org/apache/kylin/common/metrics/metrics2/JmxMetricsReporter.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 75% ">JmxMetricsReporter</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/JobBuildRequest.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80% ">JobBuildRequest</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/JobBuilderSupport.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.217 , Coverage - 66.4% ">JobBuilderSupport</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/JobController.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="Average Method Complexity - 1.889 , Coverage - 25.4% ">JobController</a>
+            
+    
+            <a href="org/apache/kylin/job/engine/JobEngineConfig.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="Average Method Complexity - 2.462 , Coverage - 43% ">JobEngineConfig</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/common/JobInfoConverter.html" class="tag"
+            style="font-size: 26px;color:#e7a19b"
+            title="Average Method Complexity - 5.4 , Coverage - 56.9% ">JobInfoConverter</a>
+            
+    
+            <a href="org/apache/kylin/job/JobInstance.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="Average Method Complexity - 1.226 , Coverage - 27.9% ">JobInstance</a>
+            
+    
+            <a href="org/apache/kylin/job/JobInstance.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="Average Method Complexity - 1.333 , Coverage - 21.6% ">JobInstance.JobStep</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/JobListRequest.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">JobListRequest</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/JobService.html" class="tag"
+            style="font-size: 19px;color:#e28e87"
+            title="Average Method Complexity - 2.613 , Coverage - 47% ">JobService</a>
+            
+    
+            <a href="org/apache/kylin/job/constant/JobStatusEnum.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="Average Method Complexity - 1.25 , Coverage - 15.4% ">JobStatusEnum</a>
+            
+    
+            <a href="org/apache/kylin/job/constant/JobStepStatusEnum.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="Average Method Complexity - 1.2 , Coverage - 13.3% ">JobStepStatusEnum</a>
+            
+    
+            <a href="org/apache/kylin/job/constant/JobTimeFilterEnum.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.333 , Coverage - 90.9% ">JobTimeFilterEnum</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/JoinDesc.html" class="tag"
+            style="font-size: 17px;color:#e28e87"
+            title="Average Method Complexity - 1.917 , Coverage - 43.3% ">JoinDesc</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/JoinTableDesc.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="Average Method Complexity - 2.083 , Coverage - 25.4% ">JoinTableDesc</a>
+            
+    
+            <a href="org/apache/kylin/job/JoinedFlatTable.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 2.778 , Coverage - 77.1% ">JoinedFlatTable</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/JoinsTree.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.222 , Coverage - 75% ">JoinsTree</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/JoinsTree.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.25 , Coverage - 60% ">JoinsTree.Chain</a>
+            
+    
+            <a href="org/apache/kylin/common/metrics/metrics2/JsonFileMetricsReporter.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 3 , Coverage - 71.4% ">JsonFileMetricsReporter</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/JsonSerializer.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">JsonSerializer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/JsonUtil.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">JsonUtil</a>
+            
+    
+            <a href="org/apache/kylin/source/kafka/config/KafkaConsumerProperties.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 2.5 , Coverage - 71.4% ">KafkaConsumerProperties</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/KeyValueCreator.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.8 , Coverage - 63.3% ">KeyValueCreator</a>
+            
+    
+            <a href="org/apache/kylin/query/util/KeywordDefaultDirtyHack.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">KeywordDefaultDirtyHack</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/KylinAclPermissionEvaluator.html" class="tag"
+            style="font-size: 20px;color:#d5584c"
+            title="Average Method Complexity - 3 , Coverage - 15.3% ">KylinAclPermissionEvaluator</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/KylinAuthenticationProvider.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="Average Method Complexity - 2 , Coverage - 9.8% ">KylinAuthenticationProvider</a>
+            
+    
+            <a href="org/apache/kylin/common/KylinConfig.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 2.065 , Coverage - 54.1% ">KylinConfig</a>
+            
+    
+            <a href="org/apache/kylin/common/KylinConfigBase.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.154 , Coverage - 52.2% ">KylinConfigBase</a>
+            
+    
+            <a href="org/apache/kylin/tool/KylinConfigCLI.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 3 , Coverage - 80.6% ">KylinConfigCLI</a>
+            
+    
+            <a href="org/apache/kylin/common/KylinConfigCannotInitException.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">KylinConfigCannotInitException</a>
+            
+    
+            <a href="org/apache/kylin/common/KylinConfigExt.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.429 , Coverage - 70.6% ">KylinConfigExt</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinConnection.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.5 , Coverage - 74.1% ">KylinConnection</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinJdbcFactory.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 72.7% ">KylinJdbcFactory</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinJdbcFactory.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">KylinJdbcFactory.Version41</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/KylinMapper.html" class="tag"
+            style="font-size: 19px;color:#e28e87"
+            title="Average Method Complexity - 2.857 , Coverage - 41.7% ">KylinMapper</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinMeta.html" class="tag"
+            style="font-size: 16px;color:#e28e87"
+            title="Average Method Complexity - 1.68 , Coverage - 43.8% ">KylinMeta</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinMeta.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71.4% ">KylinMeta.KMetaCatalog</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinMeta.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 53.8% ">KylinMeta.KMetaProject</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinMeta.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">KylinMeta.KMetaSchema</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinMeta.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">KylinMeta.KMetaTable</a>
+            
+    
+            <a href="org/apache/kylin/common/metrics/metrics2/KylinObjectNameFactory.html" class="tag"
+            style="font-size: 21px;color:#d9695f"
+            title="Average Method Complexity - 3.5 , Coverage - 22.2% ">KylinObjectNameFactory</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinPreparedStatement.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1.05 , Coverage - 22.9% ">KylinPreparedStatement</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/KylinReducer.html" class="tag"
+            style="font-size: 19px;color:#e28e87"
+            title="Average Method Complexity - 2.857 , Coverage - 42.6% ">KylinReducer</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinResultSet.html" class="tag"
+            style="font-size: 21px;color:#14892c"
+            title="Average Method Complexity - 3.5 , Coverage - 93.3% ">KylinResultSet</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinStatement.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">KylinStatement</a>
+            
+    
+            <a href="org/apache/kylin/common/KylinVersion.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 2.357 , Coverage - 56.6% ">KylinVersion</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/LogicalTupleFilter.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.933 , Coverage - 64.8% ">LogicalTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/LongMaxAggregator.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.4 , Coverage - 35.3% ">LongMaxAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/LongMinAggregator.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.4 , Coverage - 35.3% ">LongMinAggregator</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/LongSerializer.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 76.5% ">LongSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/LongSumAggregator.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80% ">LongSumAggregator</a>
+            
+    
+            <a href="org/apache/kylin/dict/lookup/LookupStringTable.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.667 , Coverage - 69.4% ">LookupStringTable</a>
+            
+    
+            <a href="org/apache/kylin/dict/lookup/LookupTable.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.25 , Coverage - 76.2% ">LookupTable</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/MRBatchCubingEngine2.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">MRBatchCubingEngine2</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/MRUtil.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="Average Method Complexity - 1.091 , Coverage - 15.6% ">MRUtil</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/ManagedUser.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="Average Method Complexity - 1.37 , Coverage - 23.9% ">ManagedUser</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/ManagedUser.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ManagedUser.SimpleGrantedAuthorityDeserializer</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/ManagedUser.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ManagedUser.SimpleGrantedAuthoritySerializer</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/common/MapReduceExecutable.html" class="tag"
+            style="font-size: 20px;color:#d5584c"
+            title="Average Method Complexity - 3.154 , Coverage - 6.2% ">MapReduceExecutable</a>
+            
+    
+            <a href="org/apache/kylin/common/util/MathUtil.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 71.4% ">MathUtil</a>
+            
+    
+            <a href="org/apache/kylin/measure/MeasureAggregator.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 88.9% ">MeasureAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/MeasureAggregators.html" class="tag"
+            style="font-size: 20px;color:#e7a19b"
+            title="Average Method Complexity - 3.111 , Coverage - 52.3% ">MeasureAggregators</a>
+            
+    
+            <a href="org/apache/kylin/measure/MeasureCodec.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.6 , Coverage - 72.9% ">MeasureCodec</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/MeasureDesc.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="Average Method Complexity - 2.111 , Coverage - 30.8% ">MeasureDesc</a>
+            
+    
+            <a href="org/apache/kylin/measure/MeasureType.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="Average Method Complexity - 1 , Coverage - 23.8% ">MeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/MeasureTypeFactory.html" class="tag"
+            style="font-size: 19px;color:#fae1a0"
+            title="Average Method Complexity - 2.875 , Coverage - 74.7% ">MeasureTypeFactory</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/MemDiskStore.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.273 , Coverage - 61% ">MemDiskStore</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/MemDiskStore.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.8 , Coverage - 70.7% ">MemDiskStore.DiskPart</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/MemDiskStore.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">MemDiskStore.MemChunk</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/MemDiskStore.html" class="tag"
+            style="font-size: 21px;color:#fae1a0"
+            title="Average Method Complexity - 3.6 , Coverage - 73.4% ">MemDiskStore.MemPart</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/MemDiskStore.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 2.6 , Coverage - 69.2% ">MemDiskStore.Reader</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/MemDiskStore.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.6 , Coverage - 86.9% ">MemDiskStore.Writer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/MemoryBudgetController.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 3.231 , Coverage - 70.1% ">MemoryBudgetController</a>
+            
+    
+            <a href="org/apache/kylin/common/util/MemoryBudgetController.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">MemoryBudgetController.ConsumerEntry</a>
+            
+    
+            <a href="org/apache/kylin/common/util/MemoryBudgetController.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 50% ">MemoryBudgetController.NotEnoughBudgetException</a>
+            
+    
+            <a href="org/apache/kylin/rest/msg/Message.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="Average Method Complexity - 1.011 , Coverage - 7.9% ">Message</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/MetaRequest.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 57.1% ">MetaRequest</a>
+            
+    
+            <a href="org/apache/kylin/common/metrics/common/MetricsFactory.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.5 , Coverage - 56.2% ">MetricsFactory</a>
+            
+    
+            <a href="org/apache/kylin/common/metrics/common/MetricsNameBuilder.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">MetricsNameBuilder</a>
+            
+    
+            <a href="org/apache/kylin/job/lock/MockJobLock.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">MockJobLock</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ModelDataGenerator.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.261 , Coverage - 90.4% ">ModelDataGenerator</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/ModelDimensionDesc.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 2.143 , Coverage - 52.3% ">ModelDimensionDesc</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/ModelService.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="Average Method Complexity - 2.762 , Coverage - 33.8% ">ModelService</a>
+            
+    
+            <a href="org/apache/kylin/rest/msg/MsgPicker.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 57.1% ">MsgPicker</a>
+            
+    
+            <a href="org/apache/kylin/dict/MultipleDictionaryValueEnumerator.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 92.3% ">MultipleDictionaryValueEnumerator</a>
+            
+    
+            <a href="org/apache/kylin/rest/exception/NotFoundException.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NotFoundException</a>
+            
+    
+            <a href="org/apache/kylin/dict/Number2BytesConverter.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.714 , Coverage - 95% ">Number2BytesConverter</a>
+            
+    
+            <a href="org/apache/kylin/dict/Number2BytesConverter.html" class="tag"
+            style="font-size: 46px;color:#14892c"
+            title="Average Method Complexity - 12.333 , Coverage - 90.7% ">Number2BytesConverter.NumberBytesCodec</a>
+            
+    
+            <a href="org/apache/kylin/dict/NumberDictionary.html" class="tag"
+            style="font-size: 14px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 40% ">NumberDictionary</a>
+            
+    
+            <a href="org/apache/kylin/dict/NumberDictionary2.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71.4% ">NumberDictionary2</a>
+            
+    
+            <a href="org/apache/kylin/dict/NumberDictionaryBuilder.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NumberDictionaryBuilder</a>
+            
+    
+            <a href="org/apache/kylin/dict/NumberDictionaryForestBuilder.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">NumberDictionaryForestBuilder</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPAuthentication.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.667 , Coverage - 64.3% ">OLAPAuthentication</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPContext.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.714 , Coverage - 77.9% ">OLAPContext</a>
+            
+    
+            <a href="org/apache/kylin/query/enumerator/OLAPEnumerator.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="Average Method Complexity - 2.625 , Coverage - 35.1% ">OLAPEnumerator</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPProjectRel.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="Average Method Complexity - 3.091 , Coverage - 36.1% ">OLAPProjectRel</a>
+            
+    
+            <a href="org/apache/kylin/query/optrule/OLAPProjectRule.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 75% ">OLAPProjectRule</a>
+            
+    
+            <a href="org/apache/kylin/query/enumerator/OLAPQuery.html" class="tag"
+            style="font-size: 20px;color:#e28e87"
+            title="Average Method Complexity - 3 , Coverage - 43.5% ">OLAPQuery</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPRel.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 65.4% ">OLAPRel.JavaImplementor</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPRel.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.538 , Coverage - 50% ">OLAPRel.OLAPImplementor</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPRel.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 2.333 , Coverage - 68% ">OLAPRel.RewriteImplementor</a>
+            
+    
+            <a href="org/apache/kylin/query/schema/OLAPSchema.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.143 , Coverage - 65.2% ">OLAPSchema</a>
+            
+    
+            <a href="org/apache/kylin/query/schema/OLAPSchemaFactory.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.667 , Coverage - 89.9% ">OLAPSchemaFactory</a>
+            
+    
+            <a href="org/apache/kylin/query/schema/OLAPTable.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.952 , Coverage - 81% ">OLAPTable</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPTableScan.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.615 , Coverage - 69% ">OLAPTableScan</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPToEnumerableConverter.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 77.4% ">OLAPToEnumerableConverter</a>
+            
+    
+            <a href="org/apache/kylin/query/optrule/OLAPToEnumerableConverterRule.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">OLAPToEnumerableConverterRule</a>
+            
+    
+            <a href="org/apache/kylin/dimension/OneMoreByteVLongDimEnc.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 2.091 , Coverage - 70% ">OneMoreByteVLongDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/OneMoreByteVLongDimEnc.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.286 , Coverage - 70.4% ">OneMoreByteVLongDimEnc.VLongSerializer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/OptionsHelper.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.286 , Coverage - 31% ">OptionsHelper</a>
+            
+    
+            <a href="org/apache/kylin/common/util/OrderedProperties.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="Average Method Complexity - 1.161 , Coverage - 18.6% ">OrderedProperties</a>
+            
+    
+            <a href="org/apache/kylin/common/util/OrderedProperties.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">OrderedProperties.CustomProperties</a>
+            
+    
+            <a href="org/apache/kylin/common/util/Pair.html" class="tag"
+            style="font-size: 15px;color:#e28e87"
+            title="Average Method Complexity - 1.2 , Coverage - 47.5% ">Pair</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/ParameterDesc.html" class="tag"
+            style="font-size: 19px;color:#e7a19b"
+            title="Average Method Complexity - 2.733 , Coverage - 56.7% ">ParameterDesc</a>
+            
+    
+            <a href="org/apache/kylin/common/util/PartialSorter.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">PartialSorter</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/PartitionDesc.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.182 , Coverage - 82.2% ">PartitionDesc</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/PartitionDesc.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 3.6 , Coverage - 72.8% ">PartitionDesc.DefaultPartitionConditionBuilder</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/PasswordPlaceholderConfigurer.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="Average Method Complexity - 2 , Coverage - 38.5% ">PasswordPlaceholderConfigurer</a>
+            
+    
+            <a href="org/apache/kylin/job/common/PatternedLogger.html" class="tag"
+            style="font-size: 24px;color:#d04437"
+            title="Average Method Complexity - 4.667 , Coverage - 2.7% ">PatternedLogger</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/PeekingImpl.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.4 , Coverage - 87% ">PeekingImpl</a>
+            
+    
+            <a href="org/apache/kylin/measure/percentile/PercentileAggregator.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.167 , Coverage - 55.6% ">PercentileAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/percentile/PercentileCounter.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1.062 , Coverage - 79.1% ">PercentileCounter</a>
+            
+    
+            <a href="org/apache/kylin/engine/spark/util/PercentileCounterSerializer.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PercentileCounterSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/percentile/PercentileMeasureType.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.167 , Coverage - 31.6% ">PercentileMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/percentile/PercentileMeasureType.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">PercentileMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/measure/percentile/PercentileSerializer.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.286 , Coverage - 76.9% ">PercentileSerializer</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/PrepareSqlRequest.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="Average Method Complexity - 2.2 , Coverage - 11.1% ">PrepareSqlRequest</a>
+            
+    
+            <a href="org/apache/calcite/tools/Programs.html" class="tag"
+            style="font-size: 15px;color:#e28e87"
+            title="Average Method Complexity - 1.286 , Coverage - 48.2% ">Programs</a>
+            
+    
+            <a href="org/apache/calcite/tools/Programs.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 3 , Coverage - 71.4% ">Programs.DecorrelateProgram</a>
+            
+    
+            <a href="org/apache/calcite/tools/Programs.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Programs.SequenceProgram</a>
+            
+    
+            <a href="org/apache/calcite/tools/Programs.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">Programs.TrimFieldsProgram</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/ProjectController.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 2.333 , Coverage - 57.1% ">ProjectController</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/ProjectInstance.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.267 , Coverage - 62.8% ">ProjectInstance</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/ProjectL2Cache.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 2.4 , Coverage - 69.5% ">ProjectL2Cache</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/ProjectL2Cache.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ProjectL2Cache.ProjectCache</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/ProjectL2Cache.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ProjectL2Cache.TableCache</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/ProjectManager.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.633 , Coverage - 67% ">ProjectManager</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/ProjectManager.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.5 , Coverage - 58.3% ">ProjectManager.ProjectSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/ProjectRequest.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ProjectRequest</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/ProjectService.html" class="tag"
+            style="font-size: 17px;color:#e28e87"
+            title="Average Method Complexity - 2.154 , Coverage - 43.9% ">ProjectService</a>
+            
+    
+            <a href="org/apache/kylin/query/util/PushDownUtil.html" class="tag"
+            style="font-size: 22px;color:#de7b72"
+            title="Average Method Complexity - 3.667 , Coverage - 31.9% ">PushDownUtil</a>
+            
+    
+            <a href="org/apache/kylin/query/util/PushDownUtil.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.667 , Coverage - 67.3% ">PushDownUtil.FromTablesVisitor</a>
+            
+    
+            <a href="org/apache/kylin/query/security/QuerACLTestUtil.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">QuerACLTestUtil</a>
+            
+    
+            <a href="org/apache/kylin/query/QueryConnection.html" class="tag"
+            style="font-size: 17px;color:#89c495"
+            title="Average Method Complexity - 2 , Coverage - 100% ">QueryConnection</a>
+            
+    
+            <a href="org/apache/kylin/common/QueryContext.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1.083 , Coverage - 65.4% ">QueryContext</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/QueryController.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="Average Method Complexity - 1.375 , Coverage - 15.2% ">QueryController</a>
+            
+    
+            <a href="org/apache/kylin/query/QueryDataSource.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 1.857 , Coverage - 89.6% ">QueryDataSource</a>
+            
+    
+            <a href="org/apache/kylin/query/QueryDataSource.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">QueryDataSource.WrappedDataSource</a>
+            
+    
+            <a href="org/apache/kylin/query/security/QueryInterceptor.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.75 , Coverage - 59.1% ">QueryInterceptor</a>
+            
+    
+            <a href="org/apache/kylin/query/security/QueryInterceptorUtil.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 50% ">QueryInterceptorUtil</a>
+            
+    
+            <a href="org/apache/kylin/rest/metrics/QueryMetrics.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.1 , Coverage - 95.2% ">QueryMetrics</a>
+            
+    
+            <a href="org/apache/kylin/rest/metrics/QueryMetrics2Facade.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.6 , Coverage - 93.3% ">QueryMetrics2Facade</a>
+            
+    
+            <a href="org/apache/kylin/rest/metrics/QueryMetricsFacade.html" class="tag"
+            style="font-size: 19px;color:#14892c"
+            title="Average Method Complexity - 2.667 , Coverage - 91.8% ">QueryMetricsFacade</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/QueryRouter.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 3 , Coverage - 68.1% ">QueryRouter</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/QueryService.html" class="tag"
+            style="font-size: 26px;color:#de7b72"
+            title="Average Method Complexity - 5.406 , Coverage - 33.6% ">QueryService</a>
+            
+    
+            <a href="org/apache/kylin/query/util/QueryUtil.html" class="tag"
+            style="font-size: 23px;color:#fae1a0"
+            title="Average Method Complexity - 4.167 , Coverage - 81.8% ">QueryUtil</a>
+            
+    
+            <a href="org/apache/kylin/query/util/QueryUtil.html" class="tag"
+            style="font-size: 31px;color:#fae1a0"
+            title="Average Method Complexity - 7 , Coverage - 78.4% ">QueryUtil.DefaultQueryTransformer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/RandomSampler.html" class="tag"
+            style="font-size: 28px;color:#fae1a0"
+            title="Average Method Complexity - 6 , Coverage - 83.3% ">RandomSampler</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/RangeKeyDistributionJob.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 84% ">RangeKeyDistributionJob</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/RangeKeyDistributionMapper.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.667 , Coverage - 94.4% ">RangeKeyDistributionMapper</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/RangeKeyDistributionReducer.html" class="tag"
+            style="font-size: 23px;color:#f6c342"
+            title="Average Method Complexity - 4 , Coverage - 68.3% ">RangeKeyDistributionReducer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/RangeUtil.html" class="tag"
+            style="font-size: 32px;color:#f6c342"
+            title="Average Method Complexity - 7.286 , Coverage - 67.5% ">RangeUtil</a>
+            
+    
+            <a href="org/apache/kylin/measure/raw/RawAggregator.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="Average Method Complexity - 2 , Coverage - 32.4% ">RawAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/raw/RawMeasureType.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="Average Method Complexity - 1.636 , Coverage - 3.1% ">RawMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/raw/RawMeasureType.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">RawMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/cube/RawQueryLastHacker.html" class="tag"
+            style="font-size: 31px;color:#14892c"
+            title="Average Method Complexity - 7 , Coverage - 87.5% ">RawQueryLastHacker</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/RawResource.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">RawResource</a>
+            
+    
+            <a href="org/apache/kylin/measure/raw/RawSerializer.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.286 , Coverage - 75.4% ">RawSerializer</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/RealizationCheck.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.636 , Coverage - 57.4% ">RealizationCheck</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/RealizationCheck.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="Average Method Complexity - 2.364 , Coverage - 26.8% ">RealizationCheck.IncapableReason</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/RealizationChooser.html" class="tag"
+            style="font-size: 19px;color:#e7a19b"
+            title="Average Method Complexity - 2.8 , Coverage - 56.2% ">RealizationChooser</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/RealizationChooser.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 2 , Coverage - 62.5% ">RealizationChooser.RealizationCost</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/RealizationEntry.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="Average Method Complexity - 2 , Coverage - 34.1% ">RealizationEntry</a>
+            
+    
+            <a href="org/apache/kylin/metadata/realization/RealizationRegistry.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.429 , Coverage - 82% ">RealizationRegistry</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/rules/RealizationSortRule.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">RealizationSortRule</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/RecordComparator.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.5 , Coverage - 94.1% ">RecordComparator</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/RecordComparators.html" class="tag"
+            style="font-size: 19px;color:#89c495"
+            title="Average Method Complexity - 2.571 , Coverage - 100% ">RecordComparators</a>
+            
+    
+            <a href="org/apache/calcite/sql2rel/RelFieldTrimmer.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 75% ">RelFieldTrimmer</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/rules/RemoveBlackoutRealizationsRule.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 3.5 , Coverage - 68.4% ">RemoveBlackoutRealizationsRule</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/rules/RemoveUncapableRealizationsRule.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 3 , Coverage - 81.8% ">RemoveUncapableRealizationsRule</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/ResourceStore.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.75 , Coverage - 76% ">ResourceStore</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/ResourceStore.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.2 , Coverage - 93% ">ResourceStore.Checkpoint</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/ResourceTool.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="Average Method Complexity - 2.556 , Coverage - 8.9% ">ResourceTool</a>
+            
+    
+            <a href="org/apache/kylin/common/restclient/RestClient.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="Average Method Complexity - 1.565 , Coverage - 23.6% ">RestClient</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/ResultLevel.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">ResultLevel</a>
+            
+    
+            <a href="org/apache/kylin/measure/bitmap/RoaringBitmapCounter.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.471 , Coverage - 72.9% ">RoaringBitmapCounter</a>
+            
+    
+            <a href="org/apache/kylin/measure/bitmap/RoaringBitmapCounterFactory.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 81.8% ">RoaringBitmapCounterFactory</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/RootPersistentEntity.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 78% ">RootPersistentEntity</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/RoutingRule.html" class="tag"
+            style="font-size: 17px;color:#e28e87"
+            title="Average Method Complexity - 1.857 , Coverage - 42.6% ">RoutingRule</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/rule/RowKeyAttrRule.html" class="tag"
+            style="font-size: 31px;color:#f6c342"
+            title="Average Method Complexity - 7 , Coverage - 71.4% ">RowKeyAttrRule</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/RowKeyColDesc.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.684 , Coverage - 53.5% ">RowKeyColDesc</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/RowKeyColumnIO.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.2 , Coverage - 87.5% ">RowKeyColumnIO</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/RowKeyColumnOrder.html" class="tag"
+            style="font-size: 21px;color:#e28e87"
+            title="Average Method Complexity - 3.5 , Coverage - 46.7% ">RowKeyColumnOrder</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/RowKeyColumnOrder.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">RowKeyColumnOrder.StringOrder</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/RowKeyDecoder.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.333 , Coverage - 65.1% ">RowKeyDecoder</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/RowKeyDesc.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.538 , Coverage - 83.3% ">RowKeyDesc</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/RowKeyEncoder.html" class="tag"
+            style="font-size: 16px;color:#e28e87"
+            title="Average Method Complexity - 1.786 , Coverage - 49% ">RowKeyEncoder</a>
+            
+    
+            <a href="org/apache/kylin/cube/common/RowKeySplitter.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.714 , Coverage - 82% ">RowKeySplitter</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/RowValueDecoder.html" class="tag"
+            style="font-size: 16px;color:#e28e87"
+            title="Average Method Complexity - 1.5 , Coverage - 40.3% ">RowValueDecoder</a>
+            
+    
+            <a href="org/apache/kylin/metadata/realization/SQLDigest.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.25 , Coverage - 82.8% ">SQLDigest</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/SQLRequest.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="Average Method Complexity - 2.222 , Coverage - 37.6% ">SQLRequest</a>
+            
+    
+            <a href="org/apache/kylin/rest/response/SQLResponse.html" class="tag"
+            style="font-size: 14px;color:#fae1a0"
+            title="Average Method Complexity - 1 , Coverage - 80.6% ">SQLResponse</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/json/SQLResponseStub.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 57.4% ">SQLResponseStub</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/json/SQLResponseStub.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 55.8% ">SQLResponseStub.ColumnMetaStub</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/steps/SaveStatisticsStep.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="Average Method Complexity - 2 , Coverage - 8% ">SaveStatisticsStep</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/ScanRangePlannerBase.html" class="tag"
+            style="font-size: 25px;color:#14892c"
+            title="Average Method Complexity - 4.8 , Coverage - 87.1% ">ScanRangePlannerBase</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/ScanRangePlannerBase.html" class="tag"
+            style="font-size: 24px;color:#e7a19b"
+            title="Average Method Complexity - 4.5 , Coverage - 51.5% ">ScanRangePlannerBase.ColumnRange</a>
+            
+    
+            <a href="org/apache/kylin/job/SchedulerFactory.html" class="tag"
+            style="font-size: 17px;color:#14892c"
+            title="Average Method Complexity - 2 , Coverage - 87.5% ">SchedulerFactory</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/SegmentRange.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="Average Method Complexity - 2.364 , Coverage - 55.3% ">SegmentRange</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/SegmentRange.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="Average Method Complexity - 3.5 , Coverage - 69% ">SegmentRange.Endpoint</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/SegmentRange.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.667 , Coverage - 100% ">SegmentRange.TSRange</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/Segments.html" class="tag"
+            style="font-size: 24px;color:#fae1a0"
+            title="Average Method Complexity - 4.636 , Coverage - 77.5% ">Segments</a>
+            
+    
+            <a href="org/apache/kylin/metadata/querymeta/SelectedColumnMeta.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 55.9% ">SelectedColumnMeta</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/steps/SelfDefineSortableKey.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.615 , Coverage - 59.4% ">SelfDefineSortableKey</a>
+            
+    
+            <a href="org/apache/kylin/common/util/SetThreadName.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SetThreadName</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ShardingHash.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="Average Method Complexity - 2 , Coverage - 23.5% ">ShardingHash</a>
+            
+    
+            <a href="org/apache/kylin/job/common/ShellExecutable.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="Average Method Complexity - 1.5 , Coverage - 35.3% ">ShellExecutable</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/SidInfo.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.333 , Coverage - 70% ">SidInfo</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/SingleValueCache.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.154 , Coverage - 81.6% ">SingleValueCache</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/SingleValueRegister.html" class="tag"
+            style="font-size: 17px;color:#f6c342"
+            title="Average Method Complexity - 1.846 , Coverage - 72.1% ">SingleValueRegister</a>
+            
+    
+            <a href="org/apache/kylin/dict/lookup/SnapshotManager.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="Average Method Complexity - 2.067 , Coverage - 29.8% ">SnapshotManager</a>
+            
+    
+            <a href="org/apache/kylin/dict/lookup/SnapshotTable.html" class="tag"
+            style="font-size: 19px;color:#de7b72"
+            title="Average Method Complexity - 2.647 , Coverage - 31.2% ">SnapshotTable</a>
+            
+    
+            <a href="org/apache/kylin/dict/lookup/SnapshotTableSerializer.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.667 , Coverage - 52.9% ">SnapshotTableSerializer</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/SortedColumnDFSFile.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.75 , Coverage - 75.9% ">SortedColumnDFSFile</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/SortedColumnDFSFileReader.html" class="tag"
+            style="font-size: 20px;color:#fae1a0"
+            title="Average Method Complexity - 3.2 , Coverage - 82% ">SortedColumnDFSFileReader</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/SortedColumnDFSFileReader.html" class="tag"
+            style="font-size: 15px;color:#fae1a0"
+            title="Average Method Complexity - 1.333 , Coverage - 77.3% ">SortedColumnDFSFileReader.ReaderBuffer</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/SortedIteratorMerger.html" class="tag"
+            style="font-size: 16px;color:#89c495"
+            title="Average Method Complexity - 1.5 , Coverage - 100% ">SortedIteratorMerger</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/SortedIteratorMerger.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.25 , Coverage - 87.5% ">SortedIteratorMerger.MergedIterator</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/SortedIteratorMergerWithLimit.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SortedIteratorMergerWithLimit</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/SortedIteratorMergerWithLimit.html" class="tag"
+            style="font-size: 23px;color:#fae1a0"
+            title="Average Method Complexity - 4 , Coverage - 83.6% ">SortedIteratorMergerWithLimit.MergedIteratorWithLimit</a>
+            
+    
+            <a href="org/apache/kylin/source/SourceFactory.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.167 , Coverage - 66.7% ">SourceFactory</a>
+            
+    
+            <a href="org/apache/kylin/source/SourcePartition.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.167 , Coverage - 73% ">SourcePartition</a>
+            
+    
+            <a href="org/apache/kylin/common/util/SoutLogger.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SoutLogger</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/SparseRegister.html" class="tag"
+            style="font-size: 18px;color:#f6c342"
+            title="Average Method Complexity - 2.273 , Coverage - 69.6% ">SparseRegister</a>
+            
+    
+            <a href="org/apache/kylin/common/util/SplittedBytes.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SplittedBytes</a>
+            
+    
+            <a href="org/apache/calcite/sql2rel/SqlToRelConverter.html" class="tag"
+            style="font-size: 24px;color:#d5584c"
+            title="Average Method Complexity - 4.491 , Coverage - 12.9% ">SqlToRelConverter</a>
+            
+    
+            <a href="org/apache/calcite/sql2rel/SqlToRelConverter.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="Average Method Complexity - 3.083 , Coverage - 20.2% ">SqlToRelConverter.Blackboard</a>
+            
+    
+            <a href="org/apache/calcite/sql2rel/SqlToRelConverter.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">SqlToRelConverter.ConfigBuilder</a>
+            
+    
+            <a href="org/apache/calcite/sql2rel/SqlToRelConverter.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SqlToRelConverter.ConfigImpl</a>
+            
+    
+            <a href="org/apache/calcite/sql2rel/SqlToRelConverter.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">SqlToRelConverter.LookupContext</a>
+            
+    
+            <a href="org/apache/kylin/storage/StorageContext.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.211 , Coverage - 38.7% ">StorageContext</a>
+            
+    
+            <a href="org/apache/kylin/storage/StorageFactory.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.333 , Coverage - 100% ">StorageFactory</a>
+            
+    
+            <a href="org/apache/kylin/common/StorageURL.html" class="tag"
+            style="font-size: 19px;color:#f6c342"
+            title="Average Method Complexity - 2.692 , Coverage - 68.2% ">StorageURL</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/rule/StreamingCubeRule.html" class="tag"
+            style="font-size: 34px;color:#d5584c"
+            title="Average Method Complexity - 8 , Coverage - 14.3% ">StreamingCubeRule</a>
+            
+    
+            <a href="org/apache/kylin/common/util/StreamingMessageRow.html" class="tag"
+            style="font-size: 14px;color:#e28e87"
+            title="Average Method Complexity - 1 , Coverage - 46.7% ">StreamingMessageRow</a>
+            
+    
+            <a href="org/apache/kylin/source/kafka/StreamingParser.html" class="tag"
+            style="font-size: 22px;color:#d9695f"
+            title="Average Method Complexity - 3.75 , Coverage - 22.7% ">StreamingParser</a>
+            
+    
+            <a href="org/apache/kylin/dict/StringBytesConverter.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">StringBytesConverter</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/StringCodeSystem.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">StringCodeSystem</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/StringEntity.html" class="tag"
+            style="font-size: 16px;color:#e7a19b"
+            title="Average Method Complexity - 1.5 , Coverage - 57.7% ">StringEntity</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/StringSerializer.html" class="tag"
+            style="font-size: 15px;color:#f6c342"
+            title="Average Method Complexity - 1.143 , Coverage - 70% ">StringSerializer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/StringSplitter.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="Average Method Complexity - 3 , Coverage - 68.8% ">StringSplitter</a>
+            
+    
+            <a href="org/apache/kylin/common/util/StringUtil.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="Average Method Complexity - 3.133 , Coverage - 17.2% ">StringUtil</a>
+            
+    
+            <a href="org/apache/kylin/metadata/acl/TableACL.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.182 , Coverage - 93.3% ">TableACL</a>
+            
+    
+            <a href="org/apache/kylin/metadata/acl/TableACL.html" class="tag"
+            style="font-size: 14px;color:#14892c"
+            title="Average Method Complexity - 1 , Coverage - 85.7% ">TableACL.TableBlackList</a>
+            
+    
+            <a href="org/apache/kylin/metadata/acl/TableACLManager.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.571 , Coverage - 77.4% ">TableACLManager</a>
+            
+    
+            <a href="org/apache/kylin/metadata/acl/TableACLManager.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">TableACLManager.TableACLSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/TableACLService.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.125 , Coverage - 89.7% ">TableACLService</a>
+            
+    
+            <a href="org/apache/kylin/dict/TableColumnValueEnumerator.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 75.9% ">TableColumnValueEnumerator</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/TableDesc.html" class="tag"
+            style="font-size: 17px;color:#e28e87"
+            title="Average Method Complexity - 1.906 , Coverage - 49.5% ">TableDesc</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/TableExtDesc.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="Average Method Complexity - 1.375 , Coverage - 36.6% ">TableExtDesc</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/TableExtDesc.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">TableExtDesc.ColumnStats</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/TableGenConfig.html" class="tag"
+            style="font-size: 36px;color:#89c495"
+            title="Average Method Complexity - 9 , Coverage - 100% ">TableGenConfig</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/TableInterceptor.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 37.5% ">TableInterceptor</a>
+            
+    
+            <a href="org/apache/kylin/metadata/querymeta/TableMeta.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TableMeta</a>
+            
+    
+            <a href="org/apache/kylin/metadata/TableMetadataManager.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.966 , Coverage - 75.3% ">TableMetadataManager</a>
+            
+    
+            <a href="org/apache/kylin/metadata/TableMetadataManager.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 58.8% ">TableMetadataManager.SrcTableSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/TableRef.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 1.846 , Coverage - 74.6% ">TableRef</a>
+            
+    
+            <a href="org/apache/kylin/rest/util/TableauInterceptor.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.5 , Coverage - 83.9% ">TableauInterceptor</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/TblColRef.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.7 , Coverage - 82.9% ">TblColRef</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/TblColRef.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TblColRef.InnerDataTypeEnum</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/TimeConditionLiteralsReplacer.html" class="tag"
+            style="font-size: 25px;color:#fae1a0"
+            title="Average Method Complexity - 5 , Coverage - 75% ">TimeConditionLiteralsReplacer</a>
+            
+    
+            <a href="org/apache/kylin/dimension/TimeDimEnc.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TimeDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dict/TimeStrDictionary.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.308 , Coverage - 53.5% ">TimeStrDictionary</a>
+            
+    
+            <a href="org/apache/kylin/common/util/TimeUtil.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TimeUtil</a>
+            
+    
+            <a href="org/apache/kylin/source/kafka/TimedJsonStreamParser.html" class="tag"
+            style="font-size: 22px;color:#14892c"
+            title="Average Method Complexity - 3.8 , Coverage - 86.7% ">TimedJsonStreamParser</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/TooManyCuboidException.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TooManyCuboidException</a>
+            
+    
+            <a href="org/apache/kylin/measure/topn/TopNCounter.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.25 , Coverage - 83.8% ">TopNCounter</a>
+            
+    
+            <a href="org/apache/kylin/measure/topn/TopNCounterSerializer.html" class="tag"
+            style="font-size: 16px;color:#f6c342"
+            title="Average Method Complexity - 1.667 , Coverage - 72.2% ">TopNCounterSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/topn/TopNMeasureType.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="Average Method Complexity - 2.821 , Coverage - 9.2% ">TopNMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/topn/TopNMeasureType.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TopNMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/TreeCuboidScheduler.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 81.8% ">TreeCuboidScheduler.CuboidCostComparator</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/TreeCuboidScheduler.html" class="tag"
+            style="font-size: 16px;color:#14892c"
+            title="Average Method Complexity - 1.5 , Coverage - 89.3% ">TreeCuboidScheduler.CuboidTree</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/TreeCuboidScheduler.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="Average Method Complexity - 1.714 , Coverage - 12.5% ">TreeCuboidScheduler.TreeNode</a>
+            
+    
+            <a href="org/apache/kylin/dict/TrieDictionary.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.5 , Coverage - 76.7% ">TrieDictionary</a>
+            
+    
+            <a href="org/apache/kylin/dict/TrieDictionaryBuilder.html" class="tag"
+            style="font-size: 20px;color:#14892c"
+            title="Average Method Complexity - 3.048 , Coverage - 88.3% ">TrieDictionaryBuilder</a>
+            
+    
+            <a href="org/apache/kylin/dict/TrieDictionaryBuilder.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.25 , Coverage - 60% ">TrieDictionaryBuilder.CompleteParts</a>
+            
+    
+            <a href="org/apache/kylin/dict/TrieDictionaryBuilder.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TrieDictionaryBuilder.Node</a>
+            
+    
+            <a href="org/apache/kylin/dict/TrieDictionaryForest.html" class="tag"
+            style="font-size: 18px;color:#14892c"
+            title="Average Method Complexity - 2.467 , Coverage - 89.5% ">TrieDictionaryForest</a>
+            
+    
+            <a href="org/apache/kylin/dict/TrieDictionaryForestBuilder.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 2.182 , Coverage - 95.3% ">TrieDictionaryForestBuilder</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/TrimmedCubeCodeSystem.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.333 , Coverage - 82% ">TrimmedCubeCodeSystem</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/TrimmedDimEnc.html" class="tag"
+            style="font-size: 14px;color:#e7a19b"
+            title="Average Method Complexity - 1 , Coverage - 60% ">TrimmedDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/TrimmedDimensionSerializer.html" class="tag"
+            style="font-size: 14px;color:#de7b72"
+            title="Average Method Complexity - 1 , Coverage - 33.3% ">TrimmedDimensionSerializer</a>
+            
+    
+            <a href="org/apache/kylin/metadata/tuple/Tuple.html" class="tag"
+            style="font-size: 19px;color:#d5584c"
+            title="Average Method Complexity - 2.708 , Coverage - 13.6% ">Tuple</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/TupleFilter.html" class="tag"
+            style="font-size: 18px;color:#fae1a0"
+            title="Average Method Complexity - 2.2 , Coverage - 73.9% ">TupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/TupleFilter.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">TupleFilter.FilterOperatorEnum</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/TupleFilterSerializer.html" class="tag"
+            style="font-size: 28px;color:#fae1a0"
+            title="Average Method Complexity - 6 , Coverage - 79.1% ">TupleFilterSerializer</a>
+            
+    
+            <a href="org/apache/kylin/metadata/tuple/TupleInfo.html" class="tag"
+            style="font-size: 15px;color:#e7a19b"
+            title="Average Method Complexity - 1.417 , Coverage - 57.7% ">TupleInfo</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/UnitTestSupport.html" class="tag"
+            style="font-size: 15px;color:#89c495"
+            title="Average Method Complexity - 1.222 , Coverage - 100% ">UnitTestSupport</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/steps/UpdateCubeInfoAfterBuildStep.html" class="tag"
+            style="font-size: 18px;color:#d04437"
+            title="Average Method Complexity - 2.333 , Coverage - 3.8% ">UpdateCubeInfoAfterBuildStep</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/UserController.html" class="tag"
+            style="font-size: 17px;color:#e7a19b"
+            title="Average Method Complexity - 2 , Coverage - 50% ">UserController</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/UserGrantedAuthority.html" class="tag"
+            style="font-size: 17px;color:#d5584c"
+            title="Average Method Complexity - 2 , Coverage - 16.7% ">UserGrantedAuthority</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/UserService.html" class="tag"
+            style="font-size: 16px;color:#fae1a0"
+            title="Average Method Complexity - 1.75 , Coverage - 73.9% ">UserService</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/Util.html" class="tag"
+            style="font-size: 18px;color:#89c495"
+            title="Average Method Complexity - 2.4 , Coverage - 95.2% ">Util</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/ValidateContext.html" class="tag"
+            style="font-size: 15px;color:#14892c"
+            title="Average Method Complexity - 1.4 , Coverage - 90.5% ">ValidateContext</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/ValidateContext.html" class="tag"
+            style="font-size: 14px;color:#f6c342"
+            title="Average Method Complexity - 1 , Coverage - 71.4% ">ValidateContext.Result</a>
+            
+    
+            <a href="org/apache/kylin/query/udf/VersionUDF.html" class="tag"
+            style="font-size: 14px;color:#89c495"
+            title="Average Method Complexity - 1 , Coverage - 100% ">VersionUDF</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/util/ZookeeperAclBuilder.html" class="tag"
+            style="font-size: 17px;color:#fae1a0"
+            title="Average Method Complexity - 2 , Coverage - 78% ">ZookeeperAclBuilder</a>
+           </div>
+   
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.2.1
+                on Wed Dec 13 2017 10:25:03 PST using coverage data from Wed Dec 13 2017 10:24:58 PST.
+            </li>
+        </ul>
+        <ul>
+            <li>Clover free edition. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

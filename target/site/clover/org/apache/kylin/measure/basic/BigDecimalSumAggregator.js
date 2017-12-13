@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":61,"id":82913,"methods":[{"el":35,"sc":5,"sl":32},{"el":40,"sc":5,"sl":37},{"el":50,"sc":5,"sl":42},{"el":55,"sc":5,"sl":52},{"el":60,"sc":5,"sl":57}],"name":"BigDecimalSumAggregator","sl":28}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_130":{"methods":[{"sl":37},{"sl":52}],"name":"verifyAggregateAndHavingFilter","pass":true,"statements":[{"sl":39},{"sl":54}]},"test_166":{"methods":[{"sl":37},{"sl":52}],"name":"testAggregationCacheSpill","pass":true,"statements":[{"sl":39},{"sl":54}]},"test_238":{"methods":[{"sl":37},{"sl":52}],"name":"testAggregate","pass":true,"statements":[{"sl":39},{"sl":54}]},"test_253":{"methods":[{"sl":37},{"sl":57}],"name":"testEstimateMemSize","pass":true,"statements":[{"sl":39},{"sl":59}]},"test_257":{"methods":[{"sl":37},{"sl":52}],"name":"testAggregationCacheInMem","pass":true,"statements":[{"sl":39},{"sl":54}]},"test_385":{"methods":[{"sl":37},{"sl":57}],"name":"testAggregatorEstimate","pass":true,"statements":[{"sl":39},{"sl":59}]},"test_390":{"methods":[{"sl":32},{"sl":52}],"name":"testReducerOnlyAggrInBaseCuboid","pass":true,"statements":[{"sl":34},{"sl":54}]},"test_444":{"methods":[{"sl":32},{"sl":37},{"sl":52}],"name":"testReducer","pass":true,"statements":[{"sl":34},{"sl":39},{"sl":54}]},"test_532":{"methods":[{"sl":37},{"sl":57}],"name":"testAggregatorEstimate","pass":true,"statements":[{"sl":39},{"sl":59}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [444, 390], [], [444, 390], [], [], [532, 444, 238, 385, 257, 166, 130, 253], [], [532, 444, 238, 385, 257, 166, 130, 253], [], [], [], [], [], [], [], [], [], [], [], [], [444, 238, 390, 257, 166, 130], [], [444, 238, 390, 257, 166, 130], [], [], [532, 385, 253], [], [532, 385, 253], [], []]

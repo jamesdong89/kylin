@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.kylin.engine.mr.SortedColumnReaderTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 2.942 sec - in org.apache.kylin.engine.mr.SortedColumnReaderTest

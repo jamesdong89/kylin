@@ -91,7 +91,7 @@ public class OLAPContext {
 
     public OLAPContext(int seq) {
         this.id = seq;
-        this.storageContext = new StorageContext(seq);
+        this.storageContext = new StorageContext();
         this.sortColumns = Lists.newArrayList();
         this.sortOrders = Lists.newArrayList();
         Map<String, String> parameters = _localPrarameters.get();

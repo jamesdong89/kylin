@@ -371,15 +371,7 @@ public class QueryService extends BasicService {
         }
     }
 
-    public SQLResponse queryWithoutSecure(SQLRequest sqlRequest) {
-        return doQueryWithCache(sqlRequest, false);
-    }
-
     public SQLResponse doQueryWithCache(SQLRequest sqlRequest) {
-        return doQueryWithCache(sqlRequest, true);
-    }
-
-    public SQLResponse doQueryWithCache(SQLRequest sqlRequest, boolean secureEnabled) {
         Message msg = MsgPicker.getMsg();
         sqlRequest.setUsername(getUserName());
 
@@ -407,9 +399,6 @@ public class QueryService extends BasicService {
             final boolean isSelect = QueryUtil.isSelectStatement(sql);
 
             long startTime = System.currentTimeMillis();
-
-            // force clear the query context before a new query
-            OLAPContext.clearThreadLocalContexts();
 
             SQLResponse sqlResponse = null;
             boolean queryCacheEnabled = checkCondition(kylinConfig.isQueryCacheEnabled(),
@@ -464,17 +453,15 @@ public class QueryService extends BasicService {
                     sqlResponse.setTotalScanBytes(0);
                 }
 
-                checkQueryAuth(sqlResponse, project, secureEnabled);
+                checkQueryAuth(sqlResponse, project);
 
             } catch (Throwable e) { // calcite may throw AssertError
                 logger.error("Exception while executing query", e);
                 String errMsg = makeErrorMsgUserFriendly(e);
 
                 sqlResponse = new SQLResponse(null, null, 0, true, errMsg);
-                sqlResponse.setThrowable(e.getCause() == null ? e : ExceptionUtils.getRootCause(e));
                 sqlResponse.setTotalScanCount(queryContext.getScannedRows());
                 sqlResponse.setTotalScanBytes(queryContext.getScannedBytes());
-                sqlResponse.setCubeSegmentStatisticsList(queryContext.getCubeSegmentStatisticsResultList());
 
                 if (queryCacheEnabled && e.getCause() != null
                         && ExceptionUtils.getRootCause(e) instanceof ResourceLimitExceededException) {
@@ -526,9 +513,8 @@ public class QueryService extends BasicService {
         return response;
     }
 
-    protected void checkQueryAuth(SQLResponse sqlResponse, String project, boolean secureEnabled)
-            throws AccessDeniedException {
-        if (!sqlResponse.getIsException() && KylinConfig.getInstanceFromEnv().isQuerySecureEnabled() && secureEnabled) {
+    protected void checkQueryAuth(SQLResponse sqlResponse, String project) throws AccessDeniedException {
+        if (!sqlResponse.getIsException() && KylinConfig.getInstanceFromEnv().isQuerySecureEnabled()) {
             checkAuthorization(sqlResponse, project);
         }
     }
@@ -569,6 +555,8 @@ public class QueryService extends BasicService {
             parameters.put(OLAPContext.PRM_USER_AUTHEN_INFO, userInfo);
             parameters.put(OLAPContext.PRM_ACCEPT_PARTIAL_RESULT, String.valueOf(sqlRequest.isAcceptPartial()));
             OLAPContext.setParameters(parameters);
+            // force clear the query context before a new query
+            OLAPContext.clearThreadLocalContexts();
 
             return execute(correctedSql, sqlRequest, conn);
 
@@ -958,8 +946,6 @@ public class QueryService extends BasicService {
         StringBuilder logSb = new StringBuilder("Processed rows for each storageContext: ");
         if (OLAPContext.getThreadLocalContexts() != null) { // contexts can be null in case of 'explain plan for'
             for (OLAPContext ctx : OLAPContext.getThreadLocalContexts()) {
-                String realizationName = "NULL";
-                int realizationType = -1;
                 if (ctx.realization != null) {
                     isPartialResult |= ctx.storageContext.isPartialResultReturned();
                     if (cubeSb.length() > 0) {
@@ -967,11 +953,7 @@ public class QueryService extends BasicService {
                     }
                     cubeSb.append(ctx.realization.getCanonicalName());
                     logSb.append(ctx.storageContext.getProcessedRowCount()).append(" ");
-
-                    realizationName = ctx.realization.getName();
-                    realizationType = ctx.realization.getStorageType();
                 }
-                QueryContext.current().setContextRealization(ctx.id, realizationName, realizationType);
             }
         }
         logger.info(logSb.toString());
@@ -980,7 +962,6 @@ public class QueryService extends BasicService {
                 isPushDown);
         response.setTotalScanCount(QueryContext.current().getScannedRows());
         response.setTotalScanBytes(QueryContext.current().getScannedBytes());
-        response.setCubeSegmentStatisticsList(QueryContext.current().getCubeSegmentStatisticsResultList());
         return response;
     }
 

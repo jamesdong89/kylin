@@ -318,7 +318,7 @@
 
         <!-- Central storage of cryptographic keys -->
         <bean id="keyManager" class="org.springframework.security.saml.key.JKSKeyManager">
-            <constructor-arg value="${kylin.security.saml.keystore-file}"/>
+            <constructor-arg value="classpath:samlKeystore.jks"/>
             <constructor-arg type="java.lang.String" value="changeit"/>
             <constructor-arg>
                 <map>
@@ -358,6 +358,7 @@
         <!-- Handler for successful logout -->
         <bean id="successLogoutHandler"
               class="org.springframework.security.web.authentication.logout.SimpleUrlLogoutSuccessHandler">
+            <property name="defaultTargetUrl" value="/login"/>
         </bean>
 
         <!-- Logger for SAML messages and events -->
@@ -402,7 +403,7 @@
                         <constructor-arg>
                             <bean class="org.opensaml.saml2.metadata.provider.FilesystemMetadataProvider">
                                 <constructor-arg>
-                                    <value type="java.io.File">${kylin.security.saml.metadata-file}</value>
+                                    <value type="java.io.File">classpath:sso_metadata.xml</value>
                                 </constructor-arg>
                                 <property name="parserPool" ref="parserPool"/>
                             </bean>

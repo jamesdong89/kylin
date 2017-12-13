@@ -1,0 +1,3270 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="img/clover.ico" />
+
+    <link rel="stylesheet" href="aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('style.css');
+        @import url('tree.css');
+        
+    </style>
+
+    <script src="jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="package-nodes-tree.js" type="text/javascript"></script>
+    <script src="clover-tree.js" type="text/javascript"></script>
+    <script src="clover.js" type="text/javascript"></script>
+    <script src="clover-descriptions.js" type="text/javascript"></script>
+    <script src="cloud.js" type="text/javascript"></script>
+
+            <title>Apache Kylin 2.3.0-SNAPSHOT (Aggregated)</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://kylin.apache.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://kylin.apache.org" target="_top">
+                                        Apache Kylin 2.3.0-SNAPSHOT (Aggregated)
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="aui-nav-selected">
+                    <a href="dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                  <div class="packages-tree-wrapper" data-root-relative="" data-package-name="">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="dashboard.html">Project Clover database Wed Dec 13 2017 10:24:58 PST</a></li>
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Project overview
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+            <li class="menu-item ">
+            <a href="dashboard.html">Dashboard</a>
+        </li>
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="testsrc-pkg-summary.html"><strong>Test code</strong></a>
+        </li>
+        <li class="menu-item ">
+            <a href="test-pkg-summary.html"><strong>Test results</strong></a>
+        </li>
+                <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                                                <li class="menu-item ">
+                <a href="treemap.html"><strong>Coverage tree map</strong></a>
+            </li>
+            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = quickWinsDescription();
+                var title = 'Quick Wins';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="org/apache/kylin/common/util/AbstractApplication.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 6 ">AbstractApplication</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/AbstractCache.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">AbstractCache</a>
+            
+    
+            <a href="org/apache/kylin/dimension/AbstractDateDimEnc.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 59 , # Elements Covered - 32 ">AbstractDateDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/job/execution/AbstractExecutable.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="# Elements - 229 , # Elements Covered - 166 ">AbstractExecutable</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/common/AbstractHadoopJob.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="# Elements - 402 , # Elements Covered - 86 ">AbstractHadoopJob</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/AbstractRowKeyEncoder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 3 ">AbstractRowKeyEncoder</a>
+            
+    
+            <a href="org/apache/kylin/source/kafka/AbstractTimeParser.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 1 , # Elements Covered - 1 ">AbstractTimeParser</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/AccessController.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 29 ">AccessController</a>
+            
+    
+            <a href="org/apache/kylin/rest/response/AccessEntryResponse.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 16 ">AccessEntryResponse</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/AccessRequest.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 17 ">AccessRequest</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/AccessService.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 229 , # Elements Covered - 145 ">AccessService</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/AceInfo.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 13 ">AceInfo</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/AclEntityFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 16 ">AclEntityFactory</a>
+            
+    
+            <a href="org/apache/kylin/rest/util/AclEvaluate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 47 , # Elements Covered - 20 ">AclEvaluate</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/AclPermission.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">AclPermission</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/AclPermissionFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 26 ">AclPermissionFactory</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/AclService.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 21 ">AclRecord</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/AclService.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 165 , # Elements Covered - 143 ">AclService</a>
+            
+    
+            <a href="org/apache/kylin/rest/util/AclUtil.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 12 ">AclUtil</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/AdminController.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 16 ">AdminController</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/AdminService.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 19 ">AdminService</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/common/coprocessor/AggrKey.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 81 , # Elements Covered - 70 ">AggrKey</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/AggregationGroup.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="# Elements - 357 , # Elements Covered - 298 ">AggregationGroup</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/rule/AggregationGroupRule.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 137 , # Elements Covered - 92 ">AggregationGroupRule</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/AppendDictNode.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 170 , # Elements Covered - 158 ">AppendDictNode</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/AppendDictNode.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 93 , # Elements Covered - 71 ">AppendDictNode.Stats</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/AppendDictSlice.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 191 , # Elements Covered - 107 ">AppendDictSlice</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/AppendDictSliceKey.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 25 ">AppendDictSliceKey</a>
+            
+    
+            <a href="org/apache/kylin/dict/AppendTrieDictionary.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 71 , # Elements Covered - 37 ">AppendTrieDictionary</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/AppendTrieDictionaryBuilder.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="# Elements - 201 , # Elements Covered - 198 ">AppendTrieDictionaryBuilder</a>
+            
+    
+            <a href="org/apache/kylin/common/util/Array.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 43 , # Elements Covered - 8 ">Array</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/AsymmetricRecordComparator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 2 ">AsymmetricRecordComparator</a>
+            
+    
+            <a href="org/apache/kylin/common/debug/BackdoorToggles.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 76 , # Elements Covered - 24 ">BackdoorToggles</a>
+            
+    
+            <a href="org/apache/kylin/common/BackwardCompatibilityConfig.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 148 , # Elements Covered - 61 ">BackwardCompatibilityConfig</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/BadQueryDetector.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 88 , # Elements Covered - 81 ">BadQueryDetector</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/BadQueryDetector.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 5 ">BadQueryDetector.Entry</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/BadQueryDetector.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">BadQueryDetector.LoggerNotifier</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/BadQueryDetector.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 7 ">BadQueryDetector.PersistenceNotifier</a>
+            
+    
+            <a href="org/apache/kylin/metadata/badquery/BadQueryEntry.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 68 , # Elements Covered - 33 ">BadQueryEntry</a>
+            
+    
+            <a href="org/apache/kylin/metadata/badquery/BadQueryHistory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 5 ">BadQueryHistory</a>
+            
+    
+            <a href="org/apache/kylin/metadata/badquery/BadQueryHistoryManager.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 56 , # Elements Covered - 47 ">BadQueryHistoryManager</a>
+            
+    
+            <a href="org/apache/kylin/rest/exception/BadRequestException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 5 ">BadRequestException</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/BasicController.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 39 , # Elements Covered - 16 ">BasicController</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/BasicMeasureType.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 102 , # Elements Covered - 51 ">BasicMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/BasicMeasureType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">BasicMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/BasicService.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 21 ">BasicService</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/BatchCubingJobBuilder2.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 100 , # Elements Covered - 94 ">BatchCubingJobBuilder2</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/BigDecimalMaxAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 15 ">BigDecimalMaxAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/BigDecimalMinAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 15 ">BigDecimalMinAggregator</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/BigDecimalSerializer.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 39 , # Elements Covered - 34 ">BigDecimalSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/BigDecimalSumAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 8 ">BigDecimalSumAggregator</a>
+            
+    
+            <a href="org/apache/kylin/common/util/BitSets.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 10 ">BitSets</a>
+            
+    
+            <a href="org/apache/kylin/measure/bitmap/BitmapAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 14 ">BitmapAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/bitmap/BitmapMeasureType.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 62 , # Elements Covered - 6 ">BitmapMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/bitmap/BitmapMeasureType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">BitmapMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/measure/bitmap/BitmapSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 14 ">BitmapSerializer</a>
+            
+    
+            <a href="org/apache/kylin/dimension/BooleanDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 49 , # Elements Covered - 31 ">BooleanDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/BooleanDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 19 ">BooleanDimEnc.BooleanSerializer</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/Broadcaster.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 161 , # Elements Covered - 146 ">Broadcaster</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/Broadcaster.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 57 , # Elements Covered - 17 ">Broadcaster.BroadcastEvent</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/Broadcaster.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 10 ">Broadcaster.Event</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/Broadcaster.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 3 ">Broadcaster.Listener</a>
+            
+    
+            <a href="org/apache/kylin/rest/broadcaster/BroadcasterReceiveServlet.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 19 ">BroadcasterReceiveServlet</a>
+            
+    
+            <a href="org/apache/kylin/engine/spark/cube/BufferedCuboidWriter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 26 ">BufferedCuboidWriter</a>
+            
+    
+            <a href="org/apache/kylin/common/util/BufferedLogger.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 2 ">BufferedLogger</a>
+            
+    
+            <a href="org/apache/kylin/measure/BufferedMeasureCodec.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 43 , # Elements Covered - 32 ">BufferedMeasureCodec</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ByteArray.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 107 , # Elements Covered - 87 ">ByteArray</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ByteBufferBackedInputStream.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 10 ">ByteBufferBackedInputStream</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ByteBufferOutputStream.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">ByteBufferOutputStream</a>
+            
+    
+            <a href="org/apache/kylin/dict/ByteComparator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">ByteComparator</a>
+            
+    
+            <a href="org/apache/kylin/common/util/Bytes.html" class="tag"
+            style="font-size: 26px;color:#d9695f"
+            title="# Elements - 845 , # Elements Covered - 106 ">Bytes</a>
+            
+    
+            <a href="org/apache/kylin/common/util/Bytes.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 5 ">Bytes.LexicographicalComparerHolder</a>
+            
+    
+            <a href="org/apache/kylin/common/util/Bytes.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 93 , # Elements Covered - 86 ">Bytes.LexicographicalComparerHolder.UnsafeComparer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/BytesSplitter.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 78 , # Elements Covered - 35 ">BytesSplitter</a>
+            
+    
+            <a href="org/apache/kylin/common/util/BytesUtil.html" class="tag"
+            style="font-size: 18px;color:#e7a19b"
+            title="# Elements - 369 , # Elements Covered - 301 ">BytesUtil</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/CacheController.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 4 ">CacheController</a>
+            
+    
+            <a href="org/apache/kylin/dict/CacheDictionary.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 59 , # Elements Covered - 55 ">CacheDictionary</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/CacheService.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 66 , # Elements Covered - 47 ">CacheService</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/tool/CalciteParser.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 112 , # Elements Covered - 90 ">CalciteParser</a>
+            
+    
+            <a href="org/apache/calcite/prepare/CalcitePrepareImpl.html" class="tag"
+            style="font-size: 20px;color:#de7b72"
+            title="# Elements - 484 , # Elements Covered - 180 ">CalcitePrepareImpl</a>
+            
+    
+            <a href="org/apache/calcite/prepare/CalcitePrepareImpl.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 133 , # Elements Covered - 58 ">CalcitePrepareImpl.CalcitePreparingStmt</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/Candidate.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 16 ">Candidate</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/CaseInsensitiveStringCache.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">CaseInsensitiveStringCache</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/CaseTupleFilter.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 69 , # Elements Covered - 48 ">CaseTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/common/util/CheckUtil.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 28 ">CheckUtil</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ClassUtil.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 77 , # Elements Covered - 53 ">ClassUtil</a>
+            
+    
+            <a href="org/apache/kylin/common/util/CliCommandExecutor.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 82 , # Elements Covered - 34 ">CliCommandExecutor</a>
+            
+    
+            <a href="org/apache/kylin/common/metrics/metrics2/CodahaleMetrics.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 222 , # Elements Covered - 76 ">CodahaleMetrics</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/cardinality/ColumnCardinalityReducer.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 35 , # Elements Covered - 34 ">ColumnCardinalityReducer</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/ColumnDesc.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 152 , # Elements Covered - 94 ">ColumnDesc</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenConfig.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 61 , # Elements Covered - 61 ">ColumnGenConfig</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenerator.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 48 , # Elements Covered - 40 ">ColumnGenerator</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 15 ">ColumnGenerator.AddNullFilter</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 12 ">ColumnGenerator.DiscreteGen</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 4 ">ColumnGenerator.IDGen</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 18 ">ColumnGenerator.OrderFilter</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ColumnGenerator.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 94 , # Elements Covered - 84 ">ColumnGenerator.RandomGen</a>
+            
+    
+            <a href="org/apache/kylin/metadata/querymeta/ColumnMeta.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 118 , # Elements Covered - 118 ">ColumnMeta</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/ColumnRowType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 11 ">ColumnRowType</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/ColumnTupleFilter.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 64 , # Elements Covered - 45 ">ColumnTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/storage/translate/ColumnValueRange.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 132 , # Elements Covered - 54 ">ColumnValueRange</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/ComparatorEx.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 23 ">ComparatorEx</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/CompareTupleFilter.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 177 , # Elements Covered - 102 ">CompareTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/common/util/CompressionUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 15 ">CompressionUtils</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/ConcurrentDiskStore.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 99 , # Elements Covered - 71 ">ConcurrentDiskStore</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/ConcurrentDiskStore.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 78 , # Elements Covered - 52 ">ConcurrentDiskStore.Reader</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/ConcurrentDiskStore.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 26 ">ConcurrentDiskStore.Writer</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/ConstantTupleFilter.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 50 , # Elements Covered - 40 ">ConstantTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/common/coprocessor/CoprocessorProjector.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 45 , # Elements Covered - 25 ">CoprocessorProjector</a>
+            
+    
+            <a href="org/apache/kylin/measure/topn/Counter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 9 ">Counter</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/CreateFlatHiveTableStep.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 4 ">CreateFlatHiveTableStep</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/CreateHTableJob.html" class="tag"
+            style="font-size: 16px;color:#d04437"
+            title="# Elements - 236 , # Elements Covered - 22 ">CreateHTableJob</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeCapabilityChecker.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 137 , # Elements Covered - 59 ">CubeCapabilityChecker</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/CubeCodeSystem.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 93 , # Elements Covered - 70 ">CubeCodeSystem</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/CubeController.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 380 , # Elements Covered - 105 ">CubeController</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/CubeDesc.html" class="tag"
+            style="font-size: 26px;color:#89c495"
+            title="# Elements - 836 , # Elements Covered - 597 ">CubeDesc</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/CubeDesc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 5 ">CubeDesc.DeriveInfo</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/CubeDescController.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 10 ">CubeDescController</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeDescManager.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 194 , # Elements Covered - 122 ">CubeDescManager</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeDescManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 20 ">CubeDescManager.CubeDescSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/CubeDimEncMap.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 24 ">CubeDimEncMap</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/CubeGridTable.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">CubeGridTable</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/CubeHFileMapper.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 20 ">CubeHFileMapper</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeInstance.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="# Elements - 258 , # Elements Covered - 175 ">CubeInstance</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/CubeJoinedFlatTableDesc.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 80 , # Elements Covered - 58 ">CubeJoinedFlatTableDesc</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeManager.html" class="tag"
+            style="font-size: 21px;color:#f6c342"
+            title="# Elements - 582 , # Elements Covered - 393 ">CubeManager</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 15 ">CubeManager.CubeSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/CubeMetadataValidator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 6 ">CubeMetadataValidator</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/CubeRequest.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 40 , # Elements Covered - 37 ">CubeRequest</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/CubeScanRangePlanner.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 182 , # Elements Covered - 123 ">CubeScanRangePlanner</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeSegment.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="# Elements - 296 , # Elements Covered - 178 ">CubeSegment</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeSegmentAdvisor.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 41 , # Elements Covered - 41 ">CubeSegmentAdvisor</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/CubeService.html" class="tag"
+            style="font-size: 20px;color:#d9695f"
+            title="# Elements - 474 , # Elements Covered - 126 ">CubeService</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/CubeService.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 6 ">CubeService.HTableInfoSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/common/CubeStatsWriter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 15 ">CubeStatsWriter</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/cube/v2/CubeStorageQuery.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 2 ">CubeStorageQuery</a>
+            
+    
+            <a href="org/apache/kylin/cube/CubeUpdate.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 41 , # Elements Covered - 36 ">CubeUpdate</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/steps/CubingExecutableUtil.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 52 , # Elements Covered - 12 ">CubingExecutableUtil</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/CubingJob.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 164 , # Elements Covered - 29 ">CubingJob</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/Cuboid.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 167 , # Elements Covered - 114 ">Cuboid</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/CuboidCLI.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 120 , # Elements Covered - 93 ">CuboidCLI</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/steps/CuboidReducer.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 41 , # Elements Covered - 41 ">CuboidReducer</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/CuboidScheduler.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 44 , # Elements Covered - 38 ">CuboidScheduler</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/algorithm/CuboidStatsUtil.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 127 , # Elements Covered - 117 ">CuboidStatsUtil</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/CuboidToGridTableMapping.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 139 , # Elements Covered - 63 ">CuboidToGridTableMapping</a>
+            
+    
+            <a href="org/apache/kylin/common/util/DBUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 12 ">DBUtils</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/DFSFileTable.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 39 , # Elements Covered - 6 ">DFSFileTable</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/DFSFileTableReader.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 105 , # Elements Covered - 78 ">DFSFileTableReader</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/DFSFileTableReader.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 5 ">DFSFileTableReader.CsvRowReader</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/DFSFileTableReader.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 11 ">DFSFileTableReader.SeqRowReader</a>
+            
+    
+            <a href="org/apache/kylin/common/util/DaemonThreadFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">DaemonThreadFactory</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/DataModelDesc.html" class="tag"
+            style="font-size: 20px;color:#e7a19b"
+            title="# Elements - 504 , # Elements Covered - 333 ">DataModelDesc</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/DataModelManager.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 157 , # Elements Covered - 112 ">DataModelManager</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/DataModelManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 9 ">DataModelManager.DataModelSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/DataType.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="# Elements - 210 , # Elements Covered - 175 ">DataType</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/DataTypeSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 46 , # Elements Covered - 26 ">DataTypeSerializer</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/DatabaseDesc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 17 ">DatabaseDesc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DateDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 16 ">DateDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DateDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 11 ">DateDimEnc.DateDimValueCodec</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DateDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">DateDimEnc.Factory</a>
+            
+    
+            <a href="org/apache/kylin/common/util/DateFormat.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 78 , # Elements Covered - 67 ">DateFormat</a>
+            
+    
+            <a href="org/apache/kylin/dict/DateStrDictionary.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 59 , # Elements Covered - 28 ">DateStrDictionary</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/DateTimeSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 11 ">DateTimeSerializer</a>
+            
+    
+            <a href="org/apache/kylin/job/execution/DefaultChainedExecutable.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 120 , # Elements Covered - 87 ">DefaultChainedExecutable</a>
+            
+    
+            <a href="org/apache/kylin/job/impl/threadpool/DefaultContext.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 9 ">DefaultContext</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/DefaultCuboidScheduler.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="# Elements - 264 , # Elements Covered - 208 ">DefaultCuboidScheduler</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/DefaultGTComparator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">DefaultGTComparator</a>
+            
+    
+            <a href="org/apache/kylin/job/execution/DefaultOutput.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 42 , # Elements Covered - 25 ">DefaultOutput</a>
+            
+    
+            <a href="org/apache/kylin/job/impl/threadpool/DefaultScheduler.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 74 , # Elements Covered - 48 ">DefaultScheduler</a>
+            
+    
+            <a href="org/apache/kylin/job/impl/threadpool/DefaultScheduler.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 54 , # Elements Covered - 39 ">DefaultScheduler.FetcherRunner</a>
+            
+    
+            <a href="org/apache/kylin/job/impl/threadpool/DefaultScheduler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 9 ">DefaultScheduler.JobRunner</a>
+            
+    
+            <a href="org/apache/kylin/source/kafka/DefaultTimeParser.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 8 ">DefaultTimeParser</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/DenseRegister.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 75 , # Elements Covered - 62 ">DenseRegister</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictCodeSystem.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 5 ">DictCodeSystem</a>
+            
+    
+            <a href="org/apache/kylin/common/util/Dictionary.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 48 , # Elements Covered - 34 ">Dictionary</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/DictionaryDesc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 21 ">DictionaryDesc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DictionaryDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 54 , # Elements Covered - 30 ">DictionaryDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DictionaryDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 11 ">DictionaryDimEnc.DictionarySerializer</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryGenerator.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 53 , # Elements Covered - 48 ">DictionaryGenerator</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 17 ">DictionaryGenerator.DateDictBuilder</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 9 ">DictionaryGenerator.NumberTrieDictForestBuilder</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 9 ">DictionaryGenerator.StringTrieDictForestBuilder</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryGenerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 8 ">DictionaryGenerator.TimeDictBuilder</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryInfo.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 57 , # Elements Covered - 30 ">DictionaryInfo</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryInfoSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 20 ">DictionaryInfoSerializer</a>
+            
+    
+            <a href="org/apache/kylin/dict/DictionaryManager.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 274 , # Elements Covered - 139 ">DictionaryManager</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/rule/DictionaryRule.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 45 , # Elements Covered - 44 ">DictionaryRule</a>
+            
+    
+            <a href="org/apache/kylin/measure/dim/DimCountDistinctAggFunc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 13 ">DimCountDistinctAggFunc</a>
+            
+    
+            <a href="org/apache/kylin/measure/dim/DimCountDistinctAggFunc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 9 ">DimCountDistinctAggFunc.DimDistinctCounter</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/DimensionDesc.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 113 , # Elements Covered - 41 ">DimensionDesc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DimensionEncoding.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 19 ">DimensionEncoding</a>
+            
+    
+            <a href="org/apache/kylin/dimension/DimensionEncodingFactory.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 64 , # Elements Covered - 38 ">DimensionEncodingFactory</a>
+            
+    
+            <a href="org/apache/kylin/job/impl/threadpool/DistributedScheduler.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 103 , # Elements Covered - 2 ">DistributedScheduler</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/DomainObjectInfo.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 13 ">DomainObjectInfo</a>
+            
+    
+            <a href="org/apache/kylin/measure/topn/DoubleDeltaSerializer.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 132 , # Elements Covered - 123 ">DoubleDeltaSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/DoubleMaxAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 6 ">DoubleMaxAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/DoubleMinAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 6 ">DoubleMinAggregator</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/DoubleSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 5 ">DoubleSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/DoubleSumAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 4 ">DoubleSumAggregator</a>
+            
+    
+            <a href="org/apache/kylin/metadata/draft/Draft.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 19 ">Draft</a>
+            
+    
+            <a href="org/apache/kylin/metadata/draft/DraftManager.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 74 , # Elements Covered - 48 ">DraftManager</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/Driver.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 13 ">Driver</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/DynamicTupleFilter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 11 ">DynamicTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/engine/EngineFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 14 ">EngineFactory</a>
+            
+    
+            <a href="org/apache/kylin/rest/response/EnvelopeResponse.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 1 ">EnvelopeResponse</a>
+            
+    
+            <a href="org/apache/kylin/rest/response/ErrorResponse.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 12 ">ErrorResponse</a>
+            
+    
+            <a href="org/apache/kylin/job/dao/ExecutableDao.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 119 , # Elements Covered - 83 ">ExecutableDao</a>
+            
+    
+            <a href="org/apache/kylin/job/execution/ExecutableManager.html" class="tag"
+            style="font-size: 18px;color:#de7b72"
+            title="# Elements - 373 , # Elements Covered - 189 ">ExecutableManager</a>
+            
+    
+            <a href="org/apache/kylin/job/dao/ExecutableOutputPO.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 12 ">ExecutableOutputPO</a>
+            
+    
+            <a href="org/apache/kylin/job/dao/ExecutablePO.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 16 ">ExecutablePO</a>
+            
+    
+            <a href="org/apache/kylin/job/execution/ExecutableState.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 22 ">ExecutableState</a>
+            
+    
+            <a href="org/apache/kylin/job/exception/ExecuteException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 2 ">ExecuteException</a>
+            
+    
+            <a href="org/apache/kylin/job/execution/ExecuteResult.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 8 ">ExecuteResult</a>
+            
+    
+            <a href="org/apache/kylin/measure/extendedcolumn/ExtendedColumnMeasureType.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 162 , # Elements Covered - 55 ">ExtendedColumnMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/extendedcolumn/ExtendedColumnMeasureType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">ExtendedColumnMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/measure/extendedcolumn/ExtendedColumnSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 21 ">ExtendedColumnSerializer</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/ExternalAclProvider.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 13 ">ExternalAclProvider</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/ExternalFilterDesc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 2 ">ExternalFilterDesc</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/ExtractTupleFilter.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 60 , # Elements Covered - 8 ">ExtractTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/FileResourceStore.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 106 , # Elements Covered - 97 ">FileResourceStore</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/FilterOptimizeTransformer.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 101 , # Elements Covered - 58 ">FilterOptimizeTransformer</a>
+            
+    
+            <a href="org/apache/kylin/dimension/FixedLenDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 55 , # Elements Covered - 36 ">FixedLenDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/FixedLenDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">FixedLenDimEnc.Factory</a>
+            
+    
+            <a href="org/apache/kylin/dimension/FixedLenDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 2 ">FixedLenDimEnc.FixedLenSerializer</a>
+            
+    
+            <a href="org/apache/kylin/dimension/FixedLenHexDimEnc.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 137 , # Elements Covered - 119 ">FixedLenHexDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/FixedLenHexDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 19 ">FixedLenHexDimEnc.FixedLenSerializer</a>
+            
+    
+            <a href="org/apache/kylin/rest/exception/ForbiddenException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ForbiddenException</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/FunctionDesc.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 208 , # Elements Covered - 133 ">FunctionDesc</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/rule/FunctionRule.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 94 , # Elements Covered - 53 ">FunctionRule</a>
+            
+    
+            <a href="org/apache/kylin/cube/common/FuzzyValueCombination.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 71 , # Elements Covered - 62 ">FuzzyValueCombination</a>
+            
+    
+            <a href="org/apache/kylin/storage/translate/FuzzyValueCombination.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 71 , # Elements Covered - 69 ">FuzzyValueCombination</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTAggregateScanner.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 68 , # Elements Covered - 54 ">GTAggregateScanner</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTAggregateScanner.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 179 , # Elements Covered - 126 ">GTAggregateScanner.AggregationCache</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTAggregateScanner.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">GTAggregateScanner.AggregationCache.HavingFilterChecker</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTAggregateScanner.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 46 , # Elements Covered - 22 ">GTAggregateScanner.AggregationCache.HavingFilterCodeSys</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTAggregateScanner.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 2 ">GTAggregateScanner.AggregationCache.HavingFilterTuple</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTAggregateScanner.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 22 ">GTAggregateScanner.AggregationCache.ReturningRecord</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTBuilder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 16 ">GTBuilder</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/GTCubeStorageQueryBase.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 362 , # Elements Covered - 156 ">GTCubeStorageQueryBase</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/GTCubeStorageQueryRequest.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 9 ">GTCubeStorageQueryRequest</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTFilterScanner.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 66 , # Elements Covered - 52 ">GTFilterScanner</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTFilterScanner.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 48 , # Elements Covered - 41 ">GTFilterScanner.FilterResultCache</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTForwardingScanner.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">GTForwardingScanner</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTInfo.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 199 , # Elements Covered - 157 ">GTInfo</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTInfo.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 31 ">GTInfo.Builder</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTRecord.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 194 , # Elements Covered - 107 ">GTRecord</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTSampleCodeSystem.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 29 ">GTSampleCodeSystem</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTScanRange.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 83 , # Elements Covered - 14 ">GTScanRange</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTScanRequest.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="# Elements - 265 , # Elements Covered - 198 ">GTScanRequest</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTScanRequestBuilder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 74 , # Elements Covered - 73 ">GTScanRequestBuilder</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/memstore/GTSimpleMemStore.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 25 ">GTSimpleMemStore</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/memstore/GTSimpleMemStore.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 6 ">GTSimpleMemStore.Writer</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTUtil.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 41 , # Elements Covered - 41 ">GTUtil</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GTUtil.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 142 , # Elements Covered - 90 ">GTUtil.GTConvertDecorator</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/GlobalDictHDFSStore.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 164 , # Elements Covered - 106 ">GlobalDictHDFSStore</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/GlobalDictHDFSStore.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 43 , # Elements Covered - 40 ">GlobalDictHDFSStore.IndexFormatV1</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/GlobalDictHDFSStore.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 52 , # Elements Covered - 47 ">GlobalDictHDFSStore.IndexFormatV2</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/GlobalDictMetadata.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">GlobalDictMetadata</a>
+            
+    
+            <a href="org/apache/kylin/dict/global/GlobalDictStore.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">GlobalDictStore</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/GridTable.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 18 ">GridTable</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/HBaseColumnDesc.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 85 , # Elements Covered - 31 ">HBaseColumnDesc</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/HBaseColumnFamilyDesc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 6 ">HBaseColumnFamilyDesc</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/HBaseConnection.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 215 , # Elements Covered - 41 ">HBaseConnection</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/HBaseMROutput2Transition.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 8 ">HBaseMROutput2Transition</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/HBaseMRSteps.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 127 , # Elements Covered - 47 ">HBaseMRSteps</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/HBaseMappingDesc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 47 , # Elements Covered - 9 ">HBaseMappingDesc</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/HBaseStorage.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 18 ">HBaseStorage</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 12 ">HLLCAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCMeasureType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 30 ">HLLCMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCMeasureType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">HLLCMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 20 ">HLLCSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCounter.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="# Elements - 299 , # Elements Covered - 222 ">HLLCounter</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCounter.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 38 , # Elements Covered - 38 ">HLLCounter.HLLCSnapshot</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCounterOld.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 269 , # Elements Covered - 91 ">HLLCounterOld</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HLLCounterOld.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 22 ">HLLCounterOld.HLLCSnapshot</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/common/HadoopShellExecutable.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 8 ">HadoopShellExecutable</a>
+            
+    
+            <a href="org/apache/kylin/common/util/HadoopUtil.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 85 , # Elements Covered - 47 ">HadoopUtil</a>
+            
+    
+            <a href="org/apache/kylin/common/util/HiveCmdBuilder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 107 , # Elements Covered - 82 ">HiveCmdBuilder</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/HiveMRInput.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 2 ">HiveMRInput</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/HiveMRInput.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 96 , # Elements Covered - 89 ">HiveMRInput.BatchCubingInputSide</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/HiveMRInput.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 39 , # Elements Covered - 6 ">HiveMRInput.GarbageCollectionStep</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/HiveMRInput.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 70 , # Elements Covered - 6 ">HiveMRInput.RedistributeFlatHiveTableStep</a>
+            
+    
+            <a href="org/apache/kylin/source/adhocquery/HivePushDownConverter.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 131 , # Elements Covered - 93 ">HivePushDownConverter</a>
+            
+    
+            <a href="org/apache/kylin/source/hive/HiveSource.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 8 ">HiveSource</a>
+            
+    
+            <a href="org/apache/kylin/tool/HybridCubeCLI.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">HybridCubeCLI</a>
+            
+    
+            <a href="org/apache/kylin/rest/job/HybridCubeCLI.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 125 , # Elements Covered - 93 ">HybridCubeCLI</a>
+            
+    
+            <a href="org/apache/kylin/storage/hybrid/HybridInstance.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 168 , # Elements Covered - 95 ">HybridInstance</a>
+            
+    
+            <a href="org/apache/kylin/storage/hybrid/HybridManager.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 77 , # Elements Covered - 64 ">HybridManager</a>
+            
+    
+            <a href="org/apache/kylin/storage/hybrid/HybridManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 13 ">HybridManager.HybridSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/HyperLogLogPlusTable.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 30 ">HyperLogLogPlusTable</a>
+            
+    
+            <a href="org/apache/kylin/source/IReadableTable.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 63 , # Elements Covered - 37 ">IReadableTable.TableSignature</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/IRemoteClient.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">IRemoteClient.QueryResult</a>
+            
+    
+            <a href="org/apache/kylin/common/util/IdentityUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 17 ">IdentityUtils</a>
+            
+    
+            <a href="org/apache/kylin/job/exception/IllegalStateTranferException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 2 ">IllegalStateTranferException</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ImmutableBitSet.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 98 , # Elements Covered - 75 ">ImmutableBitSet</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ImplementationSwitch.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 33 , # Elements Covered - 29 ">ImplementationSwitch</a>
+            
+    
+            <a href="org/apache/kylin/rest/init/InitialTaskManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 10 ">InitialTaskManager</a>
+            
+    
+            <a href="org/apache/kylin/dimension/IntDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 50 , # Elements Covered - 36 ">IntDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/IntDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">IntDimEnc.Factory</a>
+            
+    
+            <a href="org/apache/kylin/dimension/IntDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 21 ">IntDimEnc.IntegerSerializer</a>
+            
+    
+            <a href="org/apache/kylin/dimension/IntegerDimEnc.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 69 , # Elements Covered - 49 ">IntegerDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/IntegerDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 19 ">IntegerDimEnc.IntegerSerializer</a>
+            
+    
+            <a href="org/apache/kylin/rest/exception/InternalErrorException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 4 ">InternalErrorException</a>
+            
+    
+            <a href="org/apache/kylin/dict/IterableDictionaryValueEnumerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 8 ">IterableDictionaryValueEnumerator</a>
+            
+    
+            <a href="org/apache/kylin/engine/spark/util/IteratorUtils.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 28 ">IteratorUtils</a>
+            
+    
+            <a href="org/apache/kylin/common/metrics/metrics2/JmxMetricsReporter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 6 ">JmxMetricsReporter</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/JobBuildRequest.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 16 ">JobBuildRequest</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/JobBuilderSupport.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 116 , # Elements Covered - 77 ">JobBuilderSupport</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/JobController.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 63 , # Elements Covered - 16 ">JobController</a>
+            
+    
+            <a href="org/apache/kylin/job/engine/JobEngineConfig.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 100 , # Elements Covered - 43 ">JobEngineConfig</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/common/JobInfoConverter.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 102 , # Elements Covered - 58 ">JobInfoConverter</a>
+            
+    
+            <a href="org/apache/kylin/job/JobInstance.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 86 , # Elements Covered - 24 ">JobInstance</a>
+            
+    
+            <a href="org/apache/kylin/job/JobInstance.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 102 , # Elements Covered - 22 ">JobInstance.JobStep</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/JobListRequest.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 25 ">JobListRequest</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/JobService.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 285 , # Elements Covered - 134 ">JobService</a>
+            
+    
+            <a href="org/apache/kylin/job/constant/JobStatusEnum.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 2 ">JobStatusEnum</a>
+            
+    
+            <a href="org/apache/kylin/job/constant/JobStepStatusEnum.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 2 ">JobStepStatusEnum</a>
+            
+    
+            <a href="org/apache/kylin/job/constant/JobTimeFilterEnum.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 10 ">JobTimeFilterEnum</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/JoinDesc.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 150 , # Elements Covered - 65 ">JoinDesc</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/JoinTableDesc.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 63 , # Elements Covered - 16 ">JoinTableDesc</a>
+            
+    
+            <a href="org/apache/kylin/job/JoinedFlatTable.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 188 , # Elements Covered - 145 ">JoinedFlatTable</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/JoinsTree.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 84 , # Elements Covered - 63 ">JoinsTree</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/JoinsTree.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 9 ">JoinsTree.Chain</a>
+            
+    
+            <a href="org/apache/kylin/common/metrics/metrics2/JsonFileMetricsReporter.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 49 , # Elements Covered - 35 ">JsonFileMetricsReporter</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/JsonSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">JsonSerializer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/JsonUtil.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 15 ">JsonUtil</a>
+            
+    
+            <a href="org/apache/kylin/source/kafka/config/KafkaConsumerProperties.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 84 , # Elements Covered - 60 ">KafkaConsumerProperties</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/KeyValueCreator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 19 ">KeyValueCreator</a>
+            
+    
+            <a href="org/apache/kylin/query/util/KeywordDefaultDirtyHack.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">KeywordDefaultDirtyHack</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/KylinAclPermissionEvaluator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 59 , # Elements Covered - 9 ">KylinAclPermissionEvaluator</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/KylinAuthenticationProvider.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 5 ">KylinAuthenticationProvider</a>
+            
+    
+            <a href="org/apache/kylin/common/KylinConfig.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 255 , # Elements Covered - 138 ">KylinConfig</a>
+            
+    
+            <a href="org/apache/kylin/common/KylinConfigBase.html" class="tag"
+            style="font-size: 23px;color:#e7a19b"
+            title="# Elements - 693 , # Elements Covered - 362 ">KylinConfigBase</a>
+            
+    
+            <a href="org/apache/kylin/tool/KylinConfigCLI.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 25 ">KylinConfigCLI</a>
+            
+    
+            <a href="org/apache/kylin/common/KylinConfigCannotInitException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">KylinConfigCannotInitException</a>
+            
+    
+            <a href="org/apache/kylin/common/KylinConfigExt.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 24 ">KylinConfigExt</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinConnection.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 58 , # Elements Covered - 43 ">KylinConnection</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinJdbcFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 16 ">KylinJdbcFactory</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinJdbcFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">KylinJdbcFactory.Version41</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/KylinMapper.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 20 ">KylinMapper</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinMeta.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 144 , # Elements Covered - 63 ">KylinMeta</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinMeta.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 5 ">KylinMeta.KMetaCatalog</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinMeta.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 13 , # Elements Covered - 7 ">KylinMeta.KMetaProject</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinMeta.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">KylinMeta.KMetaSchema</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinMeta.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 3 ">KylinMeta.KMetaTable</a>
+            
+    
+            <a href="org/apache/kylin/common/metrics/metrics2/KylinObjectNameFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 6 ">KylinObjectNameFactory</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinPreparedStatement.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 48 , # Elements Covered - 11 ">KylinPreparedStatement</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/KylinReducer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 47 , # Elements Covered - 20 ">KylinReducer</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinResultSet.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 30 , # Elements Covered - 28 ">KylinResultSet</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/KylinStatement.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">KylinStatement</a>
+            
+    
+            <a href="org/apache/kylin/common/KylinVersion.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 113 , # Elements Covered - 64 ">KylinVersion</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/LogicalTupleFilter.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 88 , # Elements Covered - 57 ">LogicalTupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/LongMaxAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 6 ">LongMaxAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/LongMinAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 6 ">LongMinAggregator</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/LongSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 13 ">LongSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/basic/LongSumAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 8 ">LongSumAggregator</a>
+            
+    
+            <a href="org/apache/kylin/dict/lookup/LookupStringTable.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 49 , # Elements Covered - 34 ">LookupStringTable</a>
+            
+    
+            <a href="org/apache/kylin/dict/lookup/LookupTable.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 101 , # Elements Covered - 77 ">LookupTable</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/MRBatchCubingEngine2.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 6 ">MRBatchCubingEngine2</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/MRUtil.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 5 ">MRUtil</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/ManagedUser.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 117 , # Elements Covered - 28 ">ManagedUser</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/ManagedUser.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">ManagedUser.SimpleGrantedAuthorityDeserializer</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/ManagedUser.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">ManagedUser.SimpleGrantedAuthoritySerializer</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/common/MapReduceExecutable.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 161 , # Elements Covered - 10 ">MapReduceExecutable</a>
+            
+    
+            <a href="org/apache/kylin/common/util/MathUtil.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 5 ">MathUtil</a>
+            
+    
+            <a href="org/apache/kylin/measure/MeasureAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 8 ">MeasureAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/MeasureAggregators.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 65 , # Elements Covered - 34 ">MeasureAggregators</a>
+            
+    
+            <a href="org/apache/kylin/measure/MeasureCodec.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 48 , # Elements Covered - 35 ">MeasureCodec</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/MeasureDesc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 39 , # Elements Covered - 12 ">MeasureDesc</a>
+            
+    
+            <a href="org/apache/kylin/measure/MeasureType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 5 ">MeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/MeasureTypeFactory.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 99 , # Elements Covered - 74 ">MeasureTypeFactory</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/MemDiskStore.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 41 , # Elements Covered - 25 ">MemDiskStore</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/MemDiskStore.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 58 , # Elements Covered - 41 ">MemDiskStore.DiskPart</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/MemDiskStore.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">MemDiskStore.MemChunk</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/MemDiskStore.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 188 , # Elements Covered - 138 ">MemDiskStore.MemPart</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/MemDiskStore.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 104 , # Elements Covered - 72 ">MemDiskStore.Reader</a>
+            
+    
+            <a href="org/apache/kylin/cube/inmemcubing/MemDiskStore.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 61 , # Elements Covered - 53 ">MemDiskStore.Writer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/MemoryBudgetController.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 177 , # Elements Covered - 124 ">MemoryBudgetController</a>
+            
+    
+            <a href="org/apache/kylin/common/util/MemoryBudgetController.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">MemoryBudgetController.ConsumerEntry</a>
+            
+    
+            <a href="org/apache/kylin/common/util/MemoryBudgetController.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">MemoryBudgetController.NotEnoughBudgetException</a>
+            
+    
+            <a href="org/apache/kylin/rest/msg/Message.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 189 , # Elements Covered - 15 ">Message</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/MetaRequest.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 4 ">MetaRequest</a>
+            
+    
+            <a href="org/apache/kylin/common/metrics/common/MetricsFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 9 ">MetricsFactory</a>
+            
+    
+            <a href="org/apache/kylin/common/metrics/common/MetricsNameBuilder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">MetricsNameBuilder</a>
+            
+    
+            <a href="org/apache/kylin/job/lock/MockJobLock.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">MockJobLock</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/ModelDataGenerator.html" class="tag"
+            style="font-size: 15px;color:#de7b72"
+            title="# Elements - 218 , # Elements Covered - 197 ">ModelDataGenerator</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/ModelDimensionDesc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 44 , # Elements Covered - 23 ">ModelDimensionDesc</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/ModelService.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 272 , # Elements Covered - 92 ">ModelService</a>
+            
+    
+            <a href="org/apache/kylin/rest/msg/MsgPicker.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 8 ">MsgPicker</a>
+            
+    
+            <a href="org/apache/kylin/dict/MultipleDictionaryValueEnumerator.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 39 , # Elements Covered - 36 ">MultipleDictionaryValueEnumerator</a>
+            
+    
+            <a href="org/apache/kylin/rest/exception/NotFoundException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">NotFoundException</a>
+            
+    
+            <a href="org/apache/kylin/dict/Number2BytesConverter.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 40 , # Elements Covered - 38 ">Number2BytesConverter</a>
+            
+    
+            <a href="org/apache/kylin/dict/Number2BytesConverter.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 129 , # Elements Covered - 117 ">Number2BytesConverter.NumberBytesCodec</a>
+            
+    
+            <a href="org/apache/kylin/dict/NumberDictionary.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 4 ">NumberDictionary</a>
+            
+    
+            <a href="org/apache/kylin/dict/NumberDictionary2.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 5 ">NumberDictionary2</a>
+            
+    
+            <a href="org/apache/kylin/dict/NumberDictionaryBuilder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">NumberDictionaryBuilder</a>
+            
+    
+            <a href="org/apache/kylin/dict/NumberDictionaryForestBuilder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">NumberDictionaryForestBuilder</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPAuthentication.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 9 ">OLAPAuthentication</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPContext.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 77 , # Elements Covered - 60 ">OLAPContext</a>
+            
+    
+            <a href="org/apache/kylin/query/enumerator/OLAPEnumerator.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 77 , # Elements Covered - 27 ">OLAPEnumerator</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPProjectRel.html" class="tag"
+            style="font-size: 16px;color:#d5584c"
+            title="# Elements - 238 , # Elements Covered - 86 ">OLAPProjectRel</a>
+            
+    
+            <a href="org/apache/kylin/query/optrule/OLAPProjectRule.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 6 ">OLAPProjectRule</a>
+            
+    
+            <a href="org/apache/kylin/query/enumerator/OLAPQuery.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 10 ">OLAPQuery</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPRel.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 17 ">OLAPRel.JavaImplementor</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPRel.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 60 , # Elements Covered - 30 ">OLAPRel.OLAPImplementor</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPRel.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 17 ">OLAPRel.RewriteImplementor</a>
+            
+    
+            <a href="org/apache/kylin/query/schema/OLAPSchema.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 46 , # Elements Covered - 30 ">OLAPSchema</a>
+            
+    
+            <a href="org/apache/kylin/query/schema/OLAPSchemaFactory.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 69 , # Elements Covered - 62 ">OLAPSchemaFactory</a>
+            
+    
+            <a href="org/apache/kylin/query/schema/OLAPTable.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 158 , # Elements Covered - 128 ">OLAPTable</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPTableScan.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 174 , # Elements Covered - 120 ">OLAPTableScan</a>
+            
+    
+            <a href="org/apache/kylin/query/relnode/OLAPToEnumerableConverter.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 53 , # Elements Covered - 41 ">OLAPToEnumerableConverter</a>
+            
+    
+            <a href="org/apache/kylin/query/optrule/OLAPToEnumerableConverterRule.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 3 ">OLAPToEnumerableConverterRule</a>
+            
+    
+            <a href="org/apache/kylin/dimension/OneMoreByteVLongDimEnc.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 60 , # Elements Covered - 42 ">OneMoreByteVLongDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dimension/OneMoreByteVLongDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 27 , # Elements Covered - 19 ">OneMoreByteVLongDimEnc.VLongSerializer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/OptionsHelper.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 9 ">OptionsHelper</a>
+            
+    
+            <a href="org/apache/kylin/common/util/OrderedProperties.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 97 , # Elements Covered - 18 ">OrderedProperties</a>
+            
+    
+            <a href="org/apache/kylin/common/util/OrderedProperties.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 4 ">OrderedProperties.CustomProperties</a>
+            
+    
+            <a href="org/apache/kylin/common/util/Pair.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 19 ">Pair</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/ParameterDesc.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 127 , # Elements Covered - 72 ">ParameterDesc</a>
+            
+    
+            <a href="org/apache/kylin/common/util/PartialSorter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">PartialSorter</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/PartitionDesc.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 73 , # Elements Covered - 60 ">PartitionDesc</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/PartitionDesc.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 81 , # Elements Covered - 59 ">PartitionDesc.DefaultPartitionConditionBuilder</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/PasswordPlaceholderConfigurer.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 65 , # Elements Covered - 25 ">PasswordPlaceholderConfigurer</a>
+            
+    
+            <a href="org/apache/kylin/job/common/PatternedLogger.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 74 , # Elements Covered - 2 ">PatternedLogger</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/PeekingImpl.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 23 , # Elements Covered - 20 ">PeekingImpl</a>
+            
+    
+            <a href="org/apache/kylin/measure/percentile/PercentileAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 10 ">PercentileAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/percentile/PercentileCounter.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 43 , # Elements Covered - 34 ">PercentileCounter</a>
+            
+    
+            <a href="org/apache/kylin/engine/spark/util/PercentileCounterSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 17 ">PercentileCounterSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/percentile/PercentileMeasureType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 6 ">PercentileMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/percentile/PercentileMeasureType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">PercentileMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/measure/percentile/PercentileSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 20 ">PercentileSerializer</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/PrepareSqlRequest.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 4 ">PrepareSqlRequest</a>
+            
+    
+            <a href="org/apache/calcite/tools/Programs.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 85 , # Elements Covered - 41 ">Programs</a>
+            
+    
+            <a href="org/apache/calcite/tools/Programs.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 5 ">Programs.DecorrelateProgram</a>
+            
+    
+            <a href="org/apache/calcite/tools/Programs.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">Programs.SequenceProgram</a>
+            
+    
+            <a href="org/apache/calcite/tools/Programs.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">Programs.TrimFieldsProgram</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/ProjectController.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 77 , # Elements Covered - 44 ">ProjectController</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/ProjectInstance.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 148 , # Elements Covered - 93 ">ProjectInstance</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/ProjectL2Cache.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 197 , # Elements Covered - 137 ">ProjectL2Cache</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/ProjectL2Cache.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">ProjectL2Cache.ProjectCache</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/ProjectL2Cache.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">ProjectL2Cache.TableCache</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/ProjectManager.html" class="tag"
+            style="font-size: 17px;color:#de7b72"
+            title="# Elements - 312 , # Elements Covered - 209 ">ProjectManager</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/ProjectManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 7 ">ProjectManager.ProjectSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/ProjectRequest.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">ProjectRequest</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/ProjectService.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 114 , # Elements Covered - 50 ">ProjectService</a>
+            
+    
+            <a href="org/apache/kylin/query/util/PushDownUtil.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 91 , # Elements Covered - 29 ">PushDownUtil</a>
+            
+    
+            <a href="org/apache/kylin/query/util/PushDownUtil.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 52 , # Elements Covered - 35 ">PushDownUtil.FromTablesVisitor</a>
+            
+    
+            <a href="org/apache/kylin/query/security/QuerACLTestUtil.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">QuerACLTestUtil</a>
+            
+    
+            <a href="org/apache/kylin/query/QueryConnection.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">QueryConnection</a>
+            
+    
+            <a href="org/apache/kylin/common/QueryContext.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 17 ">QueryContext</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/QueryController.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 46 , # Elements Covered - 7 ">QueryController</a>
+            
+    
+            <a href="org/apache/kylin/query/QueryDataSource.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 48 , # Elements Covered - 43 ">QueryDataSource</a>
+            
+    
+            <a href="org/apache/kylin/query/QueryDataSource.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">QueryDataSource.WrappedDataSource</a>
+            
+    
+            <a href="org/apache/kylin/query/security/QueryInterceptor.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 13 ">QueryInterceptor</a>
+            
+    
+            <a href="org/apache/kylin/query/security/QueryInterceptorUtil.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 7 ">QueryInterceptorUtil</a>
+            
+    
+            <a href="org/apache/kylin/rest/metrics/QueryMetrics.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 42 , # Elements Covered - 40 ">QueryMetrics</a>
+            
+    
+            <a href="org/apache/kylin/rest/metrics/QueryMetrics2Facade.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 45 , # Elements Covered - 42 ">QueryMetrics2Facade</a>
+            
+    
+            <a href="org/apache/kylin/rest/metrics/QueryMetricsFacade.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 61 , # Elements Covered - 56 ">QueryMetricsFacade</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/QueryRouter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 47 , # Elements Covered - 32 ">QueryRouter</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/QueryService.html" class="tag"
+            style="font-size: 23px;color:#de7b72"
+            title="# Elements - 667 , # Elements Covered - 224 ">QueryService</a>
+            
+    
+            <a href="org/apache/kylin/query/util/QueryUtil.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 88 , # Elements Covered - 72 ">QueryUtil</a>
+            
+    
+            <a href="org/apache/kylin/query/util/QueryUtil.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 29 ">QueryUtil.DefaultQueryTransformer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/RandomSampler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 24 , # Elements Covered - 20 ">RandomSampler</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/RangeKeyDistributionJob.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 50 , # Elements Covered - 42 ">RangeKeyDistributionJob</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/RangeKeyDistributionMapper.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 17 ">RangeKeyDistributionMapper</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/RangeKeyDistributionReducer.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 63 , # Elements Covered - 43 ">RangeKeyDistributionReducer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/RangeUtil.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 166 , # Elements Covered - 112 ">RangeUtil</a>
+            
+    
+            <a href="org/apache/kylin/measure/raw/RawAggregator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 11 ">RawAggregator</a>
+            
+    
+            <a href="org/apache/kylin/measure/raw/RawMeasureType.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 130 , # Elements Covered - 4 ">RawMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/raw/RawMeasureType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">RawMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/cube/RawQueryLastHacker.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 32 , # Elements Covered - 28 ">RawQueryLastHacker</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/RawResource.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">RawResource</a>
+            
+    
+            <a href="org/apache/kylin/measure/raw/RawSerializer.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 57 , # Elements Covered - 43 ">RawSerializer</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/RealizationCheck.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 47 , # Elements Covered - 27 ">RealizationCheck</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/RealizationCheck.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 157 , # Elements Covered - 42 ">RealizationCheck.IncapableReason</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/RealizationChooser.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 146 , # Elements Covered - 82 ">RealizationChooser</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/RealizationChooser.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 10 ">RealizationChooser.RealizationCost</a>
+            
+    
+            <a href="org/apache/kylin/metadata/project/RealizationEntry.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 44 , # Elements Covered - 15 ">RealizationEntry</a>
+            
+    
+            <a href="org/apache/kylin/metadata/realization/RealizationRegistry.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 61 , # Elements Covered - 50 ">RealizationRegistry</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/rules/RealizationSortRule.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">RealizationSortRule</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/RecordComparator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 16 ">RecordComparator</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/RecordComparators.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 53 , # Elements Covered - 53 ">RecordComparators</a>
+            
+    
+            <a href="org/apache/calcite/sql2rel/RelFieldTrimmer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 3 ">RelFieldTrimmer</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/rules/RemoveBlackoutRealizationsRule.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 13 ">RemoveBlackoutRealizationsRule</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/rules/RemoveUncapableRealizationsRule.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 9 ">RemoveUncapableRealizationsRule</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/ResourceStore.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 204 , # Elements Covered - 155 ">ResourceStore</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/ResourceStore.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 43 , # Elements Covered - 40 ">ResourceStore.Checkpoint</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/ResourceTool.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 179 , # Elements Covered - 16 ">ResourceTool</a>
+            
+    
+            <a href="org/apache/kylin/common/restclient/RestClient.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 195 , # Elements Covered - 46 ">RestClient</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/ResultLevel.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">ResultLevel</a>
+            
+    
+            <a href="org/apache/kylin/measure/bitmap/RoaringBitmapCounter.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 70 , # Elements Covered - 51 ">RoaringBitmapCounter</a>
+            
+    
+            <a href="org/apache/kylin/measure/bitmap/RoaringBitmapCounterFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 9 ">RoaringBitmapCounterFactory</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/RootPersistentEntity.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 59 , # Elements Covered - 46 ">RootPersistentEntity</a>
+            
+    
+            <a href="org/apache/kylin/query/routing/RoutingRule.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 54 , # Elements Covered - 23 ">RoutingRule</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/rule/RowKeyAttrRule.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 15 ">RowKeyAttrRule</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/RowKeyColDesc.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 86 , # Elements Covered - 46 ">RowKeyColDesc</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/RowKeyColumnIO.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 14 ">RowKeyColumnIO</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/RowKeyColumnOrder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 60 , # Elements Covered - 28 ">RowKeyColumnOrder</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/RowKeyColumnOrder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">RowKeyColumnOrder.StringOrder</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/RowKeyDecoder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 43 , # Elements Covered - 28 ">RowKeyDecoder</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/RowKeyDesc.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 60 , # Elements Covered - 50 ">RowKeyDesc</a>
+            
+    
+            <a href="org/apache/kylin/cube/kv/RowKeyEncoder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 102 , # Elements Covered - 50 ">RowKeyEncoder</a>
+            
+    
+            <a href="org/apache/kylin/cube/common/RowKeySplitter.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 61 , # Elements Covered - 50 ">RowKeySplitter</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/steps/RowValueDecoder.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 72 , # Elements Covered - 29 ">RowValueDecoder</a>
+            
+    
+            <a href="org/apache/kylin/metadata/realization/SQLDigest.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 24 ">SQLDigest</a>
+            
+    
+            <a href="org/apache/kylin/rest/request/SQLRequest.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 101 , # Elements Covered - 38 ">SQLRequest</a>
+            
+    
+            <a href="org/apache/kylin/rest/response/SQLResponse.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 67 , # Elements Covered - 54 ">SQLResponse</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/json/SQLResponseStub.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 47 , # Elements Covered - 27 ">SQLResponseStub</a>
+            
+    
+            <a href="org/apache/kylin/jdbc/json/SQLResponseStub.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 77 , # Elements Covered - 43 ">SQLResponseStub.ColumnMetaStub</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/steps/SaveStatisticsStep.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 25 , # Elements Covered - 2 ">SaveStatisticsStep</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/ScanRangePlannerBase.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 101 , # Elements Covered - 88 ">ScanRangePlannerBase</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/ScanRangePlannerBase.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 99 , # Elements Covered - 51 ">ScanRangePlannerBase.ColumnRange</a>
+            
+    
+            <a href="org/apache/kylin/job/SchedulerFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 7 ">SchedulerFactory</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/SegmentRange.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 76 , # Elements Covered - 42 ">SegmentRange</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/SegmentRange.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 87 , # Elements Covered - 60 ">SegmentRange.Endpoint</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/SegmentRange.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">SegmentRange.TSRange</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/Segments.html" class="tag"
+            style="font-size: 17px;color:#e28e87"
+            title="# Elements - 338 , # Elements Covered - 262 ">Segments</a>
+            
+    
+            <a href="org/apache/kylin/metadata/querymeta/SelectedColumnMeta.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 59 , # Elements Covered - 33 ">SelectedColumnMeta</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/steps/SelfDefineSortableKey.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 64 , # Elements Covered - 38 ">SelfDefineSortableKey</a>
+            
+    
+            <a href="org/apache/kylin/common/util/SetThreadName.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">SetThreadName</a>
+            
+    
+            <a href="org/apache/kylin/common/util/ShardingHash.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 34 , # Elements Covered - 8 ">ShardingHash</a>
+            
+    
+            <a href="org/apache/kylin/job/common/ShellExecutable.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 6 ">ShellExecutable</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/SidInfo.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 14 ">SidInfo</a>
+            
+    
+            <a href="org/apache/kylin/metadata/cachesync/SingleValueCache.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 38 , # Elements Covered - 31 ">SingleValueCache</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/SingleValueRegister.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 68 , # Elements Covered - 49 ">SingleValueRegister</a>
+            
+    
+            <a href="org/apache/kylin/dict/lookup/SnapshotManager.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 124 , # Elements Covered - 37 ">SnapshotManager</a>
+            
+    
+            <a href="org/apache/kylin/dict/lookup/SnapshotTable.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 176 , # Elements Covered - 55 ">SnapshotTable</a>
+            
+    
+            <a href="org/apache/kylin/dict/lookup/SnapshotTableSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 9 ">SnapshotTableSerializer</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/SortedColumnDFSFile.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 58 , # Elements Covered - 44 ">SortedColumnDFSFile</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/SortedColumnDFSFileReader.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 50 , # Elements Covered - 41 ">SortedColumnDFSFileReader</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/SortedColumnDFSFileReader.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 17 ">SortedColumnDFSFileReader.ReaderBuffer</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/SortedIteratorMerger.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 19 ">SortedIteratorMerger</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/SortedIteratorMerger.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 14 ">SortedIteratorMerger.MergedIterator</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/SortedIteratorMergerWithLimit.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">SortedIteratorMergerWithLimit</a>
+            
+    
+            <a href="org/apache/kylin/storage/gtrecord/SortedIteratorMergerWithLimit.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 55 , # Elements Covered - 46 ">SortedIteratorMergerWithLimit.MergedIteratorWithLimit</a>
+            
+    
+            <a href="org/apache/kylin/source/SourceFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 18 , # Elements Covered - 12 ">SourceFactory</a>
+            
+    
+            <a href="org/apache/kylin/source/SourcePartition.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 37 , # Elements Covered - 27 ">SourcePartition</a>
+            
+    
+            <a href="org/apache/kylin/common/util/SoutLogger.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">SoutLogger</a>
+            
+    
+            <a href="org/apache/kylin/measure/hllc/SparseRegister.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 79 , # Elements Covered - 55 ">SparseRegister</a>
+            
+    
+            <a href="org/apache/kylin/common/util/SplittedBytes.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 3 , # Elements Covered - 3 ">SplittedBytes</a>
+            
+    
+            <a href="org/apache/calcite/sql2rel/SqlToRelConverter.html" class="tag"
+            style="font-size: 48px;color:#e28e87"
+            title="# Elements - 2,121 , # Elements Covered - 274 ">SqlToRelConverter</a>
+            
+    
+            <a href="org/apache/calcite/sql2rel/SqlToRelConverter.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="# Elements - 366 , # Elements Covered - 74 ">SqlToRelConverter.Blackboard</a>
+            
+    
+            <a href="org/apache/calcite/sql2rel/SqlToRelConverter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 21 ">SqlToRelConverter.ConfigBuilder</a>
+            
+    
+            <a href="org/apache/calcite/sql2rel/SqlToRelConverter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 22 ">SqlToRelConverter.ConfigImpl</a>
+            
+    
+            <a href="org/apache/calcite/sql2rel/SqlToRelConverter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">SqlToRelConverter.LookupContext</a>
+            
+    
+            <a href="org/apache/kylin/storage/StorageContext.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 106 , # Elements Covered - 41 ">StorageContext</a>
+            
+    
+            <a href="org/apache/kylin/storage/StorageFactory.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 12 ">StorageFactory</a>
+            
+    
+            <a href="org/apache/kylin/common/StorageURL.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 129 , # Elements Covered - 88 ">StorageURL</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/rule/StreamingCubeRule.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 35 , # Elements Covered - 5 ">StreamingCubeRule</a>
+            
+    
+            <a href="org/apache/kylin/common/util/StreamingMessageRow.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 7 ">StreamingMessageRow</a>
+            
+    
+            <a href="org/apache/kylin/source/kafka/StreamingParser.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 75 , # Elements Covered - 17 ">StreamingParser</a>
+            
+    
+            <a href="org/apache/kylin/dict/StringBytesConverter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">StringBytesConverter</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/StringCodeSystem.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">StringCodeSystem</a>
+            
+    
+            <a href="org/apache/kylin/common/persistence/StringEntity.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 15 ">StringEntity</a>
+            
+    
+            <a href="org/apache/kylin/metadata/datatype/StringSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 20 , # Elements Covered - 14 ">StringSerializer</a>
+            
+    
+            <a href="org/apache/kylin/common/util/StringSplitter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 11 ">StringSplitter</a>
+            
+    
+            <a href="org/apache/kylin/common/util/StringUtil.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 151 , # Elements Covered - 26 ">StringUtil</a>
+            
+    
+            <a href="org/apache/kylin/metadata/acl/TableACL.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 75 , # Elements Covered - 70 ">TableACL</a>
+            
+    
+            <a href="org/apache/kylin/metadata/acl/TableACL.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 12 ">TableACL.TableBlackList</a>
+            
+    
+            <a href="org/apache/kylin/metadata/acl/TableACLManager.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 84 , # Elements Covered - 65 ">TableACLManager</a>
+            
+    
+            <a href="org/apache/kylin/metadata/acl/TableACLManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 3 ">TableACLManager.TableACLSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/TableACLService.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 26 ">TableACLService</a>
+            
+    
+            <a href="org/apache/kylin/dict/TableColumnValueEnumerator.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 29 , # Elements Covered - 22 ">TableColumnValueEnumerator</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/TableDesc.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 198 , # Elements Covered - 98 ">TableDesc</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/TableExtDesc.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 112 , # Elements Covered - 41 ">TableExtDesc</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/TableExtDesc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 24 ">TableExtDesc.ColumnStats</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/TableGenConfig.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 19 ">TableGenConfig</a>
+            
+    
+            <a href="org/apache/kylin/rest/security/TableInterceptor.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 6 ">TableInterceptor</a>
+            
+    
+            <a href="org/apache/kylin/metadata/querymeta/TableMeta.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 59 , # Elements Covered - 59 ">TableMeta</a>
+            
+    
+            <a href="org/apache/kylin/metadata/TableMetadataManager.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="# Elements - 247 , # Elements Covered - 186 ">TableMetadataManager</a>
+            
+    
+            <a href="org/apache/kylin/metadata/TableMetadataManager.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 17 , # Elements Covered - 10 ">TableMetadataManager.SrcTableSyncListener</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/TableRef.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 71 , # Elements Covered - 53 ">TableRef</a>
+            
+    
+            <a href="org/apache/kylin/rest/util/TableauInterceptor.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 31 , # Elements Covered - 26 ">TableauInterceptor</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/TblColRef.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 158 , # Elements Covered - 131 ">TblColRef</a>
+            
+    
+            <a href="org/apache/kylin/metadata/model/TblColRef.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">TblColRef.InnerDataTypeEnum</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/TimeConditionLiteralsReplacer.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 48 , # Elements Covered - 36 ">TimeConditionLiteralsReplacer</a>
+            
+    
+            <a href="org/apache/kylin/dimension/TimeDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 7 ">TimeDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/dict/TimeStrDictionary.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 43 , # Elements Covered - 23 ">TimeStrDictionary</a>
+            
+    
+            <a href="org/apache/kylin/common/util/TimeUtil.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 34 , # Elements Covered - 34 ">TimeUtil</a>
+            
+    
+            <a href="org/apache/kylin/source/kafka/TimedJsonStreamParser.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 83 , # Elements Covered - 72 ">TimedJsonStreamParser</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/TooManyCuboidException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">TooManyCuboidException</a>
+            
+    
+            <a href="org/apache/kylin/measure/topn/TopNCounter.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 130 , # Elements Covered - 109 ">TopNCounter</a>
+            
+    
+            <a href="org/apache/kylin/measure/topn/TopNCounterSerializer.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 54 , # Elements Covered - 39 ">TopNCounterSerializer</a>
+            
+    
+            <a href="org/apache/kylin/measure/topn/TopNMeasureType.html" class="tag"
+            style="font-size: 17px;color:#d04437"
+            title="# Elements - 306 , # Elements Covered - 28 ">TopNMeasureType</a>
+            
+    
+            <a href="org/apache/kylin/measure/topn/TopNMeasureType.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 8 ">TopNMeasureType.Factory</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/TreeCuboidScheduler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 9 ">TreeCuboidScheduler.CuboidCostComparator</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/TreeCuboidScheduler.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 103 , # Elements Covered - 92 ">TreeCuboidScheduler.CuboidTree</a>
+            
+    
+            <a href="org/apache/kylin/cube/cuboid/TreeCuboidScheduler.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 40 , # Elements Covered - 5 ">TreeCuboidScheduler.TreeNode</a>
+            
+    
+            <a href="org/apache/kylin/dict/TrieDictionary.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="# Elements - 275 , # Elements Covered - 211 ">TrieDictionary</a>
+            
+    
+            <a href="org/apache/kylin/dict/TrieDictionaryBuilder.html" class="tag"
+            style="font-size: 17px;color:#e28e87"
+            title="# Elements - 307 , # Elements Covered - 271 ">TrieDictionaryBuilder</a>
+            
+    
+            <a href="org/apache/kylin/dict/TrieDictionaryBuilder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 9 ">TrieDictionaryBuilder.CompleteParts</a>
+            
+    
+            <a href="org/apache/kylin/dict/TrieDictionaryBuilder.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 10 ">TrieDictionaryBuilder.Node</a>
+            
+    
+            <a href="org/apache/kylin/dict/TrieDictionaryForest.html" class="tag"
+            style="font-size: 17px;color:#e28e87"
+            title="# Elements - 305 , # Elements Covered - 273 ">TrieDictionaryForest</a>
+            
+    
+            <a href="org/apache/kylin/dict/TrieDictionaryForestBuilder.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 85 , # Elements Covered - 81 ">TrieDictionaryForestBuilder</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/TrimmedCubeCodeSystem.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 61 , # Elements Covered - 50 ">TrimmedCubeCodeSystem</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/TrimmedDimEnc.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 15 , # Elements Covered - 9 ">TrimmedDimEnc</a>
+            
+    
+            <a href="org/apache/kylin/cube/gridtable/TrimmedDimensionSerializer.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 4 ">TrimmedDimensionSerializer</a>
+            
+    
+            <a href="org/apache/kylin/metadata/tuple/Tuple.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 154 , # Elements Covered - 21 ">Tuple</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/TupleFilter.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 153 , # Elements Covered - 113 ">TupleFilter</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/TupleFilter.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 4 ">TupleFilter.FilterOperatorEnum</a>
+            
+    
+            <a href="org/apache/kylin/metadata/filter/TupleFilterSerializer.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 139 , # Elements Covered - 110 ">TupleFilterSerializer</a>
+            
+    
+            <a href="org/apache/kylin/metadata/tuple/TupleInfo.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 52 , # Elements Covered - 30 ">TupleInfo</a>
+            
+    
+            <a href="org/apache/kylin/gridtable/UnitTestSupport.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 77 , # Elements Covered - 77 ">UnitTestSupport</a>
+            
+    
+            <a href="org/apache/kylin/engine/mr/steps/UpdateCubeInfoAfterBuildStep.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 53 , # Elements Covered - 2 ">UpdateCubeInfoAfterBuildStep</a>
+            
+    
+            <a href="org/apache/kylin/rest/controller/UserController.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 11 ">UserController</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/UserGrantedAuthority.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 42 , # Elements Covered - 7 ">UserGrantedAuthority</a>
+            
+    
+            <a href="org/apache/kylin/rest/service/UserService.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 69 , # Elements Covered - 51 ">UserService</a>
+            
+    
+            <a href="org/apache/kylin/source/datagen/Util.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 42 , # Elements Covered - 40 ">Util</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/ValidateContext.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 21 , # Elements Covered - 19 ">ValidateContext</a>
+            
+    
+            <a href="org/apache/kylin/cube/model/validation/ValidateContext.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 5 ">ValidateContext.Result</a>
+            
+    
+            <a href="org/apache/kylin/query/udf/VersionUDF.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">VersionUDF</a>
+            
+    
+            <a href="org/apache/kylin/storage/hbase/util/ZookeeperAclBuilder.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 50 , # Elements Covered - 39 ">ZookeeperAclBuilder</a>
+           </div>
+   
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.2.1
+                on Wed Dec 13 2017 10:25:03 PST using coverage data from Wed Dec 13 2017 10:24:58 PST.
+            </li>
+        </ul>
+        <ul>
+            <li>Clover free edition. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

@@ -410,13 +410,9 @@ public class AggregationGroup implements Serializable {
                     }
                 }
             }
-            if (getJoints().size() > 0) {
-                cuboidID = cuboidID | Collections.min(getJoints(), Cuboid.cuboidSelectComparator);
-            }
-            if (!isOnTree(cuboidID)) {
-                // kylin.cube.aggrgroup.is-mandatory-only-valid can be false
-                return null;
-            }
+
+            cuboidID = cuboidID | Collections.min(getJoints(), Cuboid.cuboidSelectComparator);
+            Preconditions.checkState(isOnTree(cuboidID));
         }
         return cuboidID;
     }

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.kylin.rest.controller.CubeControllerTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.776 sec - in org.apache.kylin.rest.controller.CubeControllerTest

@@ -1,0 +1,2299 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../../style.css');
+        @import url('../../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../../cloud.js" type="text/javascript"></script>
+
+            <title>Apache Kylin 2.3.0-SNAPSHOT (Aggregated)</title>
+    </head>
+
+<body  onload="onLoad('Apache Kylin 2.3.0-SNAPSHOT (Aggregated): org.apache.kylin.metadata.filter.ConstantTupleFilter.java')">
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://kylin.apache.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://kylin.apache.org" target="_top">
+                                        Apache Kylin 2.3.0-SNAPSHOT (Aggregated)
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../../" data-package-name="org.apache.kylin.metadata.filter">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../../dashboard.html">Project Clover database Wed Dec 13 2017 10:24:58 PST</a></li> 
+        <li><a href="pkg-summary.html">        Package org.apache.kylin.metadata.filter</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            File ConstantTupleFilter.java
+    </h1>
+
+
+
+
+
+
+
+
+    
+<div class="aui-tabs horizontal-tabs" id="tabs-file">
+            <div class="tabs-pane aui-tabs-pane-100-pcnt active-pane" id="tabs-file-source">
+        <div>&#160;</div>
+
+        
+                <div style="display: table; width: 100%">
+                            <div class="clover-histogram-table-cell">
+                                <div class="dashboard-widget">
+            <header class="dashboard-widget-header">
+                <h3>Coverage histogram</h3>
+            </header>
+            <div class="dashboard-widget-content">
+                <div class="aui-item clover-aui-item-histogram">
+                    <img src="../../../../../img/srcFileCovDistChart8.png" alt="../../../../../img/srcFileCovDistChart8.png"
+                         usemap="#srcFileCovDistChart8.png" class="clover-histogram-img"/>
+                    <map id="srcFileCovDistChart8.png" name="srcFileCovDistChart8.png">
+<area shape="rect" coords="100,55,107,66" title="94 files have 91-100% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="91,59,98,66" title="59 files have 81-90% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="82,56,89,66" title="81 files have 71-80% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="73,57,80,66" title="74 files have 61-70% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="64,60,71,66" title="51 files have 51-60% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="56,61,63,66" title="47 files have 41-50% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="47,61,54,65" title="40 files have 31-40% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="38,63,45,65" title="24 files have 21-30% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="29,63,36,66" title="27 files have 11-20% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="20,65,27,66" title="12 files have 1-10% coverage" alt="" nohref="nohref"/>
+<area shape="rect" coords="11,8,18,65" title="465 files have 0% coverage" alt="" nohref="nohref"/>
+</map><br />
+                    <span class="subtle"><strong>15% </strong>of files have more coverage</span>
+                </div>
+            </div>
+        </div>
+                    </div>
+                        <div style="display: table-cell; width: 67%;">
+                    <div class="dashboard-widget">
+        <header class="dashboard-widget-header">
+            <h3>Code metrics</h3>
+        </header>
+        <div class="dashboard-widget-content">
+                        
+
+<div id="td-header-stats" class="aui-item" style="display: ">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">8</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">29</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">13</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">125</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">80</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">18</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.62</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2.23</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">13</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1.38</div>
+    </div>
+</div>
+
+</div>
+                        
+
+<div id="td-filtered-header-stats" class="aui-item" style="display: none">
+<div style="display: table">
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of branches in this file">Branches:</label></div>
+        <div class="stats-box-value">8</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of statements in this file">Statements:</label></div>
+        <div class="stats-box-value">29</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of methods in this file">Methods:</label></div>
+        <div class="stats-box-value">13</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of classes in this file">Classes:</label></div>
+        <div class="stats-box-value">1</div>
+    </div>
+            <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of lines of code in this file">LOC:</label></div>
+        <div class="stats-box-value">125</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Total number of non-comment lines of code in this file">NCLOC:</label></div>
+        <div class="stats-box-value">80</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Cyclomatic complexity is the number of paths in this file">Total complexity:</label></div>
+        <div class="stats-box-value">18</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label">
+            <label title="Complexity density is the complexity divided by the number of statements in this file">Complexity density:</label>
+        </div>
+        <div class="stats-box-value">0.62</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of statements per method.">Statements/Method:</label></div>
+        <div class="stats-box-value">2.23</div>
+    </div>
+    <div class="stats-box">
+        <div class="stats-box-label"><label title="Number of methods per class.">Methods/Class:</label></div>
+        <div class="stats-box-value">13</div>
+    </div>
+        <div class="stats-box">
+        <div class="stats-box-label"><label title="Complexity divided by the number of methods in this file">Average method complexity:</label></div>
+        <div class="stats-box-value">1.38</div>
+    </div>
+</div>
+
+</div>        </div>
+    </div>
+            </div>
+        </div>
+
+        
+        
+
+
+    <h2>Classes</h2>
+
+        <table class="aui aui-table-sortable">
+        <thead>
+                        <tr>     <th>Class</th>
+    <th>Line #</th>
+
+            
+        <th class="">
+            <label  title="The total number of statements.">Total Statements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The percentage of elements that have been filtered from this report.">% Filtered</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label>
+        </th>
+        
+            
+        <th class="">
+            <label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label>
+        </th>
+        
+    
+            <th>Actions</th>
+    </tr>         </thead>
+        <tbody>
+                              <tr> <td id="ConstantTupleFilter">
+        <span><a href="#35" title="ConstantTupleFilter" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '35');">ConstantTupleFilter</a></span>
+</td>
+<td>35<a name="sl-35"></a></td>
+    <td class="">29</td>
+    <td class="">0%</td>
+    <td class="">18</td>
+    <td class="">10</td>
+    <td class=""><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8</span>80%</div><div style="display: table-cell">
+ <div title="80% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:80%"></div></div></div></div></td>
+    <td><button data-dialog-id="dialog-ConstantTupleFilter" class="aui-button aui-button-link dialog-show-button">Show methods</button></td>
+</tr>                      </tbody>
+    </table>
+
+    
+     
+        <section role="dialog" id="dialog-ConstantTupleFilter" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+            
+            <header class="aui-dialog2-header">
+                <h1 class="aui-dialog2-header-main">Class ConstantTupleFilter</h1>
+                <div class="aui-dialog2-header-secondary">
+                    <input id="dialog-ConstantTupleFilter-method-filter" class="test-filter text" type="text" name="method-filter"
+                           placeholder="Type to filter methods..." autocomplete="off"
+                           onkeyup="filterMethods('dialog-ConstantTupleFilter-methods-body', 'dialog-ConstantTupleFilter-method-filter');"/>
+                </div>
+            </header>
+
+            
+            <div class="aui-dialog2-content">
+
+                
+
+                <table class="aui aui-table-sortable">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                    <thead>
+                                                 <tr> <th id="ConstantTupleFilter">
+    Class<br/>    <span><a href="#35" title="ConstantTupleFilter" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '35');">ConstantTupleFilter</a></span>
+</th>
+<th>Line #<br/>35<a name="sl-35"></a></th>
+    <th class=""><label  title="The total number of statements.">Total Statements</label><br/>29</th>
+    <th class=""><label  title="The percentage of elements that have been filtered from this report.">% Filtered</label><br/>0%</th>
+    <th class=""><label  title="Cyclomatic complexity is a measure of the number of paths in your code.">Complexity</label><br/>18</th>
+    <th class=""><label  title="The number of statements and branches that were not covered during testing.">Uncovered Elements</label><br/>10</th>
+    <th class=""><label  title="The amount of code that was hit at least once during testing.">TOTAL Coverage</label><br/><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.8</span>80%</div><div style="display: table-cell">
+ <div title="80% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:80%"></div></div></div></div></th>
+</tr>                     </thead>
+                    <tbody id="dialog-ConstantTupleFilter-methods-body">
+                                                                                                            <tr id="ConstantTupleFilter-1">
+<td id="summary-42-5">
+ <span class="sortValue">ConstantTupleFilter()</span>
+&#160;&#160;<a href="?line=29#42" title="ConstantTupleFilter()" name="sl-42" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '42');">ConstantTupleFilter()</a>
+</td>
+<td align="right"><span class="sortValue">42</span>42</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ConstantTupleFilter-2">
+<td id="summary-47-5">
+ <span class="sortValue">ConstantTupleFilter(Object)</span>
+&#160;&#160;<a href="?line=29#47" title="ConstantTupleFilter(Object)" name="sl-47" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '47');">ConstantTupleFilter(Object)</a>
+</td>
+<td align="right"><span class="sortValue">47</span>47</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ConstantTupleFilter-3">
+<td id="summary-52-5">
+ <span class="sortValue">ConstantTupleFilter(Collection&lt;?&gt;)</span>
+&#160;&#160;<a href="?line=29#52" title="ConstantTupleFilter(Collection&lt;?&gt;)" name="sl-52" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '52');">ConstantTupleFilter(Collection&lt;?&gt;)</a>
+</td>
+<td align="right"><span class="sortValue">52</span>52</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ConstantTupleFilter-4">
+<td id="summary-57-5">
+ <span class="sortValue">reverse()&#160;:&#160;TupleFilter</span>
+&#160;&#160;<a href="?line=29#57" title="reverse()&#160;:&#160;TupleFilter" name="sl-57" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '57');">reverse()&#160;:&#160;TupleFilter</a>
+</td>
+<td align="right"><span class="sortValue">57</span>57</td>
+<td class="" align="right"><span class="sortValue">3.0</span>3</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">5.0</span>5</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ConstantTupleFilter-5">
+<td id="summary-66-5">
+ <span class="sortValue">addChild(TupleFilter)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#66" title="addChild(TupleFilter)&#160;:&#160;void" name="sl-66" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '66');">addChild(TupleFilter)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">66</span>66</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ConstantTupleFilter-6">
+<td id="summary-71-5">
+ <span class="sortValue">toString()&#160;:&#160;String</span>
+&#160;&#160;<a href="?line=29#71" title="toString()&#160;:&#160;String" name="sl-71" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '71');">toString()&#160;:&#160;String</a>
+</td>
+<td align="right"><span class="sortValue">71</span>71</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ConstantTupleFilter-7">
+<td id="summary-76-5">
+ <span class="sortValue">evaluate(IEvaluatableTuple,IFilterCodeSystem&lt;?&gt;)&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#76" title="evaluate(IEvaluatableTuple,IFilterCodeSystem&lt;?&gt;)&#160;:&#160;boolean" name="sl-76" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '76');">evaluate(IEvaluatableTuple,IFilterCodeSystem&lt;?&gt;)&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">76</span>76</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ConstantTupleFilter-8">
+<td id="summary-81-5">
+ <span class="sortValue">isEvaluable()&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#81" title="isEvaluable()&#160;:&#160;boolean" name="sl-81" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '81');">isEvaluable()&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">81</span>81</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ConstantTupleFilter-9">
+<td id="summary-86-5">
+ <span class="sortValue">getValues()&#160;:&#160;Collection&lt;?&gt;</span>
+&#160;&#160;<a href="?line=29#86" title="getValues()&#160;:&#160;Collection&lt;?&gt;" name="sl-86" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '86');">getValues()&#160;:&#160;Collection&lt;?&gt;</a>
+</td>
+<td align="right"><span class="sortValue">86</span>86</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ConstantTupleFilter-10">
+<td id="summary-91-5">
+ <span class="sortValue">serialize(IFilterCodeSystem,ByteBuffer)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#91" title="serialize(IFilterCodeSystem,ByteBuffer)&#160;:&#160;void" name="sl-91" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '91');">serialize(IFilterCodeSystem,ByteBuffer)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">91</span>91</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ConstantTupleFilter-11">
+<td id="summary-101-5">
+ <span class="sortValue">deserialize(IFilterCodeSystem&lt;?&gt;,ByteBuffer)&#160;:&#160;void</span>
+&#160;&#160;<a href="?line=29#101" title="deserialize(IFilterCodeSystem&lt;?&gt;,ByteBuffer)&#160;:&#160;void" name="sl-101" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '101');">deserialize(IFilterCodeSystem&lt;?&gt;,ByteBuffer)&#160;:&#160;void</a>
+</td>
+<td align="right"><span class="sortValue">101</span>101</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">2.0</span>2</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ConstantTupleFilter-12">
+<td id="summary-111-5">
+ <span class="sortValue">equals(Object)&#160;:&#160;boolean</span>
+&#160;&#160;<a href="?line=29#111" title="equals(Object)&#160;:&#160;boolean" name="sl-111" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '111');">equals(Object)&#160;:&#160;boolean</a>
+</td>
+<td align="right"><span class="sortValue">111</span>111</td>
+<td class="" align="right"><span class="sortValue">6.0</span>6</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">4.0</span>4</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0</td>
+<td class="" align="right"><span class="sortValue">1.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">1.0</span>100%</div><div style="display: table-cell">
+ <div title="100% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:100%"></div></div></div></div></td>
+ </tr>                                                                                                                <tr id="ConstantTupleFilter-13">
+<td id="summary-122-5">
+ <span class="sortValue">hashCode()&#160;:&#160;int</span>
+&#160;&#160;<a href="?line=29#122" title="hashCode()&#160;:&#160;int" name="sl-122" onclick="closeDialogAndScrollTo('dialog-ConstantTupleFilter', '122');">hashCode()&#160;:&#160;int</a>
+</td>
+<td align="right"><span class="sortValue">122</span>122</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span>0%</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">1.0</span>1</td>
+<td class="" align="right"><span class="sortValue">0.0</span><div style="display: table; width: 100%">
+<div class="barGraphValue"><span class="sortValue">0.0</span>0%</div><div style="display: table-cell">
+ <div title="0% Covered"  style="min-width:200px;" class="barNegative contribBarNegative "><div class="barPositive contribBarPositive " style="width:0%"></div></div></div></div></td>
+ </tr>                                                                         </tbody>
+                </table>
+
+                <div>&#160;</div>
+                
+
+            </div>
+
+            
+            <footer class="aui-dialog2-footer">
+                <div class="aui-dialog2-footer-actions">
+                    <button class="aui-button aui-button-primary dialog-close-button"
+                            data-dialog-id="dialog-ConstantTupleFilter">Close</button>
+                </div>
+                <div class="aui-dialog2-footer-hint">Click on a class or a method name to jump to source.</div>
+            </footer>
+        </section>
+
+     
+ 
+        
+        <div>&#160;</div>
+
+<h2>Contributing tests</h2>
+
+    <div>
+                This file is covered by 47 tests.
+        <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-link dialog-show-button">
+            Select tests to highlight the test coverage
+        </button>.
+    </div>
+
+<section role="dialog" id="contr-tests-dialog" class="aui-layer aui-dialog2 aui-dialog2-xlarge" aria-hidden="true">
+    
+    <header class="aui-dialog2-header">
+        <h1 class="aui-dialog2-header-main">Contributing tests</h1>
+        <div class="aui-dialog2-header-secondary">
+            <input id="test-filter" class="test-filter text" type="text" name="test-filter"
+                   placeholder="Type to filter tests..." autocomplete="off"
+                   onkeyup="filterTests('tests-body', 'test-filter', 3);"/>
+        </div>
+    </header>
+
+    
+    <div class="aui-dialog2-content">
+    
+
+        <p class="aui-buttons">
+            <button title="Selects all tests for this file, highlighting their coverage."
+                    class="aui-button" id="selectalltests">Select all</button>
+        </p>
+
+        <table class="aui aui-table-sortable">
+            <thead id="tests-head">
+            <tr id="testHeaderRow">
+                <th class="aui-table-column-unsortable"></th>
+                <th>
+                    <label title="The percentage of coverage contributed by each single test.">Test contribution</label>
+                </th>
+                <th>
+                    <label title="The test (or test iteration) which was executed.">Test</label>
+                </th>
+                <th>
+                    <label>Result</label>
+                </th>
+                <th class="aui-table-column-unsortable">
+                    <label>Actions</label>
+                </th>
+            </tr>
+            </thead>
+            <tbody id="tests-body">
+
+<tr id="test-149">
+<td><a name="testA-149"></a><input type="checkbox" id="cb-149" value="149" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyConvertFilterConstants3_45.html';">
+<span class="sortValue">0.76</span>
+<div>
+<div title="76% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:76%"></div></div></div></td>
+<td id="tc-149">  <span class="sortValue">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyConvertFilterConstants3</span><a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyConvertFilterConstants3_45.html" title="View Test Summary Page">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyConvertFilterConstants3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest.html?line=459#src-459" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyConvertFilterConstants3_45.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-146">
+<td><a name="testA-146"></a><input type="checkbox" id="cb-146" value="146" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyConvertFilterConstants4_42.html';">
+<span class="sortValue">0.62</span>
+<div>
+<div title="62% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:62%"></div></div></div></td>
+<td id="tc-146">  <span class="sortValue">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyConvertFilterConstants4</span><a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyConvertFilterConstants4_42.html" title="View Test Summary Page">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyConvertFilterConstants4</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest.html?line=480#src-480" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyConvertFilterConstants4_42.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-142">
+<td><a name="testA-142"></a><input type="checkbox" id="cb-142" value="142" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyConvertFilterConstants2_3y.html';">
+<span class="sortValue">0.62</span>
+<div>
+<div title="62% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:62%"></div></div></div></td>
+<td id="tc-142">  <span class="sortValue">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyConvertFilterConstants2</span><a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyConvertFilterConstants2_3y.html" title="View Test Summary Page">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyConvertFilterConstants2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest.html?line=436#src-436" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyConvertFilterConstants2_3y.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-137">
+<td><a name="testA-137"></a><input type="checkbox" id="cb-137" value="137" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyConvertFilterConstants1_3t.html';">
+<span class="sortValue">0.62</span>
+<div>
+<div title="62% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:62%"></div></div></div></td>
+<td id="tc-137">  <span class="sortValue">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyConvertFilterConstants1</span><a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyConvertFilterConstants1_3t.html" title="View Test Summary Page">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyConvertFilterConstants1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest.html?line=414#src-414" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyConvertFilterConstants1_3t.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-122">
+<td><a name="testA-122"></a><input type="checkbox" id="cb-122" value="122" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyScanWithUnevaluatableFilter_3e.html';">
+<span class="sortValue">0.52</span>
+<div>
+<div title="52% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:52%"></div></div></div></td>
+<td id="tc-122">  <span class="sortValue">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyScanWithUnevaluatableFilter</span><a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyScanWithUnevaluatableFilter_3e.html" title="View Test Summary Page">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyScanWithUnevaluatableFilter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest.html?line=318#src-318" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyScanWithUnevaluatableFilter_3e.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-89">
+<td><a name="testA-89"></a><input type="checkbox" id="cb-89" value="89" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/TimeConditionLiteralsReplacerTest_basicTest_2h.html';">
+<span class="sortValue">0.46</span>
+<div>
+<div title="46% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:46%"></div></div></div></td>
+<td id="tc-89">  <span class="sortValue">org.apache.kylin.storage.hbase.common.TimeConditionLiteralsReplacerTest.basicTest</span><a href="../../../../../org/apache/kylin/storage/hbase/common/TimeConditionLiteralsReplacerTest_basicTest_2h.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.TimeConditionLiteralsReplacerTest.basicTest</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/TimeConditionLiteralsReplacerTest.html?line=37#src-37" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/TimeConditionLiteralsReplacerTest_basicTest_2h.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-93">
+<td><a name="testA-93"></a><input type="checkbox" id="cb-93" value="93" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate07_2l.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-93">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate07</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate07_2l.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate07</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest.html?line=150#src-150" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate07_2l.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-63">
+<td><a name="testA-63"></a><input type="checkbox" id="cb-63" value="63" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize04_1r.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-63">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize04</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize04_1r.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize04</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest.html?line=62#src-62" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize04_1r.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-90">
+<td><a name="testA-90"></a><input type="checkbox" id="cb-90" value="90" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate04_2i.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-90">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate04</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate04_2i.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate04</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest.html?line=102#src-102" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate04_2i.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-100">
+<td><a name="testA-100"></a><input type="checkbox" id="cb-100" value="100" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize14_2s.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-100">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize14</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize14_2s.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize14</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest.html?line=153#src-153" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize14_2s.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-91">
+<td><a name="testA-91"></a><input type="checkbox" id="cb-91" value="91" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize08_2j.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-91">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize08</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize08_2j.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize08</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest.html?line=103#src-103" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize08_2j.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-73">
+<td><a name="testA-73"></a><input type="checkbox" id="cb-73" value="73" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate08_21.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-73">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate08</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate08_21.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate08</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest.html?line=166#src-166" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate08_21.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-81">
+<td><a name="testA-81"></a><input type="checkbox" id="cb-81" value="81" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize03_29.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-81">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize03</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize03_29.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize03</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest.html?line=57#src-57" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize03_29.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-66">
+<td><a name="testA-66"></a><input type="checkbox" id="cb-66" value="66" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize13_1u.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-66">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize13</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize13_1u.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize13</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest.html?line=148#src-148" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize13_1u.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-84">
+<td><a name="testA-84"></a><input type="checkbox" id="cb-84" value="84" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize07_2c.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-84">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize07</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize07_2c.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize07</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest.html?line=88#src-88" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize07_2c.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-80">
+<td><a name="testA-80"></a><input type="checkbox" id="cb-80" value="80" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize02_28.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-80">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize02</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize02_28.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize02</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest.html?line=52#src-52" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize02_28.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-136">
+<td><a name="testA-136"></a><input type="checkbox" id="cb-136" value="136" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyScanWithEvaluatableFilter_3s.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-136">  <span class="sortValue">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyScanWithEvaluatableFilter</span><a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyScanWithEvaluatableFilter_3s.html" title="View Test Summary Page">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyScanWithEvaluatableFilter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest.html?line=341#src-341" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyScanWithEvaluatableFilter_3s.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-77">
+<td><a name="testA-77"></a><input type="checkbox" id="cb-77" value="77" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate05_25.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-77">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate05</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate05_25.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate05</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest.html?line=118#src-118" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate05_25.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-75">
+<td><a name="testA-75"></a><input type="checkbox" id="cb-75" value="75" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize01_23.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-75">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize01</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize01_23.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize01</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest.html?line=47#src-47" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize01_23.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-85">
+<td><a name="testA-85"></a><input type="checkbox" id="cb-85" value="85" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize06_2d.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-85">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize06</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize06_2d.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize06</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest.html?line=77#src-77" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize06_2d.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-92">
+<td><a name="testA-92"></a><input type="checkbox" id="cb-92" value="92" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate06_2k.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-92">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate06</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate06_2k.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate06</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest.html?line=134#src-134" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate06_2k.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-94">
+<td><a name="testA-94"></a><input type="checkbox" id="cb-94" value="94" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize10_2m.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-94">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize10</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize10_2m.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize10</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest.html?line=117#src-117" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize10_2m.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-88">
+<td><a name="testA-88"></a><input type="checkbox" id="cb-88" value="88" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize11_2g.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-88">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize11</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize11_2g.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize11</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest.html?line=130#src-130" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize11_2g.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-99">
+<td><a name="testA-99"></a><input type="checkbox" id="cb-99" value="99" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize05_2r.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-99">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize05</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize05_2r.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize05</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest.html?line=67#src-67" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize05_2r.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-83">
+<td><a name="testA-83"></a><input type="checkbox" id="cb-83" value="83" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize12_2b.html';">
+<span class="sortValue">0.44</span>
+<div>
+<div title="44% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:44%"></div></div></div></td>
+<td id="tc-83">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize12</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize12_2b.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterSerializeTest.testSerialize12</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest.html?line=143#src-143" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterSerializeTest_testSerialize12_2b.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-95">
+<td><a name="testA-95"></a><input type="checkbox" id="cb-95" value="95" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate03_2n.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-95">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate03</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate03_2n.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate03</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest.html?line=86#src-86" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate03_2n.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-65">
+<td><a name="testA-65"></a><input type="checkbox" id="cb-65" value="65" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate01_1t.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-65">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate01</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate01_1t.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate01</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest.html?line=54#src-54" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate01_1t.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-130">
+<td><a name="testA-130"></a><input type="checkbox" id="cb-130" value="130" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyAggregateAndHavingFilter_3m.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-130">  <span class="sortValue">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyAggregateAndHavingFilter</span><a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyAggregateAndHavingFilter_3m.html" title="View Test Summary Page">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifyAggregateAndHavingFilter</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest.html?line=361#src-361" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifyAggregateAndHavingFilter_3m.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-76">
+<td><a name="testA-76"></a><input type="checkbox" id="cb-76" value="76" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate00_24.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-76">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate00</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate00_24.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate00</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest.html?line=38#src-38" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate00_24.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-96">
+<td><a name="testA-96"></a><input type="checkbox" id="cb-96" value="96" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate02_2o.html';">
+<span class="sortValue">0.4</span>
+<div>
+<div title="40% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:40%"></div></div></div></td>
+<td id="tc-96">  <span class="sortValue">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate02</span><a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate02_2o.html" title="View Test Summary Page">org.apache.kylin.storage.hbase.common.coprocessor.FilterEvaluateTest.testEvaluate02</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest.html?line=70#src-70" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/hbase/common/coprocessor/FilterEvaluateTest_testEvaluate02_2o.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-775">
+<td><a name="testA-775"></a><input type="checkbox" id="cb-775" value="775" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest0_lj.html';">
+<span class="sortValue">0.34</span>
+<div>
+<div title="34% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:34%"></div></div></div></td>
+<td id="tc-775">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest0</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest0_lj.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest0</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=24#src-24" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest0_lj.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-732">
+<td><a name="testA-732"></a><input type="checkbox" id="cb-732" value="732" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest0_kc.html';">
+<span class="sortValue">0.34</span>
+<div>
+<div title="34% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:34%"></div></div></div></td>
+<td id="tc-732">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest0</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest0_kc.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest0</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=24#src-24" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest0_kc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-761">
+<td><a name="testA-761"></a><input type="checkbox" id="cb-761" value="761" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest7_l5.html';">
+<span class="sortValue">0.22</span>
+<div>
+<div title="22% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:22%"></div></div></div></td>
+<td id="tc-761">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest7</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest7_l5.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest7</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=110#src-110" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest7_l5.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-706">
+<td><a name="testA-706"></a><input type="checkbox" id="cb-706" value="706" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest7_jm.html';">
+<span class="sortValue">0.22</span>
+<div>
+<div title="22% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:22%"></div></div></div></td>
+<td id="tc-706">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest7</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest7_jm.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest7</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=110#src-110" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest7_jm.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-693">
+<td><a name="testA-693"></a><input type="checkbox" id="cb-693" value="693" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest1_j9.html';">
+<span class="sortValue">0.22</span>
+<div>
+<div title="22% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:22%"></div></div></div></td>
+<td id="tc-693">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest1</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest1_j9.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=38#src-38" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest1_j9.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-711">
+<td><a name="testA-711"></a><input type="checkbox" id="cb-711" value="711" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest1_jr.html';">
+<span class="sortValue">0.22</span>
+<div>
+<div title="22% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:22%"></div></div></div></td>
+<td id="tc-711">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest1</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest1_jr.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest1</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=38#src-38" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest1_jr.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-748">
+<td><a name="testA-748"></a><input type="checkbox" id="cb-748" value="748" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest5_ks.html';">
+<span class="sortValue">0.18</span>
+<div>
+<div title="18% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18%"></div></div></div></td>
+<td id="tc-748">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest5</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest5_ks.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest5</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=86#src-86" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest5_ks.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-750">
+<td><a name="testA-750"></a><input type="checkbox" id="cb-750" value="750" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest2_ku.html';">
+<span class="sortValue">0.18</span>
+<div>
+<div title="18% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18%"></div></div></div></td>
+<td id="tc-750">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest2</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest2_ku.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=50#src-50" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest2_ku.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-772">
+<td><a name="testA-772"></a><input type="checkbox" id="cb-772" value="772" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest2_lg.html';">
+<span class="sortValue">0.18</span>
+<div>
+<div title="18% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18%"></div></div></div></td>
+<td id="tc-772">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest2</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest2_lg.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest2</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=50#src-50" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest2_lg.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-724">
+<td><a name="testA-724"></a><input type="checkbox" id="cb-724" value="724" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest5_k4.html';">
+<span class="sortValue">0.18</span>
+<div>
+<div title="18% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:18%"></div></div></div></td>
+<td id="tc-724">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest5</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest5_k4.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest5</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=86#src-86" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest5_k4.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-695">
+<td><a name="testA-695"></a><input type="checkbox" id="cb-695" value="695" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest4_jb.html';">
+<span class="sortValue">0.12</span>
+<div>
+<div title="12% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:12%"></div></div></div></td>
+<td id="tc-695">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest4</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest4_jb.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest4</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=74#src-74" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest4_jb.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-758">
+<td><a name="testA-758"></a><input type="checkbox" id="cb-758" value="758" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest4_l2.html';">
+<span class="sortValue">0.12</span>
+<div>
+<div title="12% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:12%"></div></div></div></td>
+<td id="tc-758">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest4</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest4_l2.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest4</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=74#src-74" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest4_l2.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-698">
+<td><a name="testA-698"></a><input type="checkbox" id="cb-698" value="698" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest6_je.html';">
+<span class="sortValue">0.12</span>
+<div>
+<div title="12% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:12%"></div></div></div></td>
+<td id="tc-698">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest6</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest6_je.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest6</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=98#src-98" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest6_je.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-742">
+<td><a name="testA-742"></a><input type="checkbox" id="cb-742" value="742" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest6_km.html';">
+<span class="sortValue">0.12</span>
+<div>
+<div title="12% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:12%"></div></div></div></td>
+<td id="tc-742">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest6</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest6_km.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest6</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=98#src-98" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest6_km.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-696">
+<td><a name="testA-696"></a><input type="checkbox" id="cb-696" value="696" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest3_jc.html';">
+<span class="sortValue">0.12</span>
+<div>
+<div title="12% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:12%"></div></div></div></td>
+<td id="tc-696">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest3</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest3_jc.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=62#src-62" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest3_jc.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-771">
+<td><a name="testA-771"></a><input type="checkbox" id="cb-771" value="771" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest3_lf.html';">
+<span class="sortValue">0.12</span>
+<div>
+<div title="12% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:12%"></div></div></div></td>
+<td id="tc-771">  <span class="sortValue">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest3</span><a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest3_lf.html" title="View Test Summary Page">org.apache.kylin.metadata.filter.FilterOptimizeTransformerTest.transformTest3</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest.html?line=62#src-62" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/metadata/filter/FilterOptimizeTransformerTest_transformTest3_lf.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+<tr id="test-133">
+<td><a name="testA-133"></a><input type="checkbox" id="cb-133" value="133" name="testMethod" autocomplete="off" title="Check to highlight coverage of this test in the source code"/></td>
+<td style="vertical-align: middle"  class="link" onclick="window.location.href='../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifySegmentSkipping_3p.html';">
+<span class="sortValue">0.04</span>
+<div>
+<div title="4% Covered" style="min-width:40px;" class="barNegative contribBarNegative contribBarNegative"><div class="barPositive contribBarPositive contribBarPositive" style="width:4%"></div></div></div></td>
+<td id="tc-133">  <span class="sortValue">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifySegmentSkipping</span><a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifySegmentSkipping_3p.html" title="View Test Summary Page">org.apache.kylin.storage.gtrecord.DictGridTableTest.verifySegmentSkipping</a>
+</td>
+<td>      <span class="sortValue">1</span><span class="aui-lozenge aui-lozenge-success">PASS</span>
+  </td>
+<td> <a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest.html?line=119#src-119" title="View Test Source">
+ <span class="aui-icon aui-icon-small aui-iconfont-file-txt aui-icon-medium-gray"></span>
+</a>
+<a href="../../../../../org/apache/kylin/storage/gtrecord/DictGridTableTest_verifySegmentSkipping_3p.html" title="View Test Summary Page"><span class="aui-icon aui-icon-small aui-iconfont-file-ppt aui-icon-medium-gray"></span></a>
+</td>
+</tr>
+
+            </tbody>
+        </table>
+
+        
+        <div>&#160;</div>
+
+    
+    </div>
+
+    
+    <footer class="aui-dialog2-footer">
+        <div class="aui-dialog2-footer-actions">
+            <button data-dialog-id="contr-tests-dialog" class="aui-button aui-button-primary dialog-close-button">Apply</button>
+        </div>
+        <div class="aui-dialog2-footer-hint">Select tests to highlight code covered by them in the source view.</div>
+    </footer>
+</section>
+
+ 
+        
+        
+
+
+
+
+
+<h2>Source view</h2>
+
+
+<div style="display: table; width: 100%;">
+    <div style="display: table-cell">
+        <button class="aui-button aui-button-link"
+                title="Toggles all methods in the source to be either expanded or collapsed."
+                onclick="toggleAllInlineMethods(this); return false;" id="method-expander">
+            Collapse all methods
+        </button>
+    </div>
+    <div style="display: table-cell">
+        <div style="text-align: right; margin-bottom: 10px">
+            <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;Show legend
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function(content, trigger, showPopup) {
+                content.css({"padding":"20px"}).html(SRC_FILE_LEGEND_TEXT);
+                showPopup();
+                return false;
+            },
+            {
+                width: 700, hideDelay: 60000
+            }
+    );
+</script>        </div>
+    </div>
+</div>
+
+<table cellspacing="0" cellpadding="0" class="srcView" width="100%">
+
+    
+<tbody> <tr id="l1">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=1#src-1">1</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-1" class="srcLine"><span class="comment">/*</span></span></td>
+</tr>
+ <tr id="l2">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=2#src-2">2</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-2" class="srcLine"><span class="comment"> * Licensed to the Apache Software Foundation (ASF) under one</span></span></td>
+</tr>
+ <tr id="l3">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=3#src-3">3</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-3" class="srcLine"><span class="comment"> * or more contributor license agreements.  See the NOTICE file</span></span></td>
+</tr>
+ <tr id="l4">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=4#src-4">4</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-4" class="srcLine"><span class="comment"> * distributed with this work for additional information</span></span></td>
+</tr>
+ <tr id="l5">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=5#src-5">5</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-5" class="srcLine"><span class="comment"> * regarding copyright ownership.  The ASF licenses this file</span></span></td>
+</tr>
+ <tr id="l6">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=6#src-6">6</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-6" class="srcLine"><span class="comment"> * to you under the Apache License, Version 2.0 (the</span></span></td>
+</tr>
+ <tr id="l7">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=7#src-7">7</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-7" class="srcLine"><span class="comment"> * &quot;License&quot;); you may not use this file except in compliance</span></span></td>
+</tr>
+ <tr id="l8">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=8#src-8">8</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-8" class="srcLine"><span class="comment"> * with the License.  You may obtain a copy of the License at</span></span></td>
+</tr>
+ <tr id="l9">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=9#src-9">9</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-9" class="srcLine"><span class="comment"> * </span></span></td>
+</tr>
+ <tr id="l10">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=10#src-10">10</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-10" class="srcLine"><span class="comment"> *     http://www.apache.org/licenses/LICENSE-2.0</span></span></td>
+</tr>
+ <tr id="l11">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=11#src-11">11</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-11" class="srcLine"><span class="comment"> * </span></span></td>
+</tr>
+ <tr id="l12">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=12#src-12">12</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-12" class="srcLine"><span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></span></td>
+</tr>
+ <tr id="l13">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=13#src-13">13</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-13" class="srcLine"><span class="comment"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></span></td>
+</tr>
+ <tr id="l14">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=14#src-14">14</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-14" class="srcLine"><span class="comment"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></span></td>
+</tr>
+ <tr id="l15">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=15#src-15">15</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-15" class="srcLine"><span class="comment"> * See the License for the specific language governing permissions and</span></span></td>
+</tr>
+ <tr id="l16">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=16#src-16">16</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-16" class="srcLine"><span class="comment"> * limitations under the License.</span></span></td>
+</tr>
+ <tr id="l17">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=17#src-17">17</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-17" class="srcLine"><span class="comment">*/</span></span></td>
+</tr>
+ <tr id="l18">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=18#src-18">18</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-18" class="srcLine"></span></td>
+</tr>
+ <tr id="l19">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=19#src-19">19</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-19" class="srcLine"><span class="keyword">package</span> org.apache.<a href="../../../kylin/testsrc-pkg-summary.html">kylin</a>.<a href="../../metadata/pkg-summary.html">metadata</a>.<a href="../filter/pkg-summary.html">filter</a>;</span></td>
+</tr>
+ <tr id="l20">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=20#src-20">20</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-20" class="srcLine"></span></td>
+</tr>
+ <tr id="l21">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=21#src-21">21</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-21" class="srcLine"><span class="keyword">import</span> java.nio.ByteBuffer;</span></td>
+</tr>
+ <tr id="l22">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=22#src-22">22</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-22" class="srcLine"><span class="keyword">import</span> java.util.Collection;</span></td>
+</tr>
+ <tr id="l23">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=23#src-23">23</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-23" class="srcLine"><span class="keyword">import</span> java.util.Collections;</span></td>
+</tr>
+ <tr id="l24">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=24#src-24">24</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-24" class="srcLine"></span></td>
+</tr>
+ <tr id="l25">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=25#src-25">25</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-25" class="srcLine"><span class="keyword">import</span> org.apache.<a href="../../../kylin/pkg-summary.html">kylin</a>.<a href="../../common/pkg-summary.html">common</a>.<a href="../../common/util/pkg-summary.html">util</a>.<a href="../../../../../org/apache/kylin/common/util/BytesUtil.html#BytesUtil">BytesUtil</a>;</span></td>
+</tr>
+ <tr id="l26">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=26#src-26">26</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-26" class="srcLine"><span class="keyword">import</span> org.apache.<a href="../../../kylin/pkg-summary.html">kylin</a>.<a href="../../metadata/pkg-summary.html">metadata</a>.<a href="../tuple/pkg-summary.html">tuple</a>.<a href="../../../../../org/apache/kylin/metadata/tuple/IEvaluatableTuple.html#IEvaluatableTuple">IEvaluatableTuple</a>;</span></td>
+</tr>
+ <tr id="l27">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=27#src-27">27</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-27" class="srcLine"></span></td>
+</tr>
+ <tr id="l28">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=28#src-28">28</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-28" class="srcLine"><span class="keyword">import</span> com.google.common.collect.Lists;</span></td>
+</tr>
+ <tr id="l29">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=29#src-29">29</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-29" class="srcLine"></span></td>
+</tr>
+ <tr id="l30">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=30#src-30">30</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-30" class="srcLine"><span class="comment">/**</span></span></td>
+</tr>
+ <tr id="l31">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=31#src-31">31</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-31" class="srcLine"><span class="comment"> * </span></span></td>
+</tr>
+ <tr id="l32">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=32#src-32">32</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-32" class="srcLine"><span class="comment"> * </span><span class="javadoc">@author</span><span class="comment"> xjiang</span></span></td>
+</tr>
+ <tr id="l33">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=33#src-33">33</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-33" class="srcLine"><span class="comment"> * </span></span></td>
+</tr>
+ <tr id="l34">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=34#src-34">34</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-34" class="srcLine"><span class="comment"> */</span></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="35" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-35' onclick="toggleInlineStats(this, 'inlinestats-35');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-35" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-35'), 'inlinestats-35');return true;">
+                <td><div>
+<div title="80% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:80%"></div></div></div></td><td>80%</td>
+                <td class="inlineStat">Uncovered Elements: 10 (50)</td>
+                <td class="inlineStat">Complexity: 18</td>
+                <td class="inlineStat">Complexity Density: 0.62</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l35">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=35#src-35">35</a></td>
+<td align="right" class="coverageCount NoHilight "   onclick="return showTestsForLine(this, 35, 'Tests that hit ConstantTupleFilter');" >&#160;&#160;</td>
+<td class=" srcCell" id="id-35"><span class="spacer"></span><span id="src-35" class="srcLine"><span class="keyword">public</span> <span class="keyword">class</span> <a href="../../../../../org/apache/kylin/metadata/filter/ConstantTupleFilter.html#ConstantTupleFilter">ConstantTupleFilter</a> <span class="keyword">extends</span> <a href="../../../../../org/apache/kylin/metadata/filter/TupleFilter.html#TupleFilter">TupleFilter</a> {</span></td>
+</tr>
+ <tr id="l36">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=36#src-36">36</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-36" class="srcLine"></span></td>
+</tr>
+ <tr id="l37">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=37#src-37">37</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-37" class="srcLine">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <a href="../../../../../org/apache/kylin/metadata/filter/ConstantTupleFilter.html#ConstantTupleFilter">ConstantTupleFilter</a> FALSE = <span class="keyword">new</span> <a href="../../../../../org/apache/kylin/metadata/filter/ConstantTupleFilter.html#ConstantTupleFilter">ConstantTupleFilter</a>();</span></td>
+</tr>
+ <tr id="l38">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=38#src-38">38</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-38" class="srcLine">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">final</span> <a href="../../../../../org/apache/kylin/metadata/filter/ConstantTupleFilter.html#ConstantTupleFilter">ConstantTupleFilter</a> TRUE = <span class="keyword">new</span> <a href="../../../../../org/apache/kylin/metadata/filter/ConstantTupleFilter.html#ConstantTupleFilter">ConstantTupleFilter</a>((Object) <span class="keyword">null</span>); <span class="comment">// not sure of underlying code system, null is the only value that applies to all types</span></span></td>
+</tr>
+ <tr id="l39">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=39#src-39">39</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-39" class="srcLine"></span></td>
+</tr>
+ <tr id="l40">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=40#src-40">40</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-40" class="srcLine">    <span class="keyword">private</span> Collection&lt;Object&gt; constantValues;</span></td>
+</tr>
+ <tr id="l41">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=41#src-41">41</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-41" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="42" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-42' onclick="toggleInlineStats(this, 'inlinestats-42');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-42" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-42'), 'inlinestats-42');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l42">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=42#src-42">42</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 42, 'Tests that hit ConstantTupleFilter()');" ><span title="Line 42, Col 5: method entered 395 times." class="nolink">&#160;395</span></td>
+<td class=" methodStart  srcCell" id="id-42"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 42,45);" id="img-42" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-42" class="srcLine"><span class="nolink" title="Line 42, Col 5: method entered 395 times.">    <span class="keyword">public</span> <a href="../../../../../org/apache/kylin/metadata/filter/ConstantTupleFilter.html#ConstantTupleFilter">ConstantTupleFilter</a>() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-42'), 42,45);" id="e42" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l43">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=43#src-43">43</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 43, 'Tests that hit line # 43');" ><span title="Line 43, Col 9: statement executed 395 times." class="nolink">&#160;395</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-43" class="srcLine"><span class="nolink" title="Line 43, Col 9: statement executed 395 times.">        <span class="keyword">super</span>(Collections.&lt;<a href="../../../../../org/apache/kylin/metadata/filter/TupleFilter.html#TupleFilter">TupleFilter</a>&gt; emptyList(), FilterOperatorEnum.CONSTANT);</span></span></td>
+</tr>
+ <tr id="l44">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=44#src-44">44</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 44, 'Tests that hit line # 44');" ><span title="Line 44, Col 9: statement executed 395 times." class="nolink">&#160;395</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-44" class="srcLine"><span class="nolink" title="Line 44, Col 9: statement executed 395 times.">        <span class="keyword">this</span>.constantValues = Lists.newArrayList();</span></span></td>
+</tr>
+ <tr id="l45">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=45#src-45">45</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-45" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l46">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=46#src-46">46</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-46" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="47" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-47' onclick="toggleInlineStats(this, 'inlinestats-47');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-47" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-47'), 'inlinestats-47');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l47">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=47#src-47">47</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 47, 'Tests that hit ConstantTupleFilter(Object)');" ><span title="Line 47, Col 5: method entered 117 times." class="nolink">&#160;117</span></td>
+<td class=" methodStart  srcCell" id="id-47"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 47,50);" id="img-47" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-47" class="srcLine"><span class="nolink" title="Line 47, Col 5: method entered 117 times.">    <span class="keyword">public</span> <a href="../../../../../org/apache/kylin/metadata/filter/ConstantTupleFilter.html#ConstantTupleFilter">ConstantTupleFilter</a>(Object value) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-47'), 47,50);" id="e47" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l48">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=48#src-48">48</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 48, 'Tests that hit line # 48');" ><span title="Line 48, Col 9: statement executed 117 times." class="nolink">&#160;117</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-48" class="srcLine"><span class="nolink" title="Line 48, Col 9: statement executed 117 times.">        <span class="keyword">this</span>();</span></span></td>
+</tr>
+ <tr id="l49">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=49#src-49">49</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 49, 'Tests that hit line # 49');" ><span title="Line 49, Col 9: statement executed 117 times." class="nolink">&#160;117</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-49" class="srcLine"><span class="nolink" title="Line 49, Col 9: statement executed 117 times.">        <span class="keyword">this</span>.constantValues.add(value);</span></span></td>
+</tr>
+ <tr id="l50">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=50#src-50">50</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-50" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l51">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=51#src-51">51</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-51" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="52" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-52' onclick="toggleInlineStats(this, 'inlinestats-52');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-52" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-52'), 'inlinestats-52');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (2)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l52">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=52#src-52">52</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 52, 'Tests that hit ConstantTupleFilter(Collection&lt;?&gt;)');" ><span title="Line 52, Col 5: method entered 148 times." class="nolink">&#160;148</span></td>
+<td class=" methodStart  srcCell" id="id-52"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 52,55);" id="img-52" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-52" class="srcLine"><span class="nolink" title="Line 52, Col 5: method entered 148 times.">    <span class="keyword">public</span> <a href="../../../../../org/apache/kylin/metadata/filter/ConstantTupleFilter.html#ConstantTupleFilter">ConstantTupleFilter</a>(Collection&lt;?&gt; values) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-52'), 52,55);" id="e52" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l53">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=53#src-53">53</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 53, 'Tests that hit line # 53');" ><span title="Line 53, Col 9: statement executed 148 times." class="nolink">&#160;148</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-53" class="srcLine"><span class="nolink" title="Line 53, Col 9: statement executed 148 times.">        <span class="keyword">this</span>();</span></span></td>
+</tr>
+ <tr id="l54">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=54#src-54">54</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 54, 'Tests that hit line # 54');" ><span title="Line 54, Col 9: statement executed 148 times." class="nolink">&#160;148</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-54" class="srcLine"><span class="nolink" title="Line 54, Col 9: statement executed 148 times.">        <span class="keyword">this</span>.constantValues.addAll(values);</span></span></td>
+</tr>
+ <tr id="l55">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=55#src-55">55</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-55" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l56">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=56#src-56">56</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-56" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="57" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-57' onclick="toggleInlineStats(this, 'inlinestats-57');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-57" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-57'), 'inlinestats-57');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 5 (5)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 0.67</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l57">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=57#src-57">57</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 57, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-57"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 57,64);" id="img-57" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-57" class="srcLineHilight"><span class="nolink" title="Line 57, Col 5: method not entered.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-57'), 57,64);" id="e57" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l58">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=58#src-58">58</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-58" class="srcLine">    <span class="keyword">public</span> <a href="../../../../../org/apache/kylin/metadata/filter/TupleFilter.html#TupleFilter">TupleFilter</a> reverse() {</span></td>
+</tr>
+ <tr id="l59">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=59#src-59">59</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 59, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-59" class="srcLineHilight"><span class="nolink" title="Line 59, Col 9: statement not executed.">        <span class="keyword">if</span> (<span class="keyword">this</span>.evaluate(<span class="keyword">null</span>, <span class="keyword">null</span>)) {</span></span></td>
+</tr>
+ <tr id="l60">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=60#src-60">60</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 60, Col 13: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-60" class="srcLineHilight"><span class="nolink" title="Line 60, Col 13: statement not executed.">            <span class="keyword">return</span> <a href="../../../../../org/apache/kylin/metadata/filter/ConstantTupleFilter.html#ConstantTupleFilter">ConstantTupleFilter</a>.FALSE;</span></span></td>
+</tr>
+ <tr id="l61">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=61#src-61">61</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-61" class="srcLine">        } <span class="keyword">else</span> {</span></td>
+</tr>
+ <tr id="l62">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=62#src-62">62</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 62, Col 13: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-62" class="srcLineHilight"><span class="nolink" title="Line 62, Col 13: statement not executed.">            <span class="keyword">return</span> <a href="../../../../../org/apache/kylin/metadata/filter/ConstantTupleFilter.html#ConstantTupleFilter">ConstantTupleFilter</a>.TRUE;</span></span></td>
+</tr>
+ <tr id="l63">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=63#src-63">63</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-63" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l64">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=64#src-64">64</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-64" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l65">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=65#src-65">65</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-65" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="66" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-66' onclick="toggleInlineStats(this, 'inlinestats-66');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-66" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-66'), 'inlinestats-66');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l66">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=66#src-66">66</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 66, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-66"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 66,69);" id="img-66" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-66" class="srcLineHilight"><span class="nolink" title="Line 66, Col 5: method not entered.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-66'), 66,69);" id="e66" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l67">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=67#src-67">67</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-67" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> addChild(<a href="../../../../../org/apache/kylin/metadata/filter/TupleFilter.html#TupleFilter">TupleFilter</a> child) {</span></td>
+</tr>
+ <tr id="l68">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=68#src-68">68</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 68, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-68" class="srcLineHilight"><span class="nolink" title="Line 68, Col 9: statement not executed.">        <span class="keyword">throw</span> <span class="keyword">new</span> UnsupportedOperationException(<span class="string">&quot;This is &quot;</span> + <span class="keyword">this</span> + <span class="string">&quot; and child is &quot;</span> + child);</span></span></td>
+</tr>
+ <tr id="l69">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=69#src-69">69</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-69" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l70">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=70#src-70">70</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-70" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="71" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-71' onclick="toggleInlineStats(this, 'inlinestats-71');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-71" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-71'), 'inlinestats-71');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l71">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=71#src-71">71</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 71, 'Tests that hit toString()&#160;:&#160;String');" ><span title="Line 71, Col 5: method entered 143 times." class="nolink">&#160;143</span></td>
+<td class=" methodStart  srcCell" id="id-71"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 71,74);" id="img-71" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-71" class="srcLine"><span class="nolink" title="Line 71, Col 5: method entered 143 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-71'), 71,74);" id="e71" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l72">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=72#src-72">72</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-72" class="srcLine">    <span class="keyword">public</span> String toString() {</span></td>
+</tr>
+ <tr id="l73">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=73#src-73">73</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 73, 'Tests that hit line # 73');" ><span title="Line 73, Col 9: statement executed 143 times." class="nolink">&#160;143</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-73" class="srcLine"><span class="nolink" title="Line 73, Col 9: statement executed 143 times.">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span> + constantValues;</span></span></td>
+</tr>
+ <tr id="l74">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=74#src-74">74</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-74" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l75">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=75#src-75">75</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-75" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="76" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-76' onclick="toggleInlineStats(this, 'inlinestats-76');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-76" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-76'), 'inlinestats-76');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l76">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=76#src-76">76</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 76, 'Tests that hit evaluate(IEvaluatableTuple,IFilterCodeSystem&lt;?&gt;)&#160;:&#160;boolean');" ><span title="Line 76, Col 5: method entered 40,011 times." class="nolink">&#160;40011</span></td>
+<td class=" methodStart  srcCell" id="id-76"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 76,79);" id="img-76" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-76" class="srcLine"><span class="nolink" title="Line 76, Col 5: method entered 40,011 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-76'), 76,79);" id="e76" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l77">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=77#src-77">77</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-77" class="srcLine">    <span class="keyword">public</span> <span class="keyword">boolean</span> evaluate(<a href="../../../../../org/apache/kylin/metadata/tuple/IEvaluatableTuple.html#IEvaluatableTuple">IEvaluatableTuple</a> tuple, <a href="../../../../../org/apache/kylin/metadata/filter/IFilterCodeSystem.html#IFilterCodeSystem">IFilterCodeSystem</a>&lt;?&gt; cs) {</span></td>
+</tr>
+ <tr id="l78">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=78#src-78">78</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 78, 'Tests that hit line # 78');" ><span title="Line 78, Col 9: statement executed 40,011 times." class="nolink">&#160;40011</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-78" class="srcLine"><span class="nolink" title="Line 78, Col 9: statement executed 40,011 times.">        <span class="keyword">return</span> constantValues.size() &gt; 0;</span></span></td>
+</tr>
+ <tr id="l79">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=79#src-79">79</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-79" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l80">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=80#src-80">80</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-80" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="81" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-81' onclick="toggleInlineStats(this, 'inlinestats-81');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-81" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-81'), 'inlinestats-81');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l81">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=81#src-81">81</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 81, 'Tests that hit isEvaluable()&#160;:&#160;boolean');" ><span title="Line 81, Col 5: method entered 21 times." class="nolink">&#160;21</span></td>
+<td class=" methodStart  srcCell" id="id-81"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 81,84);" id="img-81" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-81" class="srcLine"><span class="nolink" title="Line 81, Col 5: method entered 21 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-81'), 81,84);" id="e81" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l82">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=82#src-82">82</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-82" class="srcLine">    <span class="keyword">public</span> <span class="keyword">boolean</span> isEvaluable() {</span></td>
+</tr>
+ <tr id="l83">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=83#src-83">83</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 83, 'Tests that hit line # 83');" ><span title="Line 83, Col 9: statement executed 21 times." class="nolink">&#160;21</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-83" class="srcLine"><span class="nolink" title="Line 83, Col 9: statement executed 21 times.">        <span class="keyword">return</span> <span class="keyword">true</span>;</span></span></td>
+</tr>
+ <tr id="l84">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=84#src-84">84</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-84" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l85">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=85#src-85">85</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-85" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="86" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-86' onclick="toggleInlineStats(this, 'inlinestats-86');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-86" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-86'), 'inlinestats-86');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l86">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=86#src-86">86</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 86, 'Tests that hit getValues()&#160;:&#160;Collection&lt;?&gt;');" ><span title="Line 86, Col 5: method entered 40,313 times." class="nolink">&#160;40313</span></td>
+<td class=" methodStart  srcCell" id="id-86"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 86,89);" id="img-86" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-86" class="srcLine"><span class="nolink" title="Line 86, Col 5: method entered 40,313 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-86'), 86,89);" id="e86" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l87">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=87#src-87">87</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-87" class="srcLine">    <span class="keyword">public</span> Collection&lt;?&gt; getValues() {</span></td>
+</tr>
+ <tr id="l88">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=88#src-88">88</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 88, 'Tests that hit line # 88');" ><span title="Line 88, Col 9: statement executed 40,313 times." class="nolink">&#160;40313</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-88" class="srcLine"><span class="nolink" title="Line 88, Col 9: statement executed 40,313 times.">        <span class="keyword">return</span> <span class="keyword">this</span>.constantValues;</span></span></td>
+</tr>
+ <tr id="l89">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=89#src-89">89</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-89" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l90">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=90#src-90">90</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-90" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="91" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-91' onclick="toggleInlineStats(this, 'inlinestats-91');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-91" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-91'), 'inlinestats-91');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (4)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 0.25</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l91">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=91#src-91">91</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 91, 'Tests that hit serialize(IFilterCodeSystem,ByteBuffer)&#160;:&#160;void');" ><span title="Line 91, Col 5: method entered 129 times." class="nolink">&#160;129</span></td>
+<td class=" methodStart  srcCell" id="id-91"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 91,99);" id="img-91" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-91" class="srcLine"><span class="nolink" title="Line 91, Col 5: method entered 129 times.">    @SuppressWarnings({ <span class="string">&quot;unchecked&quot;</span>, <span class="string">&quot;rawtypes&quot;</span> })</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-91'), 91,99);" id="e91" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l92">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=92#src-92">92</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-92" class="srcLine">    @Override</span></td>
+</tr>
+ <tr id="l93">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=93#src-93">93</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-93" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> serialize(<a href="../../../../../org/apache/kylin/metadata/filter/IFilterCodeSystem.html#IFilterCodeSystem">IFilterCodeSystem</a> cs, ByteBuffer buffer) {</span></td>
+</tr>
+ <tr id="l94">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=94#src-94">94</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 94, 'Tests that hit line # 94');" ><span title="Line 94, Col 9: statement executed 129 times." class="nolink">&#160;129</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-94" class="srcLine"><span class="nolink" title="Line 94, Col 9: statement executed 129 times.">        <span class="keyword">int</span> size = <span class="keyword">this</span>.constantValues.size();</span></span></td>
+</tr>
+ <tr id="l95">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=95#src-95">95</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 95, 'Tests that hit line # 95');" ><span title="Line 95, Col 9: statement executed 129 times." class="nolink">&#160;129</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-95" class="srcLine"><span class="nolink" title="Line 95, Col 9: statement executed 129 times.">        <a href="../../../../../org/apache/kylin/common/util/BytesUtil.html#BytesUtil">BytesUtil</a>.writeVInt(size, buffer);</span></span></td>
+</tr>
+ <tr id="l96">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=96#src-96">96</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 96, 'Tests that hit line # 96');" ><span title="Line 96, Col 9: statement executed 129 times." class="nolink">&#160;129</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-96" class="srcLine"><span class="nolink" title="Line 96, Col 9: statement executed 129 times.">        <span class="keyword">for</span> (Object val : <span class="keyword">this</span>.constantValues) {</span></span></td>
+</tr>
+ <tr id="l97">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=97#src-97">97</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 97, 'Tests that hit line # 97');" ><span title="Line 97, Col 13: statement executed 89,297 times." class="nolink">&#160;89297</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-97" class="srcLine"><span class="nolink" title="Line 97, Col 13: statement executed 89,297 times.">            cs.serialize(val, buffer);</span></span></td>
+</tr>
+ <tr id="l98">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=98#src-98">98</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-98" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l99">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=99#src-99">99</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-99" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l100">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=100#src-100">100</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-100" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="101" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-101' onclick="toggleInlineStats(this, 'inlinestats-101');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-101" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-101'), 'inlinestats-101');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (6)</td>
+                <td class="inlineStat">Complexity: 2</td>
+                <td class="inlineStat">Complexity Density: 0.5</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l101">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=101#src-101">101</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 101, 'Tests that hit deserialize(IFilterCodeSystem&lt;?&gt;,ByteBuffer)&#160;:&#160;void');" ><span title="Line 101, Col 5: method entered 126 times." class="nolink">&#160;126</span></td>
+<td class=" methodStart  srcCell" id="id-101"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 101,109);" id="img-101" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-101" class="srcLine"><span class="nolink" title="Line 101, Col 5: method entered 126 times.">    @Override</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-101'), 101,109);" id="e101" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l102">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=102#src-102">102</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-102" class="srcLine">    <span class="keyword">public</span> <span class="keyword">void</span> deserialize(<a href="../../../../../org/apache/kylin/metadata/filter/IFilterCodeSystem.html#IFilterCodeSystem">IFilterCodeSystem</a>&lt;?&gt; cs, ByteBuffer buffer) {</span></td>
+</tr>
+ <tr id="l103">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=103#src-103">103</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-103" class="srcLine"></span></td>
+</tr>
+ <tr id="l104">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=104#src-104">104</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 104, 'Tests that hit line # 104');" ><span title="Line 104, Col 9: statement executed 126 times." class="nolink">&#160;126</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-104" class="srcLine"><span class="nolink" title="Line 104, Col 9: statement executed 126 times.">        <span class="keyword">this</span>.constantValues.clear();</span></span></td>
+</tr>
+ <tr id="l105">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=105#src-105">105</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 105, 'Tests that hit line # 105');" ><span title="Line 105, Col 9: statement executed 126 times." class="nolink">&#160;126</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-105" class="srcLine"><span class="nolink" title="Line 105, Col 9: statement executed 126 times.">        <span class="keyword">int</span> size = <a href="../../../../../org/apache/kylin/common/util/BytesUtil.html#BytesUtil">BytesUtil</a>.readVInt(buffer);</span></span></td>
+</tr>
+ <tr id="l106">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=106#src-106">106</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 106, 'Tests that hit line # 106');" ><span title="Line 106, Col 24: true branch executed 47,606 times, false branch executed 126 times." class="nolink">&#160;47732</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-106" class="srcLine"><span class="nolink" title="Line 106, Col 24: true branch executed 47,606 times, false branch executed 126 times.">        <span class="keyword">for</span> (<span class="keyword">int</span> i = 0; i &lt; size; i++) {</span></span></td>
+</tr>
+ <tr id="l107">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=107#src-107">107</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 107, 'Tests that hit line # 107');" ><span title="Line 107, Col 13: statement executed 47,606 times." class="nolink">&#160;47606</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-107" class="srcLine"><span class="nolink" title="Line 107, Col 13: statement executed 47,606 times.">            <span class="keyword">this</span>.constantValues.add(cs.deserialize(buffer));</span></span></td>
+</tr>
+ <tr id="l108">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=108#src-108">108</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-108" class="srcLine">        }</span></td>
+</tr>
+ <tr id="l109">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=109#src-109">109</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-109" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l110">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=110#src-110">110</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-110" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="111" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-111' onclick="toggleInlineStats(this, 'inlinestats-111');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-111" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-111'), 'inlinestats-111');return true;">
+                <td><div>
+<div title="100% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:100%"></div></div></div></td><td>100%</td>
+                <td class="inlineStat">Uncovered Elements: 0 (10)</td>
+                <td class="inlineStat">Complexity: 4</td>
+                <td class="inlineStat">Complexity Density: 0.67</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l111">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=111#src-111">111</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 111, 'Tests that hit equals(Object)&#160;:&#160;boolean');" ><span title="Line 111, Col 5: method entered 72 times." class="nolink">&#160;72</span></td>
+<td class=" methodStart  srcCell" id="id-111"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 111,120);" id="img-111" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-111" class="srcLine"><span class="nolink" title="Line 111, Col 5: method entered 72 times.">    @Override <span class="keyword">public</span> <span class="keyword">boolean</span> equals(Object o) {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-111'), 111,120);" id="e111" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l112">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=112#src-112">112</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 112, 'Tests that hit line # 112');" ><span title="Line 112, Col 12: true branch executed 35 times, false branch executed 37 times." class="nolink">&#160;72</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-112" class="srcLine"><span class="nolink" title="Line 112, Col 12: true branch executed 35 times, false branch executed 37 times.">        <span class="keyword">if</span> (<span class="keyword">this</span> == o)</span></span></td>
+</tr>
+ <tr id="l113">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=113#src-113">113</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 113, 'Tests that hit line # 113');" ><span title="Line 113, Col 13: statement executed 35 times." class="nolink">&#160;35</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-113" class="srcLine"><span class="nolink" title="Line 113, Col 13: statement executed 35 times.">            <span class="keyword">return</span> <span class="keyword">true</span>;</span></span></td>
+</tr>
+ <tr id="l114">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=114#src-114">114</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 114, 'Tests that hit line # 114');" ><span title="Line 114, Col 12: true branch executed 22 times, false branch executed 15 times." class="nolink">&#160;37</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-114" class="srcLine"><span class="nolink" title="Line 114, Col 12: true branch executed 22 times, false branch executed 15 times.">        <span class="keyword">if</span> (o == <span class="keyword">null</span> || getClass() != o.getClass())</span></span></td>
+</tr>
+ <tr id="l115">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=115#src-115">115</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 115, 'Tests that hit line # 115');" ><span title="Line 115, Col 13: statement executed 22 times." class="nolink">&#160;22</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-115" class="srcLine"><span class="nolink" title="Line 115, Col 13: statement executed 22 times.">            <span class="keyword">return</span> <span class="keyword">false</span>;</span></span></td>
+</tr>
+ <tr id="l116">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=116#src-116">116</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-116" class="srcLine"></span></td>
+</tr>
+ <tr id="l117">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=117#src-117">117</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 117, 'Tests that hit line # 117');" ><span title="Line 117, Col 9: statement executed 15 times." class="nolink">&#160;15</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-117" class="srcLine"><span class="nolink" title="Line 117, Col 9: statement executed 15 times.">        <a href="../../../../../org/apache/kylin/metadata/filter/ConstantTupleFilter.html#ConstantTupleFilter">ConstantTupleFilter</a> that = (<a href="../../../../../org/apache/kylin/metadata/filter/ConstantTupleFilter.html#ConstantTupleFilter">ConstantTupleFilter</a>) o;</span></span></td>
+</tr>
+ <tr id="l118">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=118#src-118">118</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-118" class="srcLine"></span></td>
+</tr>
+ <tr id="l119">
+<td align="right" class="lineCount Good"><a class="lineNumHref" href="?line=119#src-119">119</a></td>
+<td align="right" class="coverageCount Good hitByTest"   onclick="return showTestsForLine(this, 119, 'Tests that hit line # 119');" ><span title="Line 119, Col 9: statement executed 15 times." class="nolink">&#160;15</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-119" class="srcLine"><span class="nolink" title="Line 119, Col 9: statement executed 15 times.">        <span class="keyword">return</span> constantValues.equals(that.constantValues);</span></span></td>
+</tr>
+ <tr id="l120">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=120#src-120">120</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-120" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l121">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=121#src-121">121</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-121" class="srcLine"></span></td>
+</tr>
+<tr class="inlineStatsRow" align="right" valign="middle">
+<td class="coverageCount"><a name="122" class="nolink">&#160;</a></td>
+    <td class="coverageCount aui-icon aui-icon-small aui-iconfont-arrows-right" id='inlineStatsToggle-122' onclick="toggleInlineStats(this, 'inlinestats-122');"/>
+    <td align="center" valign="middle">
+        <table id="inlinestats-122" style="display:none;" class="inlineStats" width="100%" cellspacing="1px" cellpadding="1px">
+            <tr onclick="toggleInlineStats(document.getElementById('inlineStatsToggle-122'), 'inlinestats-122');return true;">
+                <td><div>
+<div title="0% Covered" style="min-width:40px;" class="barNegative contribBarNegative barNegative"><div class="barPositive contribBarPositive barPositive" style="width:0%"></div></div></div></td><td>0%</td>
+                <td class="inlineStat">Uncovered Elements: 1 (1)</td>
+                <td class="inlineStat">Complexity: 1</td>
+                <td class="inlineStat">Complexity Density: 1</td>
+                            </tr>
+        </table>
+    </td>
+</tr>
+<tr id="l122">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=122#src-122">122</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 122, Col 5: method not entered." class="nolink">&#160;0</span></td>
+<td class=" methodStart  srcCell" id="id-122"><img title="Method Statistics" onclick="toggleSrcRowVis(this, 122,124);" id="img-122" src="../../../../../img/collapse.gif"  alt="toggle" class="icon"/><span id="src-122" class="srcLineHilight"><span class="nolink" title="Line 122, Col 5: method not entered.">    @Override <span class="keyword">public</span> <span class="keyword">int</span> hashCode() {</span><span class="foldControl" onclick="toggleSrcRowVis(document.getElementById('img-122'), 122,124);" id="e122" style="display:none;border:none;">...</span></span></td>
+</tr>
+ <tr id="l123">
+<td align="right" class="lineCount Bad"><a class="lineNumHref" href="?line=123#src-123">123</a></td>
+<td align="right" class="coverageCount Bad missedByTest"   ><span title="Line 123, Col 9: statement not executed." class="nolink">&#160;0</span></td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-123" class="srcLineHilight"><span class="nolink" title="Line 123, Col 9: statement not executed.">        <span class="keyword">return</span> constantValues.hashCode();</span></span></td>
+</tr>
+ <tr id="l124">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=124#src-124">124</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-124" class="srcLine">    }</span></td>
+</tr>
+ <tr id="l125">
+<td align="right" class="lineCount NoHilight"><a class="lineNumHref" href="?line=125#src-125">125</a></td>
+<td align="right" class="coverageCount NoHilight "   >&#160;&#160;</td>
+<td class=" srcCell" ><span class="spacer"></span><span id="src-125" class="srcLine">}</span></td>
+</tr>
+ 
+    </tbody></table>    </div>
+</div><!-- .aui-tabs -->
+
+<script type="text/javascript"> 
+    var ol_bgclass = "overBG";
+    var ol_fgclass = "overFG";
+    var ol_cgclass = "overCaption";
+    var ol_captionfontclass= "overCaption";
+    var ol_closefontclass = "closeFont";
+    var ol_closeclick = 1;
+    var ol_close = 'X';
+    var ol_wrap = 1;
+    var rootRelPath = '../../../../../';
+    var testsPerFile = -1;
+</script>
+<script src="ConstantTupleFilter.js" type="text/javascript"></script>
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.2.1
+                on Wed Dec 13 2017 10:25:03 PST using coverage data from Wed Dec 13 2017 10:24:58 PST.
+            </li>
+        </ul>
+        <ul>
+            <li>Clover free edition. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

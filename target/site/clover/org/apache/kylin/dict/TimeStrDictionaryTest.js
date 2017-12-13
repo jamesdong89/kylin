@@ -1,0 +1,10 @@
+var clover = new Object();
+
+// JSON: {classes : [{name, id, sl, el,  methods : [{sl, el}, ...]}, ...]}
+clover.pageData = {"classes":[{"el":83,"id":47607,"methods":[{"el":36,"sc":5,"sl":33},{"el":48,"sc":5,"sl":38},{"el":63,"sc":5,"sl":50},{"el":73,"sc":5,"sl":65},{"el":81,"sc":5,"sl":75}],"name":"TimeStrDictionaryTest","sl":30}]}
+
+// JSON: {test_ID : {"methods": [ID1, ID2, ID3...], "name" : "testXXX() void"}, ...};
+clover.testTargets = {"test_357":{"methods":[{"sl":38}],"name":"basicTest","pass":true,"statements":[{"sl":40},{"sl":41},{"sl":42},{"sl":43},{"sl":45},{"sl":46},{"sl":47}]},"test_441":{"methods":[{"sl":50},{"sl":75}],"name":"testEncodeDecode","pass":true,"statements":[{"sl":52},{"sl":53},{"sl":54},{"sl":55},{"sl":56},{"sl":58},{"sl":59},{"sl":60},{"sl":61},{"sl":62},{"sl":76},{"sl":77},{"sl":79},{"sl":80}]},"test_451":{"methods":[{"sl":65}],"name":"testIllegal","pass":true,"statements":[{"sl":67},{"sl":68}]},"test_463":{"methods":[{"sl":65}],"name":"testIllegal","pass":true,"statements":[{"sl":67},{"sl":68}]},"test_508":{"methods":[{"sl":50},{"sl":75}],"name":"testEncodeDecode","pass":true,"statements":[{"sl":52},{"sl":53},{"sl":54},{"sl":55},{"sl":56},{"sl":58},{"sl":59},{"sl":60},{"sl":61},{"sl":62},{"sl":76},{"sl":77},{"sl":79},{"sl":80}]},"test_575":{"methods":[{"sl":38}],"name":"basicTest","pass":true,"statements":[{"sl":40},{"sl":41},{"sl":42},{"sl":43},{"sl":45},{"sl":46},{"sl":47}]}}
+
+// JSON: { lines : [{tests : [testid1, testid2, testid3, ...]}, ...]};
+clover.srcFileLines = [[], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [], [357, 575], [], [357, 575], [357, 575], [357, 575], [357, 575], [], [357, 575], [357, 575], [357, 575], [], [], [508, 441], [], [508, 441], [508, 441], [508, 441], [508, 441], [508, 441], [], [508, 441], [508, 441], [508, 441], [508, 441], [508, 441], [], [], [451, 463], [], [451, 463], [451, 463], [], [], [], [], [], [], [508, 441], [508, 441], [508, 441], [], [508, 441], [508, 441], [], [], []]

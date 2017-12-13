@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    
+    
+    <link rel="SHORTCUT ICON" href="../../../../img/clover.ico" />
+
+    <link rel="stylesheet" href="../../../../aui/css/aui.min.css" media="all"/>
+    <link rel="stylesheet" href="../../../../aui/css/aui-experimental.min.css" media="all"/>
+    <!--[if IE 9]><link rel="stylesheet" href="../../../../aui/css/aui-ie9.min.css" media="all"/><![endif]-->
+
+    <style type="text/css" media="all">
+        @import url('../../../../style.css');
+        @import url('../../../../tree.css');
+        
+    </style>
+
+    <script src="../../../../jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-experimental.min.js" type="text/javascript"></script>
+    <script src="../../../../aui/js/aui-soy.min.js" type="text/javascript"></script>
+
+    <script src="../../../../package-nodes-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover-tree.js" type="text/javascript"></script>
+    <script src="../../../../clover.js" type="text/javascript"></script>
+    <script src="../../../../clover-descriptions.js" type="text/javascript"></script>
+    <script src="../../../../cloud.js" type="text/javascript"></script>
+
+            <title>Apache Kylin 2.3.0-SNAPSHOT (Aggregated)</title>
+    </head>
+
+<body  >
+    <div id="page">
+        
+        
+
+
+<header id="header" role="banner">
+    <nav class="aui-header aui-dropdown2-trigger-group" role="navigation">
+        <div class="aui-header-inner">
+            <div class="aui-header-primary">
+                <h1 id="logo" class="aui-header-logo aui-header-logo-clover">
+                    <a href="http://openclover.org" title="Visit OpenClover home page"><span class="aui-header-logo-device">OpenClover</span></a>
+                </h1>
+                            </div>
+            <div class="aui-header-secondary">
+                <ul class="aui-nav">
+                    <li id="system-help-menu">
+                        <a class="aui-nav-link" title="Open online documentation" target="_blank"
+                           href="http://openclover.org/documentation">
+                            <span class="aui-icon aui-icon-small aui-iconfont-help">&#160;Help</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        
+        <div class="aui-page-panel">
+            <div class="aui-page-panel-inner">
+                <div class="aui-page-panel-nav aui-page-panel-nav-clover">
+                    
+
+<div class="aui-page-header-inner" style="margin-bottom: 20px;">
+    <div class="aui-page-header-image">
+                    <a href="http://kylin.apache.org" target="_top">
+                <div class="aui-avatar aui-avatar-large aui-avatar-project">
+            <div class="aui-avatar-inner">
+                                    <img src="../../../../img/clover_logo_large.png" alt="Clover icon"/>
+                            </div>
+        </div>
+                    </a>
+            </div>
+    <div class="aui-page-header-main" >
+        <h1>
+                            <a href="http://kylin.apache.org" target="_top">
+                                        Apache Kylin 2.3.0-SNAPSHOT (Aggregated)
+                                        </a>
+                    </h1>
+    </div>
+</div>
+
+<nav class="aui-navgroup aui-navgroup-vertical">
+    <div class="aui-navgroup-inner">
+                                            <ul class="aui-nav">
+                <li class="">
+                    <a href="../../../../dashboard.html">Project overview</a>
+                </li>
+            </ul>
+        
+                <div class="aui-nav-heading packages-nav-heading">
+            <strong>Packages</strong>
+        </div>
+        <div class="aui-nav project-packages">
+            <form method="get" action="#" class="aui package-filter-container">
+                <input type="text" autocomplete="off" class="package-filter text"
+                       placeholder="Type to filter packages..." name="package-filter" id="package-filter"
+                       title="Start typing package name (or part of the name) to search through the tree. Use arrow keys and the Enter key to navigate."/>
+            </form>
+            <p class="package-filter-no-results-message hidden">
+                <small>No results found.</small>
+            </p>
+                                                <div class="packages-tree-wrapper" data-root-relative="../../../../" data-package-name="org.apache.kylin.rest">
+                <div class="packages-tree-container"></div>
+                <div class="clover-packages-lozenges"></div>
+            </div>
+        </div>
+        
+            </div>
+</nav>                </div>
+                <section class="aui-page-panel-content">
+                    <div class="aui-page-panel-content-clover">
+
+                    
+                    <ol class="aui-nav aui-nav-breadcrumbs">
+            
+        <li><a href="../../../../dashboard.html">Project Clover database Wed Dec 13 2017 10:24:58 PST</a></li> 
+    </ol>
+    
+<h1 class="aui-h2-clover">
+            Package org.apache.kylin.rest
+    </h1>
+<div class="aui-tabs horizontal-tabs">
+            <ul class="tabs-menu">
+                <li class="menu-item ">
+            <a href="pkg-summary.html"><strong>Application code</strong></a>
+        </li>
+                    <li class="menu-item ">
+            <a href="top-risks.html"><strong>Top risks</strong></a>
+        </li>
+        <li class="menu-item active-tab">
+            <a href="quick-wins.html"><strong>Quick wins</strong></a>
+        </li>
+                            </ul>
+    <div class="tabs-pane active-pane" id="tabs-first">
+
+        <div>&#160;</div>
+
+        
+
+
+                        <div style="text-align: right; margin-bottom: 10px">
+            
+                            <button id="cloudDepthCheckbox" class="aui-button active"
+                        onclick="showDeepPackageCloud(this)">Include classes from sub-packages</button>
+            
+                                    <button class="aui-button aui-button-subtle" id="popupHelp">
+    <span class="aui-icon aui-icon-small aui-iconfont-help"></span>&#160;How to read this chart
+</button>
+<script>
+    AJS.InlineDialog(AJS.$("#popupHelp"), "helpDialog",
+            function (content, trigger, showPopup) {
+                var description = quickWinsDescription();
+                var title = 'Quick Wins';
+                content.css({"padding": "20px"}).html(
+                        '<h2>' + title + '</h2>' + description);
+                showPopup();
+                return false;
+            },
+            {
+                width: 600
+            }
+    );
+</script>
+        </div>
+
+        
+
+<div style="padding: 20px; border: 1px solid #cccccc; background-color: #f5f5f5; border-radius: 3px">
+          <div id="deepPackageCloud"  >
+                          
+    
+        
+    
+            <a href="../rest/controller/AccessController.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 51 , # Elements Covered - 29 ">AccessController</a>
+            
+    
+            <a href="../rest/response/AccessEntryResponse.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 18 , # Elements Covered - 16 ">AccessEntryResponse</a>
+            
+    
+            <a href="../rest/request/AccessRequest.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 17 , # Elements Covered - 17 ">AccessRequest</a>
+            
+    
+            <a href="../rest/service/AccessService.html" class="tag"
+            style="font-size: 24px;color:#f6c342"
+            title="# Elements - 229 , # Elements Covered - 145 ">AccessService</a>
+            
+    
+            <a href="../rest/service/AceInfo.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 13 , # Elements Covered - 13 ">AceInfo</a>
+            
+    
+            <a href="../rest/security/AclEntityFactory.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 26 , # Elements Covered - 16 ">AclEntityFactory</a>
+            
+    
+            <a href="../rest/util/AclEvaluate.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 47 , # Elements Covered - 20 ">AclEvaluate</a>
+            
+    
+            <a href="../rest/security/AclPermission.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">AclPermission</a>
+            
+    
+            <a href="../rest/security/AclPermissionFactory.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 27 , # Elements Covered - 26 ">AclPermissionFactory</a>
+            
+    
+            <a href="../rest/service/AclService.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 27 , # Elements Covered - 21 ">AclRecord</a>
+            
+    
+            <a href="../rest/service/AclService.html" class="tag"
+            style="font-size: 20px;color:#f6c342"
+            title="# Elements - 165 , # Elements Covered - 143 ">AclService</a>
+            
+    
+            <a href="../rest/util/AclUtil.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 12 ">AclUtil</a>
+            
+    
+            <a href="../rest/controller/AdminController.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 23 , # Elements Covered - 16 ">AdminController</a>
+            
+    
+            <a href="../rest/service/AdminService.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 23 , # Elements Covered - 19 ">AdminService</a>
+            
+    
+            <a href="../rest/service/BadQueryDetector.html" class="tag"
+            style="font-size: 16px;color:#de7b72"
+            title="# Elements - 88 , # Elements Covered - 81 ">BadQueryDetector</a>
+            
+    
+            <a href="../rest/service/BadQueryDetector.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 5 ">BadQueryDetector.Entry</a>
+            
+    
+            <a href="../rest/service/BadQueryDetector.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">BadQueryDetector.LoggerNotifier</a>
+            
+    
+            <a href="../rest/service/BadQueryDetector.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 7 ">BadQueryDetector.PersistenceNotifier</a>
+            
+    
+            <a href="../rest/exception/BadRequestException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 11 , # Elements Covered - 5 ">BadRequestException</a>
+            
+    
+            <a href="../rest/controller/BasicController.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 39 , # Elements Covered - 16 ">BasicController</a>
+            
+    
+            <a href="../rest/service/BasicService.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 31 , # Elements Covered - 21 ">BasicService</a>
+            
+    
+            <a href="../rest/broadcaster/BroadcasterReceiveServlet.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 24 , # Elements Covered - 19 ">BroadcasterReceiveServlet</a>
+            
+    
+            <a href="../rest/controller/CacheController.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 4 ">CacheController</a>
+            
+    
+            <a href="../rest/service/CacheService.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 66 , # Elements Covered - 47 ">CacheService</a>
+            
+    
+            <a href="../rest/controller/CubeController.html" class="tag"
+            style="font-size: 32px;color:#e28e87"
+            title="# Elements - 380 , # Elements Covered - 105 ">CubeController</a>
+            
+    
+            <a href="../rest/controller/CubeDescController.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 26 , # Elements Covered - 10 ">CubeDescController</a>
+            
+    
+            <a href="../rest/request/CubeRequest.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 40 , # Elements Covered - 37 ">CubeRequest</a>
+            
+    
+            <a href="../rest/service/CubeService.html" class="tag"
+            style="font-size: 37px;color:#e7a19b"
+            title="# Elements - 474 , # Elements Covered - 126 ">CubeService</a>
+            
+    
+            <a href="../rest/service/CubeService.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 10 , # Elements Covered - 6 ">CubeService.HTableInfoSyncListener</a>
+            
+    
+            <a href="../rest/service/DomainObjectInfo.html" class="tag"
+            style="font-size: 12px;color:#d5584c"
+            title="# Elements - 13 , # Elements Covered - 13 ">DomainObjectInfo</a>
+            
+    
+            <a href="../rest/response/EnvelopeResponse.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 1 ">EnvelopeResponse</a>
+            
+    
+            <a href="../rest/response/ErrorResponse.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 12 , # Elements Covered - 12 ">ErrorResponse</a>
+            
+    
+            <a href="../rest/security/ExternalAclProvider.html" class="tag"
+            style="font-size: 14px;color:#d5584c"
+            title="# Elements - 38 , # Elements Covered - 13 ">ExternalAclProvider</a>
+            
+    
+            <a href="../rest/exception/ForbiddenException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 4 , # Elements Covered - 2 ">ForbiddenException</a>
+            
+    
+            <a href="../rest/job/HybridCubeCLI.html" class="tag"
+            style="font-size: 18px;color:#e28e87"
+            title="# Elements - 125 , # Elements Covered - 93 ">HybridCubeCLI</a>
+            
+    
+            <a href="../rest/init/InitialTaskManager.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 19 , # Elements Covered - 10 ">InitialTaskManager</a>
+            
+    
+            <a href="../rest/exception/InternalErrorException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 8 , # Elements Covered - 4 ">InternalErrorException</a>
+            
+    
+            <a href="../rest/request/JobBuildRequest.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 20 , # Elements Covered - 16 ">JobBuildRequest</a>
+            
+    
+            <a href="../rest/controller/JobController.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 63 , # Elements Covered - 16 ">JobController</a>
+            
+    
+            <a href="../rest/request/JobListRequest.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 25 , # Elements Covered - 25 ">JobListRequest</a>
+            
+    
+            <a href="../rest/service/JobService.html" class="tag"
+            style="font-size: 27px;color:#e7a19b"
+            title="# Elements - 285 , # Elements Covered - 134 ">JobService</a>
+            
+    
+            <a href="../rest/security/KylinAclPermissionEvaluator.html" class="tag"
+            style="font-size: 15px;color:#d04437"
+            title="# Elements - 59 , # Elements Covered - 9 ">KylinAclPermissionEvaluator</a>
+            
+    
+            <a href="../rest/security/KylinAuthenticationProvider.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 51 , # Elements Covered - 5 ">KylinAuthenticationProvider</a>
+            
+    
+            <a href="../rest/security/ManagedUser.html" class="tag"
+            style="font-size: 18px;color:#d5584c"
+            title="# Elements - 117 , # Elements Covered - 28 ">ManagedUser</a>
+            
+    
+            <a href="../rest/security/ManagedUser.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 6 , # Elements Covered - 6 ">ManagedUser.SimpleGrantedAuthorityDeserializer</a>
+            
+    
+            <a href="../rest/security/ManagedUser.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 5 , # Elements Covered - 5 ">ManagedUser.SimpleGrantedAuthoritySerializer</a>
+            
+    
+            <a href="../rest/msg/Message.html" class="tag"
+            style="font-size: 22px;color:#d5584c"
+            title="# Elements - 189 , # Elements Covered - 15 ">Message</a>
+            
+    
+            <a href="../rest/request/MetaRequest.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 7 , # Elements Covered - 4 ">MetaRequest</a>
+            
+    
+            <a href="../rest/service/ModelService.html" class="tag"
+            style="font-size: 26px;color:#e28e87"
+            title="# Elements - 272 , # Elements Covered - 92 ">ModelService</a>
+            
+    
+            <a href="../rest/msg/MsgPicker.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 14 , # Elements Covered - 8 ">MsgPicker</a>
+            
+    
+            <a href="../rest/exception/NotFoundException.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 2 , # Elements Covered - 2 ">NotFoundException</a>
+            
+    
+            <a href="../rest/security/PasswordPlaceholderConfigurer.html" class="tag"
+            style="font-size: 15px;color:#d5584c"
+            title="# Elements - 65 , # Elements Covered - 25 ">PasswordPlaceholderConfigurer</a>
+            
+    
+            <a href="../rest/request/PrepareSqlRequest.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 36 , # Elements Covered - 4 ">PrepareSqlRequest</a>
+            
+    
+            <a href="../rest/controller/ProjectController.html" class="tag"
+            style="font-size: 16px;color:#d9695f"
+            title="# Elements - 77 , # Elements Covered - 44 ">ProjectController</a>
+            
+    
+            <a href="../rest/request/ProjectRequest.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 9 , # Elements Covered - 9 ">ProjectRequest</a>
+            
+    
+            <a href="../rest/service/ProjectService.html" class="tag"
+            style="font-size: 18px;color:#d9695f"
+            title="# Elements - 114 , # Elements Covered - 50 ">ProjectService</a>
+            
+    
+            <a href="../rest/controller/QueryController.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 46 , # Elements Covered - 7 ">QueryController</a>
+            
+    
+            <a href="../rest/metrics/QueryMetrics.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 42 , # Elements Covered - 40 ">QueryMetrics</a>
+            
+    
+            <a href="../rest/metrics/QueryMetrics2Facade.html" class="tag"
+            style="font-size: 14px;color:#d9695f"
+            title="# Elements - 45 , # Elements Covered - 42 ">QueryMetrics2Facade</a>
+            
+    
+            <a href="../rest/metrics/QueryMetricsFacade.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 61 , # Elements Covered - 56 ">QueryMetricsFacade</a>
+            
+    
+            <a href="../rest/service/QueryService.html" class="tag"
+            style="font-size: 48px;color:#89c495"
+            title="# Elements - 667 , # Elements Covered - 224 ">QueryService</a>
+            
+    
+            <a href="../rest/request/SQLRequest.html" class="tag"
+            style="font-size: 17px;color:#d9695f"
+            title="# Elements - 101 , # Elements Covered - 38 ">SQLRequest</a>
+            
+    
+            <a href="../rest/response/SQLResponse.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 67 , # Elements Covered - 54 ">SQLResponse</a>
+            
+    
+            <a href="../rest/service/SidInfo.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 20 , # Elements Covered - 14 ">SidInfo</a>
+            
+    
+            <a href="../rest/service/TableACLService.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 29 , # Elements Covered - 26 ">TableACLService</a>
+            
+    
+            <a href="../rest/security/TableInterceptor.html" class="tag"
+            style="font-size: 12px;color:#d04437"
+            title="# Elements - 16 , # Elements Covered - 6 ">TableInterceptor</a>
+            
+    
+            <a href="../rest/util/TableauInterceptor.html" class="tag"
+            style="font-size: 13px;color:#d5584c"
+            title="# Elements - 31 , # Elements Covered - 26 ">TableauInterceptor</a>
+            
+    
+            <a href="../rest/controller/UserController.html" class="tag"
+            style="font-size: 13px;color:#d04437"
+            title="# Elements - 22 , # Elements Covered - 11 ">UserController</a>
+            
+    
+            <a href="../rest/service/UserGrantedAuthority.html" class="tag"
+            style="font-size: 14px;color:#d04437"
+            title="# Elements - 42 , # Elements Covered - 7 ">UserGrantedAuthority</a>
+            
+    
+            <a href="../rest/service/UserService.html" class="tag"
+            style="font-size: 15px;color:#d9695f"
+            title="# Elements - 69 , # Elements Covered - 51 ">UserService</a>
+           </div>
+   
+          <div id="shallowPackageCloud"  style="display: none"  >
+                          
+    
+       </div>
+   </div>
+    </div> <!-- tabs-pane active-pane -->
+</div> <!-- aui-tabs horizontal-tabs -->
+
+                        </div> <!-- class="aui-page-panel-content-clover" -->
+                    <footer id="footer" role="contentinfo">
+    <section class="footer-body">
+        <ul>
+            <li>
+                Report generated by <a target="_new" href="http://openclover.org">OpenClover</a> v 4.2.1
+                on Wed Dec 13 2017 10:25:03 PST using coverage data from Wed Dec 13 2017 10:24:58 PST.
+            </li>
+        </ul>
+        <ul>
+            <li>Clover free edition. </li>
+        </ul>
+    </section>
+</footer>                </section> <!-- class="aui-page-panel-content" -->
+            </div> <!-- class="aui-page-panel-inner" -->
+        </div> <!-- class="aui-page-panel" -->
+    </div> <!-- id="page" -->
+</body>
+</html>

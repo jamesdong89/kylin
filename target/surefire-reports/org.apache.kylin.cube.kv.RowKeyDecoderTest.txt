@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.kylin.cube.kv.RowKeyDecoderTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.056 sec - in org.apache.kylin.cube.kv.RowKeyDecoderTest

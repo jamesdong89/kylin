@@ -75,9 +75,6 @@ public class CuboidRecommender {
         return instance;
     }
 
-    /**
-     * Get recommend cuboids with their row count stats with cache
-     */
     public Map<Long, Long> getRecommendCuboidList(final CuboidStats cuboidStats, final KylinConfig kylinConfig) {
         if (cuboidStats == null) {
             return null;
@@ -116,9 +113,6 @@ public class CuboidRecommender {
         return results;
     }
 
-    /**
-     * Get recommend cuboids with their row count stats without cache
-     */
     public Map<Long, Long> getRecommendCuboidList(CuboidStats cuboidStats, KylinConfig kylinConf,
             boolean ifForceRecommend) {
         long Threshold1 = 1L << kylinConf.getCubePlannerAgreedyAlgorithmAutoThreshold();

@@ -44,7 +44,6 @@ import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.ArrayUtils;
 import org.apache.commons.lang.StringUtils;
-import org.apache.commons.validator.routines.EmailValidator;
 import org.apache.kylin.common.KylinConfig;
 import org.apache.kylin.common.KylinConfigExt;
 import org.apache.kylin.common.KylinVersion;
@@ -59,13 +58,13 @@ import org.apache.kylin.measure.extendedcolumn.ExtendedColumnMeasureType;
 import org.apache.kylin.metadata.MetadataConstants;
 import org.apache.kylin.metadata.model.ColumnDesc;
 import org.apache.kylin.metadata.model.DataModelDesc;
-import org.apache.kylin.metadata.model.DataModelManager;
 import org.apache.kylin.metadata.model.FunctionDesc;
 import org.apache.kylin.metadata.model.IEngineAware;
 import org.apache.kylin.metadata.model.IStorageAware;
 import org.apache.kylin.metadata.model.JoinDesc;
 import org.apache.kylin.metadata.model.JoinTableDesc;
 import org.apache.kylin.metadata.model.MeasureDesc;
+import org.apache.kylin.metadata.model.DataModelManager;
 import org.apache.kylin.metadata.model.TableRef;
 import org.apache.kylin.metadata.model.TblColRef;
 import org.apache.kylin.metadata.project.ProjectInstance;
@@ -163,8 +162,6 @@ public class CubeDesc extends RootPersistentEntity implements IEngineAware {
     private long partitionDateEnd = 3153600000000L;
     @JsonProperty("auto_merge_time_ranges")
     private long[] autoMergeTimeRanges;
-    @JsonProperty("volatile_range")
-    private long volatileRange = 0;
     @JsonProperty("retention_range")
     private long retentionRange = 0;
     @JsonProperty("engine_type")
@@ -185,12 +182,6 @@ public class CubeDesc extends RootPersistentEntity implements IEngineAware {
     @JsonProperty("parent_forward")
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private int parentForward = 3;
-
-    @JsonProperty("mandatory_dimension_set_list")
-    @JsonInclude(JsonInclude.Include.NON_NULL)
-    private List<Set<String>> mandatoryDimensionSetList = Collections.emptyList();
-
-    private Set<Long> mandatoryCuboids = Sets.newHashSet();
 
     private LinkedHashSet<TblColRef> allColumns = new LinkedHashSet<>();
     private LinkedHashSet<ColumnDesc> allColumnDescs = new LinkedHashSet<>();
@@ -453,18 +444,6 @@ public class CubeDesc extends RootPersistentEntity implements IEngineAware {
         this.overrideKylinProps = overrideKylinProps;
     }
 
-    public List<Set<String>> getMandatoryDimensionSetList() {
-        return mandatoryDimensionSetList;
-    }
-
-    public void setMandatoryDimensionSetList(List<Set<String>> mandatoryDimensionSetList) {
-        this.mandatoryDimensionSetList = mandatoryDimensionSetList;
-    }
-
-    public Set<Long> getMandatoryCuboids() {
-        return mandatoryCuboids;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o)
@@ -555,13 +534,6 @@ public class CubeDesc extends RootPersistentEntity implements IEngineAware {
                     .append(JsonUtil.writeValueAsString(this.hbaseMapping)).append("|")//
                     .append(JsonUtil.writeValueAsString(this.engineType)).append("|")//
                     .append(JsonUtil.writeValueAsString(this.storageType)).append("|");
-
-            if (mandatoryDimensionSetList != null && !mandatoryDimensionSetList.isEmpty()) {
-                for (Set<String> mandatoryDimensionSet : mandatoryDimensionSetList) {
-                    TreeSet<String> sortedSet = Sets.newTreeSet(mandatoryDimensionSet);
-                    sigString.append(JsonUtil.writeValueAsString(sortedSet)).append("|");
-                }
-            }
 
             String signatureInput = sigString.toString().replaceAll("\\s+", "").toLowerCase();
 
@@ -657,32 +629,6 @@ public class CubeDesc extends RootPersistentEntity implements IEngineAware {
 
         initDictionaryDesc();
         amendAllColumns();
-
-        // initialize mandatory cuboids based on mandatoryDimensionSetList
-        initMandatoryCuboids();
-    }
-
-    private void initMandatoryCuboids() {
-        Map<String, RowKeyColDesc> rowKeyColDescMap = Maps.newHashMap();
-        for (RowKeyColDesc entry : getRowkey().getRowKeyColumns()) {
-            rowKeyColDescMap.put(entry.getColumn(), entry);
-        }
-
-        for (Set<String> mandatoryDimensionSet : this.mandatoryDimensionSetList) {
-            long cuboid = 0L;
-            for (String columnName : mandatoryDimensionSet) {
-                TblColRef tblColRef = model.findColumn(columnName);
-                RowKeyColDesc rowKeyColDesc = rowKeyColDescMap.get(tblColRef.getIdentity());
-                // check if mandatory dimension set list is valid
-                if (rowKeyColDesc == null) {
-                    logger.warn("Column " + columnName + " in " + mandatoryDimensionSet + " does not exist");
-                    throw new IllegalStateException(
-                            "Column " + columnName + " in " + mandatoryDimensionSet + " does not exist");
-                }
-                cuboid |= 1L << rowKeyColDesc.getBitIndex();
-            }
-            mandatoryCuboids.add(cuboid);
-        }
     }
 
     public CuboidScheduler getInitialCuboidScheduler() {
@@ -702,7 +648,7 @@ public class CubeDesc extends RootPersistentEntity implements IEngineAware {
     }
 
     public void validateAggregationGroupsCombination() {
-        int index = 1;
+        int index = 0;
 
         for (AggregationGroup agg : getAggregationGroups()) {
             try {
@@ -727,7 +673,7 @@ public class CubeDesc extends RootPersistentEntity implements IEngineAware {
     }
 
     public void validateAggregationGroups() {
-        int index = 1;
+        int index = 0;
 
         for (AggregationGroup agg : getAggregationGroups()) {
             if (agg.getIncludes() == null) {
@@ -815,18 +761,6 @@ public class CubeDesc extends RootPersistentEntity implements IEngineAware {
             }
 
             index++;
-        }
-    }
-
-    public void validateNotifyList() {
-        List<String> notifyList = getNotifyList();
-        if (notifyList != null && !notifyList.isEmpty()) {
-            EmailValidator emailValidator = EmailValidator.getInstance();
-            for (String email: notifyList) {
-                if (!emailValidator.isValid(email)) {
-                    throw new IllegalArgumentException("Email [" + email + "] is not validation.");
-                }
-            }
         }
     }
 
@@ -1167,14 +1101,6 @@ public class CubeDesc extends RootPersistentEntity implements IEngineAware {
         return result;
     }
 
-    public long getVolatileRange() {
-        return volatileRange;
-    }
-
-    public void setVolatileRange(long volatileRange) {
-        this.volatileRange = volatileRange;
-    }
-
     public long getRetentionRange() {
         return retentionRange;
     }
@@ -1412,7 +1338,6 @@ public class CubeDesc extends RootPersistentEntity implements IEngineAware {
         newCubeDesc.setAutoMergeTimeRanges(cubeDesc.getAutoMergeTimeRanges());
         newCubeDesc.setPartitionDateStart(cubeDesc.getPartitionDateStart());
         newCubeDesc.setPartitionDateEnd(cubeDesc.getPartitionDateEnd());
-        newCubeDesc.setVolatileRange(cubeDesc.getVolatileRange());
         newCubeDesc.setRetentionRange(cubeDesc.getRetentionRange());
         newCubeDesc.setEngineType(cubeDesc.getEngineType());
         newCubeDesc.setStorageType(cubeDesc.getStorageType());

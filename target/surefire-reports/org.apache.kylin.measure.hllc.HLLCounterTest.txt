@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.kylin.measure.hllc.HLLCounterTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.365 sec - in org.apache.kylin.measure.hllc.HLLCounterTest
